@@ -1,0 +1,33 @@
+@tailwind components;
+
+@layer components {
+  .footer-form-field {
+    @apply my-1;
+  }
+
+  .footer-form-label {
+    @apply text-sm;
+    @apply mb-3;
+    @apply inline-block;
+  }
+
+  .footer-form-label[aria-required]::after {
+    content: ' *';
+  }
+
+  .footer-form-input {
+    @apply block;
+    @apply w-full;
+    @apply px-3;
+    @apply py-1;
+    @apply text-black;
+    @apply border;
+    @apply border-2;
+    @apply border-black;
+    @apply rounded-none;
+    @apply bg-transparent;
+    @apply focus:border-black;
+    @apply focus:ring-black text-xs;
+    @apply leading-5;
+  }
+}

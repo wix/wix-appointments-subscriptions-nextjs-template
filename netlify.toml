@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[template]
+  incoming-hooks = ["WixBookings"]
+
+[template.environment]
+  NEXT_PUBLIC_WIX_CLIENT_ID = "Wix headless client id"
+  NEXT_PUBLIC_BOOKINGS_CHECKOUT_URL = "The url of the Bookings form page in the live site"
+  NEXT_PUBLIC_PAID_PLANS_CHECKOUT_URL = "The url of the paid plans checkout page"

@@ -1,0 +1,14 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <ScalaCodeStyleSettings>
+      <option name="alwaysUsedImports">
+        <array>
+          <option value="com.wixpress.automapper.dsl.defaults._" />
+          <option value="com.wixpress.automapper.dsl.all._" />
+          <option value="com.wixpress.automapper.dsl.syntax._" />
+        </array>
+      </option>
+      <option name="MULTILINE_STRING_CLOSING_QUOTES_ON_NEW_LINE" value="true" />
+    </ScalaCodeStyleSettings>
+  </code_scheme>
+</component>

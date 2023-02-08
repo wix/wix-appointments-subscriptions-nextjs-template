@@ -1,0 +1,12 @@
+@tailwind components;
+
+@layer components {
+    .video-background {
+        @apply -z-10;
+        @apply fixed;
+        @apply inset-0;
+        @apply min-w-full;
+        @apply min-h-full;
+        @apply object-cover;
+    }
+}

@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-display: block;
+  font-family: Avenir-LT-W01_35-Light1475496;
+  src: url(//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix);
+  src: url(//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix) format("eot"),url(//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/0078f486-8e52-42c0-ad81-3c8d3d43f48e.woff2) format("woff2"),url(//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/908c4810-64db-4b46-bb8e-823eb41f68c0.woff) format("woff"),url(//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/4577388c-510f-4366-addb-8b663bcc762a.ttf) format("truetype"),url(//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b0268c31-e450-4159-bfea-e0d20e2b5c0c.svg#b0268c31-e450-4159-bfea-e0d20e2b5c0c) format("svg")
+}
+
+@font-face {
+  font-display: block;
+  font-family: Lulo-Clean-W01-One-Bold;
+  src: url(//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/0163ac22-50a7-406e-aa64-c62ee6fbf3d7.eot?#iefix);
+  src: url(//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/0163ac22-50a7-406e-aa64-c62ee6fbf3d7.eot?#iefix) format("eot"),url(//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/aee74cb3-c913-4b54-9722-6001c92325f2.woff2) format("woff2"),url(//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/80de9d5d-ab5f-40ce-911b-104e51e93d7c.woff) format("woff"),url(//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/1b46b05b-cfdd-4d82-8c2f-5c6cfba1fe60.ttf) format("truetype"),url(//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/be340f0b-a2d4-41df-acb1-4dc124330a88.svg#be340f0b-a2d4-41df-acb1-4dc124330a88) format("svg")
+}
+
+@layer components {
+  .dot-md-center {
+    @apply h-1;
+    @apply w-1;
+    @apply rounded-md;
+    top: 80%;
+    left: calc(50% - 2px);
+  }
+
+  .btn-main {
+    @apply text-white;
+    @apply border-2;
+    @apply border-black;
+    @apply text-sm;
+    @apply font-medium;
+    @apply bg-black;
+    @apply hover:bg-white;
+    @apply hover:text-gray-900;
+    @apply focus:outline-none;
+    @apply focus:ring-4;
+    @apply focus:ring-gray-300;
+    @apply rounded-none;
+    @apply px-5;
+    @apply py-2;
+  }
+
+  .btn-main[disabled] {
+    @apply hover:text-white;
+    @apply bg-gray-400;
+    @apply border-gray-400;
+    @apply hover:bg-gray-400;
+  }
+
+  .font-lulo {
+    font-family: lulo-clean-w01-one-bold, sans-serif;
+  }
+
+  .font-avenir {
+    font-family: Avenir-LT-W01_35-Light1475496, sans-serif;
+  }
+
+  h1, .title {
+    @apply font-lulo;
+    @apply text-4xl;
+  }
+
+  .h-header {
+    @apply h-[128px];
+  }
+
+  .header-line {
+    @apply w-9;
+    @apply h-[2px];
+    @apply bg-black;
+    @apply mb-2;
+  }
+
+  .parallax-background {
+    @apply bg-site-background;
+    @apply bg-fixed;
+    @apply bg-center;
+    @apply bg-no-repeat;
+    @apply bg-cover;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font: normal normal normal 18px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
