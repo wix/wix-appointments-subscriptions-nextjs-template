@@ -9,7 +9,9 @@ export default function PlanSelect({
   checkoutUrl: string;
 }>) {
   const url = new URL(checkoutUrl);
-  url.searchParams.set('origin', window.location.origin);
+  if (typeof window !== 'undefined') {
+    url.searchParams.set('origin', window.location.origin);
+  }
   return (
     <a className="w-full" href={url.toString()}>
       {children}

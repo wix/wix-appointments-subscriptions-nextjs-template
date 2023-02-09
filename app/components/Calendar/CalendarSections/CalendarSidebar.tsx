@@ -34,8 +34,11 @@ const CalendarSidebar = ({
     setRedirecting(true);
     session!
       .wixClient!.redirects.createRedirectSession({
+        options: {
+          useTemplateSite: false,
+        },
         bookingsCheckout: {
-          slot: [selectedSlot!],
+          slot: selectedSlot!,
           timezone,
           serviceId: service.id,
         },
