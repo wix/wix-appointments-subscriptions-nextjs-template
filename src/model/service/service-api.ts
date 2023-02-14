@@ -94,7 +94,7 @@ const fetchServices = async ({
   const authorizationValue =
     authorization ??
     (await wixSession!.tokensPromise?.then(
-      (tokens) => tokens.accessToken.accessToken
+      (tokens) => tokens.accessToken.value
     ))!;
   return fetch(BOOKINGS_SERVICES_API, {
     method: 'POST',

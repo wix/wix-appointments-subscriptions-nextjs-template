@@ -13,7 +13,7 @@ export const useServices = ({ limit }: { limit?: number }) => {
         }),
         headers: {
           'Content-Type': 'application/json',
-          Authorization: tokens.accessToken.accessToken,
+          Authorization: tokens.accessToken.value,
         },
       }).then((res) => res.json() as Promise<GetServicesResponse>)
     )

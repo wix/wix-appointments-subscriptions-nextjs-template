@@ -39,7 +39,7 @@ const fetchPublicPlans = ({
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: tokens.accessToken.accessToken,
+        Authorization: tokens.accessToken.value,
       },
       body: JSON.stringify(input),
     }).then((res) => res.json())
