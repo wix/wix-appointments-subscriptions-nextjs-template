@@ -10,15 +10,9 @@ export const formatServicePrice = ({
   dynamicPriceTemplate?: string;
 }): {
   userFormattedPrice: string;
-  priceType: 'dynamic' | 'static' | 'free';
+  priceType: ServicePaymentDto['priceType'];
 } => {
-  const priceType =
-    servicePayment.isFree ||
-    (servicePayment.price === 0 && !servicePayment.isVariedPricing)
-      ? 'free'
-      : servicePayment.isVariedPricing
-      ? 'dynamic'
-      : 'static';
+  const priceType = servicePayment.priceType;
   let userFormattedPrice = '';
   switch (priceType) {
     case 'dynamic':
@@ -32,13 +26,13 @@ export const formatServicePrice = ({
         )
       );
       break;
-    case 'free':
+    case 'text':
       userFormattedPrice = servicePayment.priceText ?? defaultFreeText;
       break;
     case 'static':
       userFormattedPrice = formatCurrency(
-        servicePayment.price,
-        servicePayment.currency
+        servicePayment?.defaultPrice?.price,
+        servicePayment?.defaultPrice?.currency
       );
       break;
   }

@@ -13,7 +13,7 @@ export default function ImageGallery({
       height={400}
       items={mediaItems.map((item) => ({
         src: getImageUrlForMedia(item, 600, 400),
-        alt: item.altText,
+        alt: '',
       }))}
     />
   );

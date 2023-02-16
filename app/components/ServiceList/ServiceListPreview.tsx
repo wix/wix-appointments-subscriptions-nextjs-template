@@ -39,9 +39,6 @@ const ServiceCardPreview = ({ service }: { service: ServiceInfoViewModel }) => {
         </a>
         <p className="text-sm">{service.info.tagLine}</p>
         <div className="border-top border border-black w-full my-6"></div>
-        <p className="text-gray-700 text-base capitalize">
-          {service.info.daysWithSessions.join(', ')}
-        </p>
         <p className="text-gray-700 text-base">
           {formattedPrice.userFormattedPrice}
         </p>

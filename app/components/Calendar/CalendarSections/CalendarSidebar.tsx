@@ -40,7 +40,7 @@ const CalendarSidebar = ({
         bookingsCheckout: {
           slot: selectedSlot!,
           timezone,
-          serviceId: service.id,
+          serviceId: service.id!,
         },
         callbacks: {
           postFlowUrl: window.location.origin,

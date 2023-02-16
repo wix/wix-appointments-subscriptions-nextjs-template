@@ -71,9 +71,6 @@ function ServicePageView({ service }: { service: ServiceInfoViewModel }) {
             </p>
           </div>
         </div>
-        <p className="pt-8 capitalize empty:hidden">
-          {service.info.daysWithSessions.join(', ')}
-        </p>
         <div className="mt-14">
           <a href={`/calendar/${service.slug}`} className="btn-main">
             Go To Calendar

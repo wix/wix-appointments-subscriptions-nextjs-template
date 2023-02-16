@@ -1,36 +1,21 @@
-import {
-  GetServiceResponse,
-  PaymentOptions,
-  PricingPlan,
-} from '@model/service/types';
 import { OfferedAsType } from '@model/service/service-types.internal';
+import type { services } from '@wix/bookings';
 
-export function determinePaymentOptionsBy(
-  pricingPlans: PricingPlan[],
-  paymentOptions: PaymentOptions
-) {
+export function determinePaymentOptionsBy(service: services.Service) {
   return [
     ...insertIf(
-      !!(pricingPlans?.length && paymentOptions.wixPaidPlan),
+      !!service?.payment?.options?.pricingPlan,
       OfferedAsType.PRICING_PLAN
     ),
-    ...insertIf(!!paymentOptions.wixPayInPerson, OfferedAsType.OFFLINE),
-    ...insertIf(!!paymentOptions.wixPayOnline, OfferedAsType.ONLINE),
+    ...insertIf(!!service?.payment?.options?.inPerson, OfferedAsType.OFFLINE),
+    ...insertIf(!!service?.payment?.options?.online, OfferedAsType.ONLINE),
   ];
 }
 
-export function mapServiceOfferedAsDto(serviceResponse: GetServiceResponse) {
-  const paymentOptions = serviceResponse!.service!.paymentOptions;
-  return determinePaymentOptionsBy(
-    serviceResponse!.pricingPlans!,
-    paymentOptions!
-  );
+export function mapServiceOfferedAsDto(service: services.Service) {
+  return determinePaymentOptionsBy(service);
 }
 
 function insertIf(condition: boolean, ...elements: any) {
   return condition ? elements : [];
-}
-
-function isPayable(paidOffline: boolean, paidOnline: boolean) {
-  return paidOffline || paidOnline;
 }

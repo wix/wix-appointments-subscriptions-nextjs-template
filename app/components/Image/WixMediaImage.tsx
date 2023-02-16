@@ -1,27 +1,19 @@
 import { ServiceImage } from '@model/service/service.mapper';
 import { media as wixMedia } from '@wix/api-client';
 
-export function getImageUrlForMedia(
+export const getImageUrlForMedia = (
   media?: ServiceImage,
-  width: number = media?.width ?? 640,
-  height: number = media?.height ?? 320
-) {
-  const imageUrl = media?.url
-    ? wixMedia.getScaledToFillImageUrl(
-        `wix:image://v1/${media.url}#originWidth=${width}&originHeight=${height}` +
-          media?.url,
-        width,
-        height,
-        {}
-      )
+  width: number = 640,
+  height: number = 320
+) =>
+  media?.image
+    ? wixMedia.getScaledToFillImageUrl(media.image, width, height, {})
     : `https://fakeimg.pl/${width}x${height}/?text=%20`;
-  return imageUrl;
-}
 
 export default function WixMediaImage({
   media,
-  width = media?.width ?? 640,
-  height = media?.height ?? 320,
+  width = 640,
+  height = 320,
 }: {
   media?: ServiceImage;
   width?: number;
@@ -34,7 +26,7 @@ export default function WixMediaImage({
         <img
           className="object-cover w-full group-hover:scale-110 transition duration-300 ease-in-out "
           src={imageUrl}
-          alt={media?.altText ?? 'no info available for image'}
+          alt={''}
         />
       </div>
     </div>

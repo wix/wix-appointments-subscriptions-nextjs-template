@@ -2,11 +2,13 @@ import './page.css';
 import ServiceListPreview from '@app/components/ServiceList/ServiceListPreview';
 import ScrollIntoView from '@app/components/ScrollIntoView/ScrollIntoView';
 import { useServerAuthSession } from '@app/hooks/useServerAuthSession';
-import { getServices } from '@model/service/service-api';
+import { safeGetServices } from '@model/service/service-api';
 
 export default async function Home() {
   const wixSession = useServerAuthSession();
-  const { services } = await getServices({ limit: 3 }, wixSession);
+  const {
+    results: { services },
+  } = await safeGetServices({ limit: 3 }, wixSession);
   return (
     <div>
       <div className="text-center w-full min-h-screen relative">
