@@ -1,5 +1,3 @@
-'use client';
-
 import { PropsWithChildren } from 'react';
 
 export default function PlanSelect({
@@ -8,12 +6,8 @@ export default function PlanSelect({
 }: PropsWithChildren<{
   checkoutUrl: string;
 }>) {
-  const url = new URL(checkoutUrl);
-  if (typeof window !== 'undefined') {
-    url.searchParams.set('origin', window.location.origin);
-  }
   return (
-    <a className="w-full" href={url.toString()}>
+    <a className="w-full" href={checkoutUrl}>
       {children}
     </a>
   );

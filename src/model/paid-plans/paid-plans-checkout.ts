@@ -1,30 +1,17 @@
-import { PublicPlan } from '@model/paid-plans/types';
-
-const checkoutUrlBase = new URL(
-  decodeURIComponent(process.env.NEXT_PUBLIC_PAID_PLANS_CHECKOUT_URL!)
-);
+import type { plans } from '@wix/pricing-plans';
 
 export const getCheckoutUrl = ({
   plan,
   navigateToSectionProps,
   maxStartDate,
 }: {
-  plan: PublicPlan;
+  plan: plans.PublicPlan;
   navigateToSectionProps?: string;
   maxStartDate?: string;
 }) => {
-  const url = new URL(checkoutUrlBase);
-  const data = btoa(
-    JSON.stringify({
-      integrationData: {
-        maxStartDate,
-        navigateToSectionProps: navigateToSectionProps
-          ? JSON.parse(atob(navigateToSectionProps))
-          : undefined,
-      },
-      planId: plan.id,
-    })
-  );
-  url.pathname += data;
-  return url.toString();
+  return `./api/pricing-plans-checkout?planId=${
+    plan._id
+  }&navigateToSectionProps=${
+    navigateToSectionProps ? JSON.parse(atob(navigateToSectionProps)) : ''
+  }&maxStartDate=${maxStartDate ?? ''}`;
 };

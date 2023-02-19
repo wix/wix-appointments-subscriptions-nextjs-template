@@ -1,29 +1,29 @@
 import { useServerAuthSession } from '@app/hooks/useServerAuthSession';
 import { getPaidPlans } from '@model/paid-plans/paid-plans-api';
 import { formatCurrencyToParts } from '@app/utils/price-formtter';
-import { Duration as PlanDuration, PeriodUnit } from '@model/paid-plans/types';
 import { getCheckoutUrl } from '@model/paid-plans/paid-plans-checkout';
 import PlanSelect from '@app/components/Plan/PlanSelect';
+import { plans } from '@wix/pricing-plans';
 
 const durationPeriodFormatter = (
-  period: PeriodUnit = PeriodUnit.UNDEFINED
+  period: plans.PeriodUnit = plans.PeriodUnit.UNDEFINED
 ): { plural: string; singular: string } => {
   switch (period) {
-    case PeriodUnit.DAY:
+    case plans.PeriodUnit.DAY:
       return { plural: 'Days', singular: 'Day' };
-    case PeriodUnit.WEEK:
+    case plans.PeriodUnit.WEEK:
       return { plural: 'Weeks', singular: 'Week' };
-    case PeriodUnit.MONTH:
+    case plans.PeriodUnit.MONTH:
       return { plural: 'Months', singular: 'Month' };
-    case PeriodUnit.YEAR:
+    case plans.PeriodUnit.YEAR:
       return { plural: 'Years', singular: 'Year' };
-    case PeriodUnit.UNDEFINED:
+    case plans.PeriodUnit.UNDEFINED:
     default:
       return { plural: '', singular: '' };
   }
 };
 
-const formatPlanDuration = (duration: PlanDuration) => {
+const formatPlanDuration = (duration: plans.Duration) => {
   const periodFormat = durationPeriodFormatter(duration.unit);
   return `${duration.count ?? 0} ${
     duration.count === 1 ? periodFormat.singular : periodFormat.plural
@@ -33,7 +33,7 @@ const formatPlanDuration = (duration: PlanDuration) => {
 export default async function PlansPage({
   searchParams,
 }: {
-  searchParams: { [key: string]: string };
+  searchParams: { [_: string]: string };
 }) {
   const { planIds, navigateToSectionProps, maxStartDate } = searchParams;
   const wixSession = useServerAuthSession();
@@ -64,7 +64,7 @@ export default async function PlansPage({
             );
             return (
               <li
-                key={plan.id}
+                key={plan._id}
                 className="w-full list-none rounded-none bg-white overflow-hidden mx-auto border-black border-2 m-0 p-0 bg-opacity-50 flex flex-col"
               >
                 <div className="text-center px-9 py-7 flex flex-grow flex-col justify-start items-center w-full border-b-2 border-black">
