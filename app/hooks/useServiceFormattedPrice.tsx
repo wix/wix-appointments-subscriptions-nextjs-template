@@ -5,5 +5,5 @@ export const useServiceFormattedPrice = (
   servicePayment: ServicePaymentDto
 ): {
   userFormattedPrice: string;
-  priceType: 'dynamic' | 'static' | 'free';
+  priceType: ServicePaymentDto['priceType'];
 } => formatServicePrice({ servicePayment });
