@@ -11,7 +11,7 @@ export const getCheckoutUrl = ({
 }) => {
   return `./api/pricing-plans-checkout?planId=${
     plan._id
-  }&navigateToSectionProps=${
-    navigateToSectionProps ? JSON.parse(atob(navigateToSectionProps)) : ''
-  }&maxStartDate=${maxStartDate ?? ''}`;
+  }&navigateToSectionProps=${navigateToSectionProps ?? ''}&maxStartDate=${
+    maxStartDate ?? ''
+  }`;
 };
