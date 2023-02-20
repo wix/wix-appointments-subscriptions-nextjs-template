@@ -28,5 +28,5 @@ export default async function handler(
       plansListUrl: baseUrl + 'plans',
     },
   })!;
-  res.redirect(redirectSession!.fullUrl!);
+  res.redirect(302, redirectSession!.fullUrl!);
 }
