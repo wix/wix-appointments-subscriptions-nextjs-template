@@ -1,14 +1,18 @@
-import { ServiceType } from '@model/service/service-types.internal';
 import { formatDuration, intervalToDuration } from 'date-fns';
 import { services } from '@wix/bookings';
 import { mapServiceOfferedAsDto } from '@model/service/service-offered-as.mapper';
 import { mapServicePaymentDto } from '@model/service/service-payment.mapper';
 
-export type ServiceInfoViewModel = ReturnType<typeof mapServiceInfo>;
+export type ServiceInfoViewModel = NonNullable<
+  ReturnType<typeof mapServiceInfo>
+>;
 
 export type ServiceImage = services.MediaItem;
 
-export function mapServiceInfo(service: services.Service) {
+export function mapServiceInfo(service?: services.Service) {
+  if (!service) {
+    return null;
+  }
   let mainMedia = service?.media?.mainMedia ?? service?.media?.items?.[0];
   let coverMedia = service?.media?.coverMedia ?? service?.media?.items?.[0];
   let otherMediaItems = service?.media?.items

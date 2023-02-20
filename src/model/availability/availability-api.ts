@@ -2,6 +2,7 @@ import { WixSession } from '../auth/auth';
 import { availabilityCalendar } from '@wix/bookings';
 
 export const getServiceAvailability = (
+  wixSession: WixSession,
   {
     serviceId,
     from,
@@ -14,8 +15,7 @@ export const getServiceAvailability = (
     to: string;
     timezone?: string;
     slotsPerDay?: number;
-  },
-  wixSession: WixSession
+  }
 ): Promise<availabilityCalendar.QueryAvailabilityResponse> =>
   queryAvailability({
     input: {

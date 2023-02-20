@@ -27,9 +27,12 @@ export const useAvailability = ({
       slotsPerDay,
     ],
     () =>
-      getServiceAvailability(
-        { serviceId, from, to, timezone, slotsPerDay },
-        wixSession
-      )
+      getServiceAvailability(wixSession, {
+        serviceId,
+        from,
+        to,
+        timezone,
+        slotsPerDay,
+      })
   );
 };

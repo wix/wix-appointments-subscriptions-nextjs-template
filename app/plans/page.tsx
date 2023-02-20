@@ -37,12 +37,9 @@ export default async function PlansPage({
 }) {
   const { planIds, navigateToSectionProps, maxStartDate } = searchParams;
   const wixSession = useServerAuthSession();
-  const { plans } = await getPaidPlans(
-    {
-      planIds: planIds ? planIds?.split(',') : undefined,
-    },
-    wixSession
-  );
+  const { plans } = await getPaidPlans(wixSession, {
+    planIds: planIds ? planIds?.split(',') : undefined,
+  });
   return (
     <div className="max-w-full-content mx-auto pb-8">
       <div className="px-5">

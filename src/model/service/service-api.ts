@@ -5,36 +5,48 @@ import {
 import { WixSession } from '../auth/auth';
 import { safeCall } from '@model/utils';
 
-export const safeGetServices = ({ limit = 100 }, wixSession?: WixSession) =>
+export const safeGetServices = (
+  wixSession?: WixSession,
+  { limit = 100, categoryId = '' } = {}
+) =>
   safeCall<{ services: ServiceInfoViewModel[] }>(
-    () => getServices({ limit }, wixSession),
+    () => getServices(wixSession, { limit, categoryId }),
     { services: [] },
     'Query Services'
   );
 
 export const getServices = (
-  { limit = 100 },
-  wixSession?: WixSession
-): Promise<{ services: ServiceInfoViewModel[] }> =>
-  wixSession!
+  wixSession?: WixSession,
+  { limit = 100, categoryId = '' } = {}
+): Promise<{ services: ServiceInfoViewModel[] }> => {
+  let queryBuilder = wixSession!
     .wixClient!.services.queryServices()
-    .limit(limit)
-    .find()
-    .then((result) => {
-      return {
-        services: result.items?.map(mapServiceInfo) ?? [],
-      };
-    });
+    .limit(limit);
+  if (categoryId) {
+    queryBuilder = queryBuilder.eq('category.id', categoryId);
+  }
+  return queryBuilder.find().then((result) => {
+    return {
+      services:
+        (result.items?.map(mapServiceInfo) as ServiceInfoViewModel[]) ?? [],
+    };
+  });
+};
 
 export const getServiceBySlug = (
-  serviceSlug: string,
-  wixSession?: WixSession
+  wixSession: WixSession,
+  serviceSlug: string
 ): Promise<ServiceInfoViewModel | null> =>
-  wixSession!
+  wixSession
     .wixClient!.services.queryServices()
     .limit(1)
-    .eq('slug.name', serviceSlug)
+    // TODO: uncomment when filter in bookings sdk is fixed
+    // .eq('mainSlug.name', serviceSlug)
     .find()
     .then((result) =>
-      result.items?.length ? mapServiceInfo(result.items[0]) : null
+      result.items?.length
+        ? mapServiceInfo(
+            result.items.find((item) => item.mainSlug?.name === serviceSlug)
+          )
+        : null
     );

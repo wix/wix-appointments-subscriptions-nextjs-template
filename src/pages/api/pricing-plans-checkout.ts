@@ -19,9 +19,6 @@ export default async function handler(
     maxStartDate: string;
   };
   const { redirectSession } = await wixClient?.redirects.createRedirectSession({
-    options: {
-      useTemplateSite: false,
-    },
     paidPlansCheckout: {
       planId,
       navigateToSectionProps,
@@ -31,5 +28,5 @@ export default async function handler(
       plansListUrl: baseUrl + 'plans',
     },
   })!;
-  res.redirect(301, redirectSession!.fullUrl!);
+  res.redirect(redirectSession!.fullUrl!);
 }

@@ -8,7 +8,7 @@ export default async function Home() {
   const wixSession = useServerAuthSession();
   const {
     results: { services },
-  } = await safeGetServices({ limit: 3 }, wixSession);
+  } = await safeGetServices(wixSession, { limit: 3 });
   return (
     <div>
       <div className="text-center w-full min-h-screen relative">

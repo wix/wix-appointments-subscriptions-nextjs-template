@@ -17,7 +17,7 @@ const offeredAsToPaymentOptions = (offeredAs: string) =>
 export default async function ServicePage({ params }: any) {
   const wixSession = useServerAuthSession();
   const service = params.slug
-    ? await getServiceBySlug(params.slug, wixSession)
+    ? await getServiceBySlug(wixSession, params.slug)
     : null;
 
   return (

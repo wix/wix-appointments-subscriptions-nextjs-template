@@ -28,15 +28,12 @@ const CalendarSidebar = ({
   >();
   const [redirecting, setRedirecting] = useState<boolean>(false);
   const formattedPrice = useServiceFormattedPrice(
-    service!.payment!.paymentDetails
+    service.payment!.paymentDetails
   );
   const goToCheckout = useCallback(() => {
     setRedirecting(true);
     session!
       .wixClient!.redirects.createRedirectSession({
-        options: {
-          useTemplateSite: false,
-        },
         bookingsCheckout: {
           slot: selectedSlot!,
           timezone,
