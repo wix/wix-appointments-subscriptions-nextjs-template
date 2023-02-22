@@ -45,15 +45,10 @@ export const getServiceBySlug = (
     () =>
       wixSession
         .wixClient!.services.queryServices()
-        .limit(1)
         .eq('mainSlug.name', serviceSlug)
         .find()
         .then((result) =>
-          result.items?.length
-            ? mapServiceInfo(
-                result.items.find((item) => item.mainSlug?.name === serviceSlug)
-              )
-            : null
+          result.items?.length ? mapServiceInfo(result.items[0]) : null
         ),
     null,
     'Get Service By Slug'
