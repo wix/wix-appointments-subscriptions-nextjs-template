@@ -68,9 +68,11 @@ export default function ServiceList({
         </ul>
       </div>
       <div className="p-3 container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {servicesToDisplay.map((service, index) => (
-          <ServiceCard service={service} key={service.id} />
-        ))}
+        {servicesToDisplay?.length
+          ? servicesToDisplay.map((service, index) => (
+              <ServiceCard service={service} key={service.id} />
+            ))
+          : 'No Services found'}
       </div>
     </>
   );

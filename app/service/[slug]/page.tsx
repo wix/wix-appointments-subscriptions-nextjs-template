@@ -16,9 +16,9 @@ const offeredAsToPaymentOptions = (offeredAs: string) =>
 
 export default async function ServicePage({ params }: any) {
   const wixSession = useServerAuthSession();
-  const service = params.slug
+  const { data: service } = params.slug
     ? await getServiceBySlug(wixSession, params.slug)
-    : null;
+    : { data: null };
 
   return (
     <div className="max-w-full-content mx-auto bg-white px-6 sm:px-28">

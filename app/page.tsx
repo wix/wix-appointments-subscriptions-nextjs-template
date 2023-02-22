@@ -7,7 +7,7 @@ import { safeGetServices } from '@model/service/service-api';
 export default async function Home() {
   const wixSession = useServerAuthSession();
   const {
-    results: { services },
+    data: { services },
   } = await safeGetServices(wixSession, { limit: 3 });
   return (
     <div>
@@ -72,12 +72,13 @@ export default async function Home() {
         </div>
       </div>
       <div className="parallax-background">
-        <div className="max-w-full-content mx-auto bg-transparent p-5">
-          <div className="header-line my-8"></div>
-          <h2 className="mb-7 mt-10 tracking-tighter title max-w-xs">
-            How I Can Help You
-          </h2>
-          {services?.length ? (
+        {services?.length ? (
+          <div className="max-w-full-content mx-auto bg-transparent p-5">
+            <div className="header-line my-8"></div>
+            <h2 className="mb-7 mt-10 tracking-tighter title max-w-xs">
+              How I Can Help You
+            </h2>
+
             <>
               <ServiceListPreview services={services} />
               <div className="flex my-8 justify-center">
@@ -86,8 +87,8 @@ export default async function Home() {
                 </a>
               </div>
             </>
-          ) : null}
-        </div>
+          </div>
+        ) : null}
       </div>
     </div>
   );

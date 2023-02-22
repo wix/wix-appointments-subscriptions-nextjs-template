@@ -36,17 +36,25 @@ export const getServices = (
 export const getServiceBySlug = (
   wixSession: WixSession,
   serviceSlug: string
-): Promise<ServiceInfoViewModel | null> =>
-  wixSession
-    .wixClient!.services.queryServices()
-    .limit(1)
-    // TODO: uncomment when filter in bookings sdk is fixed
-    // .eq('mainSlug.name', serviceSlug)
-    .find()
-    .then((result) =>
-      result.items?.length
-        ? mapServiceInfo(
-            result.items.find((item) => item.mainSlug?.name === serviceSlug)
-          )
-        : null
-    );
+): Promise<{
+  data: ServiceInfoViewModel | null;
+  hasError: boolean;
+  errorMsg?: string;
+}> =>
+  safeCall<ServiceInfoViewModel | null>(
+    () =>
+      wixSession
+        .wixClient!.services.queryServices()
+        .limit(1)
+        .eq('mainSlug.name', serviceSlug)
+        .find()
+        .then((result) =>
+          result.items?.length
+            ? mapServiceInfo(
+                result.items.find((item) => item.mainSlug?.name === serviceSlug)
+              )
+            : null
+        ),
+    null,
+    'Get Service By Slug'
+  );

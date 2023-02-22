@@ -5,7 +5,7 @@ import { useServerAuthSession } from '@app/hooks/useServerAuthSession';
 export default async function BookNowPage({ params }: any) {
   const wixSession = useServerAuthSession();
   const {
-    results: { services },
+    data: { services },
   } = await safeGetServices(wixSession);
   return (
     <div className="max-w-full-content mx-auto pb-8 px-5">

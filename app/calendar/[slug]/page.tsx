@@ -6,7 +6,7 @@ import { Suspense } from 'react';
 
 export default async function CalendarPage({ params }: any) {
   const wixSession = useServerAuthSession();
-  const service = await getServiceBySlug(wixSession, params.slug);
+  const { data: service } = await getServiceBySlug(wixSession, params.slug);
 
   return (
     <div className="bg-white max-w-full-content mx-auto">
