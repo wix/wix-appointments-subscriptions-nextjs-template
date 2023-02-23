@@ -15,9 +15,9 @@ export function mapServiceInfo(service?: services.Service) {
   }
   let mainMedia = service?.media?.mainMedia ?? service?.media?.items?.[0];
   let coverMedia = service?.media?.coverMedia ?? service?.media?.items?.[0];
-  let otherMediaItems = service?.media?.items
-    ?.filter((item) => !!item)
-    .map(({ image }) => image) as ServiceImage[] | undefined;
+  let otherMediaItems = service?.media?.items?.filter((item) => !!item) as
+    | ServiceImage[]
+    | undefined;
   const { name, description, tagLine, _id: id } = service;
   const serviceDuration = getDuration(service);
 
