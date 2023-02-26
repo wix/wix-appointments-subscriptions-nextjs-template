@@ -58,7 +58,7 @@ const CalendarSlots = ({
             bookable
               ? formattedTime === selectedTime
                 ? 'border-gray-700 bg-gray-100'
-                : 'hover:border-gray-600'
+                : 'hover:border-gray-700 border-gray-500'
               : 'text-gray-200'
           }`}
           disabled={!bookable}

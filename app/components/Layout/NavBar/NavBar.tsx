@@ -86,27 +86,27 @@ export function NavBar() {
               <span className="absolute -bottom-5 md:hidden border-b-2 w-48 left-[calc(50%_-_theme(space.24))]" />
             </li>
           ))}
-
-          <li className="order-first md:order-last justify-end">
-            <StyledNavLink
-              href="/login"
-              isActive={'/login' === linkRef}
-              onClick={() => {
-                setIsMenuShown(false);
-              }}
-            >
-              <div className="flex flex-nowrap text-turquoise-200 gap-2 justify-center items-center">
-                <div>
-                  <LoginAvatar
-                    width={22}
-                    height={22}
-                    className="fill-turquoise-200"
-                  />
-                </div>
-                <span className="whitespace-nowrap">Log In</span>
-              </div>
-            </StyledNavLink>
-          </li>
+          {/* For future use */}
+          {/*<li className="order-first md:order-last justify-end">*/}
+          {/*  <StyledNavLink*/}
+          {/*    href="/login"*/}
+          {/*    isActive={'/login' === linkRef}*/}
+          {/*    onClick={() => {*/}
+          {/*      setIsMenuShown(false);*/}
+          {/*    }}*/}
+          {/*  >*/}
+          {/*    <div className="flex flex-nowrap text-turquoise-200 gap-2 justify-center items-center">*/}
+          {/*      <div>*/}
+          {/*        <LoginAvatar*/}
+          {/*          width={22}*/}
+          {/*          height={22}*/}
+          {/*          className="fill-turquoise-200"*/}
+          {/*        />*/}
+          {/*      </div>*/}
+          {/*      <span className="whitespace-nowrap">Log In</span>*/}
+          {/*    </div>*/}
+          {/*  </StyledNavLink>*/}
+          {/*</li>*/}
         </ul>
       </nav>
     </>

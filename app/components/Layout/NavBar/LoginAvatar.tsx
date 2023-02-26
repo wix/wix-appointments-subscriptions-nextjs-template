@@ -1,5 +1,6 @@
 import { SVGProps } from 'react';
 
+// For future use
 const LoginAvatar = (props: SVGProps<any>) => (
   <svg
     data-bbox="0 0 50 50"

@@ -9,12 +9,14 @@ export const getServiceAvailability = (
     to,
     timezone,
     slotsPerDay,
+    limit,
   }: {
     serviceId: string;
     from: string;
     to: string;
     timezone?: string;
     slotsPerDay?: number;
+    limit?: number;
   }
 ): Promise<availabilityCalendar.QueryAvailabilityResponse> =>
   queryAvailability({
@@ -22,11 +24,18 @@ export const getServiceAvailability = (
       slotsPerDay,
       timezone,
       query: {
+        sort: [
+          {
+            fieldName: 'startTime',
+            order: availabilityCalendar.SortOrder.ASC,
+          },
+        ],
         filter: {
           serviceId: [serviceId],
           startDate: from,
           endDate: to,
         },
+        cursorPaging: { ...(limit ? { limit } : {}) },
       },
     },
     wixSession,

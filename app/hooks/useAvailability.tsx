@@ -8,12 +8,14 @@ export const useAvailability = ({
   to,
   timezone = Intl.DateTimeFormat().resolvedOptions().timeZone,
   slotsPerDay,
+  limit,
 }: {
   serviceId: string;
   from: string;
   to: string;
   timezone?: string;
   slotsPerDay?: number;
+  limit?: number;
 }) => {
   const wixSession = useClientAuthSession();
   return useQuery(
@@ -25,6 +27,7 @@ export const useAvailability = ({
       wixSession,
       timezone,
       slotsPerDay,
+      limit,
     ],
     () =>
       getServiceAvailability(wixSession, {
@@ -33,6 +36,7 @@ export const useAvailability = ({
         to,
         timezone,
         slotsPerDay,
+        limit,
       })
   );
 };

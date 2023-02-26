@@ -25,15 +25,19 @@ import CalendarSlots, {
   SlotViewModel,
 } from '@app/components/Calendar/CalendarSections/CalendarSlots';
 import CalendarSidebar from '@app/components/Calendar/CalendarSections/CalendarSidebar';
+import { availabilityCalendar } from '@wix/bookings';
 
 type CalendarDateRange = { from: string; to: string };
 
 const getCalendarMonthRangeForDate = (date: Date): CalendarDateRange => {
   return {
     from: formatISO(startOfMonth(date)),
-    to: formatISO(startOfMonth(addMonths(date, 1))),
+    to: formatISO(startOfMonth(addMonths(date, 3))),
   };
 };
+
+const formatSlot = (slotAvailability: availabilityCalendar.SlotAvailability) =>
+  format(new Date(slotAvailability.slot!.startDate!), TIME_FORMAT);
 
 const TIME_FORMAT = 'hh:mm a';
 
@@ -44,10 +48,11 @@ export function CalendarView({ service }: { service: ServiceInfoViewModel }) {
   const [dateRange, setDateRange] = useState<CalendarDateRange>(
     getCalendarMonthRangeForDate(selectedDate!)
   );
-  const { data: rangeData } = useAvailability({
+  const { data: rangeData, isLoading: isRangeDataLoading } = useAvailability({
     serviceId: service.id!,
     ...dateRange,
     slotsPerDay: 1,
+    limit: 42, // 6 weeks
   });
   const { data: dayData, isLoading: isDayDataLoading } = useAvailability({
     serviceId: service.id!,
@@ -86,6 +91,20 @@ export function CalendarView({ service }: { service: ServiceInfoViewModel }) {
         }, {}) ?? {}
     );
   }, [dayData]);
+  const showLoader = useMemo(
+    () =>
+      isDayDataLoading ||
+      (!dayData?.availabilityEntries?.length && isRangeDataLoading),
+    [isDayDataLoading, isRangeDataLoading, dayData]
+  );
+  const nextAvailableDate = useMemo(
+    () =>
+      rangeData?.availabilityEntries
+        ?.filter(({ bookable }) => bookable)
+        .map(({ slot }) => new Date(slot!.startDate!))
+        .find((dateWithSlots) => dateWithSlots > selectedDate),
+    [selectedDate, rangeData]
+  );
 
   return (
     <div className="flex flex-wrap">
@@ -119,7 +138,7 @@ export function CalendarView({ service }: { service: ServiceInfoViewModel }) {
           </section>
           <section className="flex-1 w-60 min-w-fit max-w-full">
             <div className="mt-4">{format(selectedDate, 'EEEE, d MMMM')}</div>
-            {isDayDataLoading ? (
+            {showLoader ? (
               <div className="w-full h-36 flex items-center justify-center">
                 <Spinner color="gray" />
               </div>
@@ -132,6 +151,15 @@ export function CalendarView({ service }: { service: ServiceInfoViewModel }) {
                   selectedTime={selectedTime}
                   onTimeSelected={setSelectedTime}
                 />
+              </div>
+            ) : !!nextAvailableDate ? (
+              <div className="pt-4">
+                <button
+                  className="btn-main w-full"
+                  onClick={() => setSelectedDate(nextAvailableDate)}
+                >
+                  Check Next Availability
+                </button>
               </div>
             ) : (
               <div className="pt-4">No availability</div>

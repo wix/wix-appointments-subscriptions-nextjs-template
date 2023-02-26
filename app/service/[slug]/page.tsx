@@ -58,10 +58,10 @@ function ServicePageView({ service }: { service: ServiceInfoViewModel }) {
       <div className="w-full h-full pt-14 pb-10 text-center">
         <div className="table text-base border-collapse mx-auto">
           <div className="table-row">
-            <p className="table-cell border border-black p-4">
+            <p className="table-cell border border-black p-4 empty:hidden">
               {service.info.formattedDuration}
             </p>
-            <p className="table-cell border border-black p-4">
+            <p className="table-cell border border-black p-4 empty:hidden">
               {formattedPrice.userFormattedPrice}
             </p>
             <p className="table-cell border border-black p-4 empty:hidden">
@@ -73,7 +73,7 @@ function ServicePageView({ service }: { service: ServiceInfoViewModel }) {
         </div>
         <div className="mt-14">
           <a href={`/calendar/${service.slug}`} className="btn-main">
-            Go To Calendar
+            Book Now
           </a>
         </div>
       </div>
