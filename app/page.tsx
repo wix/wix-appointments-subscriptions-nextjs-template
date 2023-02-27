@@ -46,18 +46,20 @@ export default async function Home() {
                 About me
               </h2>
               <p className="text-sm flex-1 leading-7">
-                I&apos;m a paragraph. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Phasellus in felis in sem iaculis elementum
-                vitae a tortor. Duis mattis, nisi vitae ornare imperdiet, arcu
-                erat consectetur diam, sed mattis ligula est non metus.
-                Vestibulum interdum in ex sit amet vestibulum. Donec tellus.
+                My name is Allan Johnson and I am a personal coach. My goal is
+                to assist people identify and overcome obstacles in their lives
+                and to maximize their potential. Through my coaching, I help
+                people set goals, build the confidence and skills they need to
+                achieve success and develop a positive mindset and a sense of
+                self-worth.
               </p>
               <p>&nbsp;</p>
               <p className="text-sm flex-1 leading-7">
-                This is a great space to write long text about your company and
-                your services. You can use this space to go into a little more
-                detail about your company. Talk about your team and what
-                services you provide.
+                As the famous American author, salesman and motivational speaker
+                Zig Ziglar once said: “Success is the doing, not the getting; in
+                the trying, not the triumph. Success is a personal standard,
+                reaching for the highest that is in us, becoming all that we can
+                be. If we do our best, we are a success.
               </p>
               <div className="mt-11 mb-20">
                 <a href="#" className="btn-main">
