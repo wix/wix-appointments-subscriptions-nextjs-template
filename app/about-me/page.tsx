@@ -9,9 +9,21 @@ export default function AboutMePage() {
           <h1 className="mb-7 mt-10 tracking-tighter">About Me</h1>
         </div>
       </div>
-      <div className="bg-white w-full h-full">
-        <div className="relative max-w-full-content mx-auto ">
-          <div className="absolute top-[-100px] sm:right-0 mx-auto sm:w-[319px] h-[319px] overflow-hidden border-white border-8 mx-5 max-w-[calc(100%-50px)]">
+      <div className="bg-white w-full h-full pb-12">
+        <div className="relative max-w-full-content mx-auto">
+          <div
+            className={`
+            absolute
+            top-[-100px]
+            sm:right-0
+            sm:w-[319px]
+            h-[319px]
+            overflow-hidden
+            border-white
+            border-8
+            mx-5
+            max-w-[calc(100%-50px)]`}
+          >
             <Image
               width={500}
               height={500}
