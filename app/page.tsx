@@ -62,7 +62,7 @@ export default async function Home() {
                 be. If we do our best, we are a success.
               </p>
               <div className="mt-11 mb-20">
-                <a href="#" className="btn-main">
+                <a href="/about-me" className="btn-main">
                   Read More
                 </a>
               </div>
