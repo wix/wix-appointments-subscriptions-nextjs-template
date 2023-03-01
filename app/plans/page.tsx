@@ -23,12 +23,33 @@ const durationPeriodFormatter = (
   }
 };
 
-const formatPlanDuration = (duration: plans.Duration) => {
+const formatOneTimePlanDuration = (duration: plans.Duration) => {
   const periodFormat = durationPeriodFormatter(duration.unit);
   return `${duration.count ?? 0} ${
     duration.count === 1 ? periodFormat.singular : periodFormat.plural
   }`;
 };
+
+const formatRecurringPlanDuration = (recurrence: plans.Recurrence) => {
+  const periodFormat = durationPeriodFormatter(recurrence?.cycleDuration?.unit);
+  return recurrence?.cycleDuration?.count === 1
+    ? periodFormat.singular
+    : `${recurrence?.cycleDuration?.count ?? 0} ${periodFormat.plural}`;
+};
+
+function formatPlanDuration(plan: plans.Plan) {
+  return plan.pricing?.singlePaymentUnlimited
+    ? 'Unlimited'
+    : plan.pricing?.singlePaymentForDuration
+    ? `Valid for ${formatOneTimePlanDuration(
+        plan.pricing?.singlePaymentForDuration!
+      )}`
+    : plan?.pricing?.subscription
+    ? `Recurring every ${formatRecurringPlanDuration(
+        plan!.pricing!.subscription!
+      )}`
+    : '';
+}
 
 export default async function PlansPage({
   searchParams,
@@ -75,13 +96,7 @@ export default async function PlansPage({
                   <div className="text-sm pb-2 flex-grow">
                     {plan.description}
                   </div>
-                  <div className="text-xs">
-                    {plan.pricing?.singlePaymentUnlimited
-                      ? 'Unlimited'
-                      : `Valid for ${formatPlanDuration(
-                          plan.pricing?.singlePaymentForDuration!
-                        )}`}
-                  </div>
+                  <div className="text-xs">{formatPlanDuration(plan)}</div>
                   <PlanSelect
                     checkoutUrl={getCheckoutUrl({
                       plan,
