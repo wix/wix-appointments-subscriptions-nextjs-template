@@ -7,6 +7,7 @@ import { useServiceFormattedPrice } from '@app/hooks/useServiceFormattedPrice';
 import { SlotViewModel } from '@app/components/Calendar/CalendarSections/CalendarSlots';
 import type { availabilityCalendar } from '@wix/bookings';
 import { useClientAuthSession } from '@app/hooks/useClientAuthSession';
+import { createRedirectCallbacks } from '@model/redirects/redirect.utils';
 
 const CalendarSidebar = ({
   service,
@@ -39,10 +40,7 @@ const CalendarSidebar = ({
           timezone,
           serviceId: service.id!,
         },
-        callbacks: {
-          postFlowUrl: window.location.origin,
-          plansListUrl: window.location.origin + '/plans',
-        },
+        callbacks: createRedirectCallbacks({ baseUrl: window.location.origin }),
       })
       .then(({ redirectSession }) => {
         window.location.href = redirectSession!.fullUrl!;

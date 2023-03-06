@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { wixClient } from '@model/auth/create-client';
+import { createRedirectCallbacks } from '@model/redirects/redirect.utils';
 
 export default async function handler(
   req: NextApiRequest,
@@ -23,10 +24,7 @@ export default async function handler(
       planId,
       navigateToSectionProps,
     },
-    callbacks: {
-      postFlowUrl: baseUrl,
-      plansListUrl: baseUrl + 'plans',
-    },
+    callbacks: createRedirectCallbacks({ baseUrl }),
   })!;
   res.redirect(302, redirectSession!.fullUrl!);
 }
