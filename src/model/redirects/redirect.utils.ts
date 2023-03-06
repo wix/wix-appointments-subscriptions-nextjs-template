@@ -6,8 +6,11 @@ export const createRedirectCallbacks = ({
 }: {
   baseUrl: string;
   postFlowUrl?: string;
-}): redirects.CallbackParams => ({
-  postFlowUrl,
-  plansListUrl: baseUrl + 'plans',
-  bookingsServiceList: baseUrl + 'book-now',
-});
+}): redirects.CallbackParams => {
+  const fixedBaseUrl = baseUrl.replace(/\/$/, '');
+  return {
+    postFlowUrl,
+    plansListUrl: fixedBaseUrl + '/plans',
+    bookingsServiceList: fixedBaseUrl + '/book-now',
+  };
+};
