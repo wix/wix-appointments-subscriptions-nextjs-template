@@ -46,3 +46,7 @@ next-env.d.ts
 !.yarn/sdks
 !.yarn/versions
 
+#IDE
+.idea
+
+
