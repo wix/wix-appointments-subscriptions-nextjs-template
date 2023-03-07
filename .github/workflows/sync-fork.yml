@@ -13,5 +13,6 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v1.8
         with:
+          token: ${{secrets.FORK_SYNC_TOKEN}}
           base: main
           head: main
