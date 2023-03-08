@@ -25,7 +25,7 @@ If for any reason, you did not select either of the apps, you can also add it fr
 ### Step 2: You can now set up the business solutions with the relevant services and plans
 See [Wix Bookings Support article](https://support.wix.com/en/wix-bookings)
 
-### Step 3: Quick Start with Deployment Platforms OR Consume APIs in the Template with an Oauth client ID
+### Step 3: Quick Start with Deployment Platforms OR Consume APIs in the Template with an OAuth client ID
 #### Option1: Quick Start with Deployment Platforms:
 The following enables quick start deployment that automatically configures your project making it super easy to start with:
 
@@ -35,15 +35,15 @@ The following enables quick start deployment that automatically configures your 
 
 For more information, view [Netlify docs](https://www.netlify.com/blog/2020/11/30/how-to-deploy-next.js-sites-to-netlify/).
 
-#### Option 2: Consume APIs in the Template with an Oauth client ID 
-To consume the APIs in the template, you will need to create an Oauth client ID. You will be able to create this ID from your [dashboard](https://manage.wix.com):
+#### Option 2: Consume APIs in the Template with an OAuth client ID 
+To consume the APIs in the template, you will need to create an OAuth client ID. You will be able to create this ID from your [dashboard](https://manage.wix.com):
 1. Go to `Settings` in the dashboard 
-2. Click `Oauth Apps` 
-3. Click `Create New` to create a new Oauth Apps 
+2. Click `OAuth Apps` 
+3. Click `Create New` to create a new OAuth Apps 
 4. Once your app is created, copy the client id
-   Only if you’ve chosen to consume APIs in the Template with an Oauth client ID, please continue to Step 4
+   Only if you’ve chosen to consume APIs in the Template with an OAuth client ID, please continue to Step 4
 
-### Step 4: Set up environment variables (this is only relevant if you use Oauth client IDs in Step 3)
+### Step 4: Set up environment variables (this is only relevant if you use OAuth client IDs in Step 3)
 **Note**: client ID should not be pushed to your source control
 
 #### Local Development Environment 
@@ -55,7 +55,7 @@ Add the `NEXT_PUBLIC_WIX_CLIENT_ID` environment variable with the client id valu
 ## Local Development
 **Note: You must complete the Get Started set up instructions before starting local development**
 
-Once you’ve obtained and configured the oauth client Id, run the development server:
+Once you’ve obtained and configured the OAuth client Id, run the development server:
 ```shell
 yarn
 yarn dev
