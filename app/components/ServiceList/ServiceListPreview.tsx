@@ -30,7 +30,7 @@ const ServiceCardPreview = ({ service }: { service: ServiceInfoViewModel }) => {
 
   return (
     <div className="w-full rounded-none overflow-hidden mx-auto border-8 border-black relative h-full min-h-[300px]">
-      <div className="p-6 text-center h-full">
+      <div className="p-6 pb-20 text-center h-full">
         <a
           href={`/service/${service.slug}`}
           className="font-bold text-xl hover:text-gray-700"
