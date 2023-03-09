@@ -2,7 +2,6 @@ import './page.css';
 import { getServiceBySlug } from '@model/service/service-api';
 import Calendar from '@app/components/Calendar/Calendar';
 import { useServerAuthSession } from '@app/hooks/useServerAuthSession';
-import { Suspense } from 'react';
 
 export default async function CalendarPage({ params }: any) {
   const wixSession = useServerAuthSession();
@@ -24,9 +23,7 @@ export default async function CalendarPage({ params }: any) {
             key={service.id}
             className="full-w rounded overflow-hidden max-w-7xl mx-auto"
           >
-            <Suspense fallback={'Loading...'}>
-              <Calendar service={service} />
-            </Suspense>
+            <Calendar service={service} />
           </div>
         </>
       ) : (

@@ -12,7 +12,7 @@ import {
   format,
   formatISO,
 } from 'date-fns';
-
+import { Suspense } from 'react';
 // react-day-picker/dist/index.js incorrectly uses "require"
 // @ts-ignore
 import { DayPicker } from 'react-day-picker/dist/index.esm';
@@ -186,8 +186,16 @@ export default function Calendar({
   service: ServiceInfoViewModel;
 }) {
   return (
-    <WixBookingsClientProvider>
-      <CalendarView service={service} />
-    </WixBookingsClientProvider>
+    <Suspense
+      fallback={
+        <div className="w-full h-36 flex items-center justify-center">
+          <Spinner color="gray" />
+        </div>
+      }
+    >
+      <WixBookingsClientProvider>
+        <CalendarView service={service} />
+      </WixBookingsClientProvider>
+    </Suspense>
   );
 }
