@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^4.24.4",
-    "@wix/api-client": "^1.1.34",
+    "@wix/api-client": "^1.1.36",
     "@wix/bookings": "^1.0.38",
     "@wix/pricing-plans": "^1.0.3",
     "@wix/redirects-api": "^1.0.11",
