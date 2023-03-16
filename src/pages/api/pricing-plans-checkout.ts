@@ -14,15 +14,15 @@ export default async function handler(
     baseUrlObj.pathname = '/';
     baseUrl = baseUrlObj.toString();
   }
-  const { navigateToSectionProps, planId } = req.query as {
-    navigateToSectionProps: string;
+  const { checkoutData, planId } = req.query as {
+    checkoutData: string;
     planId: string;
     maxStartDate: string;
   };
   const { redirectSession } = await wixClient?.redirects.createRedirectSession({
     paidPlansCheckout: {
       planId,
-      navigateToSectionProps,
+      checkoutData,
     },
     callbacks: createRedirectCallbacks({ baseUrl }),
   })!;
