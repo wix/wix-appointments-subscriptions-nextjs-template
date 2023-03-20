@@ -2,16 +2,14 @@ import type { plans } from '@wix/pricing-plans';
 
 export const getCheckoutUrl = ({
   plan,
-  navigateToSectionProps,
+  checkoutData,
   maxStartDate,
 }: {
   plan: plans.PublicPlan;
-  navigateToSectionProps?: string;
+  checkoutData?: string;
   maxStartDate?: string;
 }) => {
-  return `./api/pricing-plans-checkout?planId=${
-    plan._id
-  }&navigateToSectionProps=${navigateToSectionProps ?? ''}&maxStartDate=${
-    maxStartDate ?? ''
-  }`;
+  return `./api/pricing-plans-checkout?planId=${plan._id}&checkoutData=${
+    checkoutData ?? ''
+  }&maxStartDate=${maxStartDate ?? ''}`;
 };
