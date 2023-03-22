@@ -58,7 +58,7 @@ export default async function PlansPage({
 }) {
   const { planIds, checkoutData, maxStartDate } = searchParams;
   const wixSession = useServerAuthSession();
-  const { plans } = await getPaidPlans(wixSession, {
+  const { items: plans } = await getPaidPlans(wixSession, {
     planIds: planIds ? planIds?.split(',') : undefined,
   });
   return (
