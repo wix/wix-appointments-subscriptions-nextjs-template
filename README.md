@@ -45,7 +45,7 @@ Authentication credentials are automatically incorporated into the template, mak
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://manage.wix.com/headless-funnel-nextjs/netlify?repository=https://github.com/wix/wix-appointments-subscriptions-nextjs-template)
 
-For more information, see [How to Deploy Next.js Sites to Netlify](https://www.netlify.com/blog/2020/11/30/how-to-deploy-next.js-sites-to-netlify/).
+For more information, see [How to Deploy Next.js Sites to Netlify](https://www.netlify.com/blog/2020/11/30/how-to-deploy-next.js-sites-to-netlify/) or view the demo [here](https://netlify.bookings-appointments-demo.wix.dev/).
 
 #### Option B: Create an OAuth client ID in the Wix dashboard
 
