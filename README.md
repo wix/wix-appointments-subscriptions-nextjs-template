@@ -1,3 +1,5 @@
+[![Sync Fork](https://github.com/carmelc/vercel-demo-wix-appointments-subscriptions-nextjs-template/actions/workflows/sync-fork.yml/badge.svg?branch=main)](https://github.com/carmelc/vercel-demo-wix-appointments-subscriptions-nextjs-template/actions/workflows/sync-fork.yml)
+
 # Wix Bookings Template: A Next.js Coaching Professional Site
 
 ![](docs/media/template-showcase.gif)
