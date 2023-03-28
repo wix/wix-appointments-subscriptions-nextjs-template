@@ -56,7 +56,7 @@ export default async function PlansPage({
 }: {
   searchParams: { [_: string]: string };
 }) {
-  const { planIds, checkoutData, maxStartDate } = searchParams;
+  const { planIds, checkoutData } = searchParams;
   const wixSession = useServerAuthSession();
   const { items: plans } = await getPaidPlans(wixSession, {
     planIds: planIds ? planIds?.split(',') : undefined,
@@ -101,7 +101,6 @@ export default async function PlansPage({
                     checkoutUrl={getCheckoutUrl({
                       plan,
                       checkoutData,
-                      maxStartDate,
                     })}
                   >
                     <div className="btn-main w-full cursor-pointer mt-5">
