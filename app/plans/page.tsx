@@ -1,5 +1,8 @@
 import { useServerAuthSession } from '@app/hooks/useServerAuthSession';
-import { getPaidPlans } from '@model/paid-plans/paid-plans-api';
+import {
+  getPaidPlans,
+  safeGetPaidPlans,
+} from '@model/paid-plans/paid-plans-api';
 import { formatCurrencyToParts } from '@app/utils/price-formtter';
 import { getCheckoutUrl } from '@model/paid-plans/paid-plans-checkout';
 import PlanSelect from '@app/components/Plan/PlanSelect';
@@ -58,7 +61,7 @@ export default async function PlansPage({
 }) {
   const { planIds, checkoutData, maxStartDate } = searchParams;
   const wixSession = useServerAuthSession();
-  const { items: plans } = await getPaidPlans(wixSession, {
+  const { data: plans } = await safeGetPaidPlans(wixSession, {
     planIds: planIds ? planIds?.split(',') : undefined,
   });
   return (
