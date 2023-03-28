@@ -6,7 +6,6 @@ export const getCheckoutUrl = ({
 }: {
   plan: plans.PublicPlan;
   checkoutData?: string;
-  maxStartDate?: string;
 }) => {
   const params = new URLSearchParams();
   params.set('planId', plan._id!);
