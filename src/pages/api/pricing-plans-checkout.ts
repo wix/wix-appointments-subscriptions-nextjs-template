@@ -17,7 +17,6 @@ export default async function handler(
   const { checkoutData, planId } = req.query as {
     checkoutData: string;
     planId: string;
-    maxStartDate: string;
   };
   const { redirectSession } = await wixClient?.redirects.createRedirectSession({
     paidPlansCheckout: {
