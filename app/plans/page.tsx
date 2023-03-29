@@ -1,8 +1,5 @@
 import { useServerAuthSession } from '@app/hooks/useServerAuthSession';
-import {
-  getPaidPlans,
-  safeGetPaidPlans,
-} from '@model/paid-plans/paid-plans-api';
+import { safeGetPaidPlans } from '@model/paid-plans/paid-plans-api';
 import { formatCurrencyToParts } from '@app/utils/price-formtter';
 import { getCheckoutUrl } from '@model/paid-plans/paid-plans-checkout';
 import PlanSelect from '@app/components/Plan/PlanSelect';
@@ -53,6 +50,9 @@ function formatPlanDuration(plan: plans.Plan) {
       )}`
     : '';
 }
+
+// opt out static rendering because of https://github.com/vercel/next.js/issues/43077
+export const dynamic = 'force-dynamic';
 
 export default async function PlansPage({
   searchParams,

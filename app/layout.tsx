@@ -3,6 +3,12 @@ import Footer from '@app/components/Layout/Footer';
 import Header from '@app/components/Layout/Header';
 import { useServerAuthSession } from '@app/hooks/useServerAuthSession';
 
+/**
+ * Using force dynamic so changes in business assets (e.g. services) are immediately reflected.
+ * If you prefer having it reflected only after redeploy (not recommended) please remove it
+ * **/
+export const revalidate = 0;
+
 export default function RootLayout(layoutProps: any) {
   const { children } = layoutProps;
   const wixSession = useServerAuthSession();
