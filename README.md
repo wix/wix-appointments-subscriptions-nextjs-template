@@ -47,13 +47,6 @@ Authentication credentials are automatically incorporated into the template, mak
 
 For more information, see [How to Deploy Next.js Sites to Netlify](https://www.netlify.com/blog/2020/11/30/how-to-deploy-next.js-sites-to-netlify/) or view the demo [here](https://netlify.bookings-appointments-demo.wix.dev/).
 
-##### Vercel
-
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone/hidden?demo-description=Bookings+Coacher+nextjs+template&demo-image=https%3A%2F%2Fgithub.com%2Fwix%2Fwix-appointments-subscriptions-nextjs-template%2Fraw%2Fmain%2Fdocs%2Fmedia%2Ftemplate-showcase.gif&demo-title=Bookings+Coacher&demo-url=https%3A%2F%2Fvercel.bookings-appointments-demo.wix.dev&integration-ids=oac_LZ0wUqGylqzgr8bE8a1R7JTE&project-name=bookings-coacher&repository-name=wix-appointments-subscriptions-nextjs-template&s=https%3A%2F%2Fgithub.com%2Fwix%2Fwix-appointments-subscriptions-nextjs-template&skippable-integrations=1&build-command=yarn+build&deploymentIds=dpl_9Gtegfcme9RUmTXFvVGrP8BwDGUV)
-
-For more information, see [How to Deploy Next.js Sites to Vercel](https://vercel.com/docs/next.js/overview) or view the demo [here](https://vercel.bookings-appointments-demo.wix.dev/).
-
-
 #### Option B: Create an OAuth client ID in the Wix dashboard
 
 Read [Set Up Authorization](https://dev.wix.com/api/sdk/sdk-setup:-wix-headless/authorization) in the Wix SDK documentation for instructions on how to manually create an OAuth app and generate a client ID in the [Headless Settings](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Foauth-apps-settings) menu of the Wix dashboard.
