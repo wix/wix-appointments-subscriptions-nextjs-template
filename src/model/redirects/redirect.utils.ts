@@ -11,6 +11,6 @@ export const createRedirectCallbacks = ({
   return {
     postFlowUrl,
     plansListUrl: fixedBaseUrl + '/plans',
-    bookingsServiceList: fixedBaseUrl + '/book-now',
+    bookingsServiceListUrl: fixedBaseUrl + '/book-now',
   };
 };
