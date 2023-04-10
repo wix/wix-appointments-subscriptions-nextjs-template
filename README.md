@@ -51,7 +51,7 @@ For more information, see [How to Deploy Next.js Sites to Netlify](https://www.n
 
 Read [Set Up Authorization](https://dev.wix.com/api/sdk/sdk-setup:-wix-headless/authorization) in the Wix SDK documentation for instructions on how to manually create an OAuth app and generate a client ID in the [Headless Settings](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Foauth-apps-settings) menu of the Wix dashboard.
 
-After creating an OAuth app, store the Client ID in a secure location. 
+After creating an OAuth app, store the Client ID in a secure location.
 
 > **Note:** Do not push the client ID to your source control.
 
