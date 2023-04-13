@@ -43,7 +43,10 @@ const CalendarSidebar = ({
         callbacks: createRedirectCallbacks({ baseUrl: window.location.origin }),
       })
       .then(({ redirectSession }) => {
-        window.location.href = redirectSession!.fullUrl!;
+        window.location.assign(redirectSession!.fullUrl!);
+        setTimeout(() => {
+          setRedirecting(false);
+        }, 2000);
       })
       .catch((e) => {
         console.error(e);
