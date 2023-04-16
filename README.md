@@ -47,6 +47,8 @@ Authentication credentials are automatically incorporated into the template, mak
 
 For more information, see [How to Deploy Next.js Sites to Netlify](https://www.netlify.com/blog/2020/11/30/how-to-deploy-next.js-sites-to-netlify/) or view the demo [here](https://netlify.bookings-appointments-demo.wix.dev/).
 
+**Note** - In order to view the full flow in the demo site, use the coupon code `FREE` to book appointments or `FREEPLAN` to purchase paid plans
+
 #### Option B: Create an OAuth client ID in the Wix dashboard
 
 Read [Set Up Authorization](https://dev.wix.com/api/sdk/sdk-setup:-wix-headless/authorization) in the Wix SDK documentation for instructions on how to manually create an OAuth app and generate a client ID in the [Headless Settings](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Foauth-apps-settings) menu of the Wix dashboard.
