@@ -1,7 +1,7 @@
 import { createClient, OAuthStrategy } from '@wix/api-client';
 import { availabilityCalendar, services } from '@wix/bookings';
 import { plans } from '@wix/pricing-plans';
-import { redirects } from '@wix/redirects-api';
+import { redirects } from '@wix/redirects';
 
 export const wixClient = process.env.NEXT_PUBLIC_WIX_CLIENT_ID
   ? createClient({

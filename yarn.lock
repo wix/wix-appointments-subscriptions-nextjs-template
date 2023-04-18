@@ -627,14 +627,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/redirects-api@npm:^1.0.23":
-  version: 1.0.23
-  resolution: "@wix/redirects-api@npm:1.0.23"
+"@wix/redirects@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@wix/redirects@npm:1.0.1"
   dependencies:
     "@wix/metro-runtime": ^1.0.0
     "@wix/motion-edm-autogen-query-wrapper": ^1.0.0
     "@wix/sdk-types": ^1.0.0
-  checksum: 39e6d803136155a6afdfbbd26472b6e0c7145f204245604a99bb7e5a0d42da309585671dc605665fc4f82399929ec11bf2a942316f0d3ebfba88efc2bfd9f0da
+  checksum: b515fcf79604068e05ab7e58b7f6c9decfc0da6f769f92343bc998849c150617b52b1a27e83644cbac3260b48a2a78fe4cbef8a8db2e2b13dd900203be147b63
   languageName: node
   linkType: hard
 
@@ -4397,7 +4397,7 @@ __metadata:
     "@wix/api-client": ^1.1.36
     "@wix/bookings": ^1.0.38
     "@wix/pricing-plans": ^1.0.13
-    "@wix/redirects-api": ^1.0.23
+    "@wix/redirects": ^1.0.1
     autoprefixer: ^10.4.13
     cookie: ^0.5.0
     date-fns: ^2.29.3
