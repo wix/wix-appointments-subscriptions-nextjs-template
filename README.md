@@ -42,6 +42,7 @@ Click the quick start deployment link below to automatically authorize your temp
 Authentication credentials are automatically incorporated into the template, making it easy to get started coding and customizing.
 
 ##### Netlify
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5c157945-33fe-469c-b694-961db274a9bd/deploy-status)](https://app.netlify.com/sites/wix-appointments-subscriptions-nextjs/deploys)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://manage.wix.com/headless-funnel-nextjs/netlify?repository=https://github.com/wix/wix-appointments-subscriptions-nextjs-template)
 
