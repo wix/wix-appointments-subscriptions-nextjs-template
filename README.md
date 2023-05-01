@@ -44,7 +44,7 @@ Authentication credentials are automatically incorporated into the template, mak
 
 For more information, see [How to Deploy Next.js Sites to Netlify](https://www.netlify.com/blog/2020/11/30/how-to-deploy-next.js-sites-to-netlify/).
 
-You can also view our [live demo site](https://netlify.bookings-appointments-demo.wix.dev/). In order to view the full flow in the demo site, use the coupon code `FREE` to book appointments, and use the coupon code `FREEPLAN` to "purchase" a paid plan. This template disables reCAPTCHA on direct login.
+You can also view our [live demo site](https://netlify.bookings-appointments-demo.wix.dev/). In order to view the full flow in the demo site, use the coupon code `FREE` to book appointments, and use the coupon code `FREEPLAN` to "purchase" a paid plan.
 
 #### Option B: Create an OAuth client ID in the Wix dashboard
 
