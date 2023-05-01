@@ -1,32 +1,28 @@
 # Wix Bookings Template: A Next.js Coaching Professional Site
 
-![](docs/media/template-showcase.gif)
+![Template showcase](docs/media/template-showcase.gif)
 
-This template is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It uses [Wix Headless](https://dev.wix.com/api/sdk/about-wix-headless/overview) to leverage the Wix Bookings business solution for managing appointments.
+This template is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It uses [Wix Headless](https://dev.wix.com/api/sdk/about-wix-headless/overview) to leverage the Wix Bookings and Wix Pricing Plans business solutions.
 
 ## Part I: Get started
 
-To integrate the Wix Bookings business solution with the template, first create a project or site on Wix:
+To integrate the Wix Bookings and Wix Pricing Plans business solutions with the template, first create a project on Wix:
 
 ### Step 1: Create a project on Wix
 
-> ***Note:*** Currently, to create a new project on Wix, it's necessary to [create a new site](http://wix.com/intro/main). It will soon be possible to create a project without creating a site.
+Create a [new Wix Headless project](https://www.wix.com/intro/headless). For instructions on creating a Wix project, see [Create a Wix Headless Project](https://dev.wix.com/api/sdk/sdk-setup:-wix-headless/create-a-project) in the documentation.
 
 When prompted to add functionalities to your new project, select Bookings and Pricing Plans:
 
-![Apps Menu - select Bookings and Pricing Plans](docs/media/business-first-funnel.png)
+![Apps Menu - select Bookings and Pricing Plans](docs/media/project-business-solutions.png)
 
-You can also add these business solutions to your project later, as follows:
-
-1. Open the [Wix App Market](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Fapp-market) in your project dashboard.
-2. Search for **Wix Bookings**, then click **Wix Bookings**. On the [Wix Bookings](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Fapp-market/web-solution/wix-bookings) page, click **Add to Site**.
-2. Search for **Wix Pricing Plans**, then click **Wix Pricing Plans**. On the [Wix Pricing Plans](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Fapp-market/web-solution/paid-plans) page, click **Add to Site**.
+You can also add business solutions to your project later. See [Add Apps to a Project](https://dev.wix.com/api/sdk/guides/add-apps-to-a-project).
 
 ### Step 2: Set up the Wix business solutions you need
 
 See the [Wix Bookings Essential Checklist](https://support.wix.com/en/article/wix-bookings-the-essential-checklist-for-professional-bookings-site-owners) for information on configuring the services and plans your business needs.
 
-> ***Note:*** You can add Wix Bookings functionality to your project for free, but you must [upgrade to a Business Premium Plan](https://support.wix.com/en/article/wix-bookings-upgrading-wix-bookings-to-a-business-premium-plan) to accept bookings.
+> **Note:** You can add Wix Bookings functionality to your project for free, but you must [upgrade to a Business Premium Plan](https://support.wix.com/en/article/wix-bookings-upgrading-wix-bookings-to-a-business-premium-plan) to accept bookings.
 
 ### Step 3: Authorize the template
 
@@ -37,7 +33,7 @@ There are 2 ways to authorize the template to access your Wix project:
 
 #### Option A: Quick start deployment
 
-Click the quick start deployment link below to automatically authorize your template and configure your project. You'll be prompted to log in to your Wix account and to authorize the platform to access your project or site.
+Click the quick start deployment link below to automatically authorize your template and configure your project. You'll be prompted to log in to your Wix account and to authorize the platform to access your project.
 
 Authentication credentials are automatically incorporated into the template, making it easy to get started coding and customizing.
 
@@ -46,15 +42,17 @@ Authentication credentials are automatically incorporated into the template, mak
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://manage.wix.com/headless-funnel-nextjs/netlify?repository=https://github.com/wix/wix-appointments-subscriptions-nextjs-template)
 
-For more information, see [How to Deploy Next.js Sites to Netlify](https://www.netlify.com/blog/2020/11/30/how-to-deploy-next.js-sites-to-netlify/) or view the demo [here](https://netlify.bookings-appointments-demo.wix.dev/).
+For more information, see [How to Deploy Next.js Sites to Netlify](https://www.netlify.com/blog/2020/11/30/how-to-deploy-next.js-sites-to-netlify/).
 
-**Note** - In order to view the full flow in the demo site, use the coupon code `FREE` to book appointments or `FREEPLAN` to purchase paid plans
+You can also view our [live demo site](https://netlify.bookings-appointments-demo.wix.dev/). In order to view the full flow in the demo site, use the coupon code `FREE` to book appointments, and use the coupon code `FREEPLAN` to "purchase" a paid plans.
 
 #### Option B: Create an OAuth client ID in the Wix dashboard
 
-Read [Set Up Authorization](https://dev.wix.com/api/sdk/sdk-setup:-wix-headless/authorization) in the Wix SDK documentation for instructions on how to manually create an OAuth app and generate a client ID in the [Headless Settings](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Foauth-apps-settings) menu of the Wix dashboard.
+If you don't want to use quick-start deployment, begin by forking this repo to your git account.
 
-After creating an OAuth app, store the Client ID in a secure location.
+Read [Set Up Authorization](https://dev.wix.com/api/sdk/sdk-setup:-wix-headless/authorization) in the Wix SDK documentation for instructions on how to manually create an OAuth app and generate a client ID in the [Headless Settings](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Foauth-apps-settings) menu of the project dashboard.
+
+After creating an OAuth app, store the Client ID securely.
 
 > **Note:** Do not push the client ID to your source control.
 
@@ -67,7 +65,7 @@ To set up environment variables for consuming Wix Headless APIs, follow these st
 
 ##### Production environment
 
-In your deployment provider, add an environment variable called `NEXT_PUBLIC_WIX_CLIENT_ID` containing the client ID.
+In your deployment environment, add an environment variable called `NEXT_PUBLIC_WIX_CLIENT_ID` containing the client ID.
 
 ## Part II: Local Development
 
@@ -97,32 +95,18 @@ The template implements checkout by redirecting visitors to a Wix-managed page. 
 
 To enable online checkout for the template, follow these steps:
 
-### Step 1: Publish the Wix site
-
-> ***Note:*** Currently, in order to create a new project on Wix, it's necessary to [create a new site](http://wix.com/intro/main) and publish it. You don't need to use this site, but publishing it enables the checkout page to go live on the web. It will soon be possible to create a project without creating a site.
-
-To publish a 'dummy' site, follow these steps:
-
-
-1. In your project [dashboard](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2F) click **Design Site**.
-2. Select **Let Wix create a site for you**.
-3. Select any template.
-4. Click **Edit My Site Design**.
-5. Click **Publish**.
-6. In the **Publish** popup you can set the site’s address or connect a domain. This is the URL that appears as your checkout redirect base URL. If you don't change the base URL now, you can change it later.
-
-### Step 2: Upgrade to a Business Premium Plan
+### Step 1: Upgrade to a Business Premium Plan
 
 To enable the checkout page and accept payments using Wix business solutions, you need to [upgrade to a Business Premium Plan](https://support.wix.com/en/article/wix-bookings-upgrading-wix-bookings-to-a-business-premium-plan).
 
-### Step 3: Change the checkout redirect base URL (optional)
+### Step 2: Change the checkout base URL (optional)
 
-To change the redirect base URL, follow these steps in the project [dashboard](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2F):
-1. Click **Site Actions** (the ellipsis next to **Edit Site**).
-2. Click **Rename Site**.
+To change the base URL for Wix-managed checkout pages, follow these steps in the :
+1. In the project [dashboard](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2F), click **More Actions**.
+2. Click **Rename Project**.
 3. Change the editable part of the URL in **Site Address (URL)** and click **Save**.
 
-Alternatively, you can [connect a custom domain](https://support.wix.com/en/article/about-domains).
+Alternatively, you can [connect a custom domain](https://dev.wix.com/api/sdk/sdk-setup:-wix-headless/customize-domains).
 
 ## Part IV: Learn more about the tech stack
 
