@@ -2,7 +2,7 @@
 
 ![Template showcase](docs/media/template-showcase.gif)
 
-This template is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It uses [Wix Headless](https://dev.wix.com/api/sdk/about-wix-headless/overview) to leverage the Wix Bookings and Wix Pricing Plans business solutions.
+This template is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It uses [Wix Headless](https://dev.wix.com/api/sdk/about-wix-headless/overview) to leverage the Wix Bookings and Wix Pricing Plans business solutions for managing appointments.
 
 ## Part I: Get started
 
@@ -102,7 +102,7 @@ To enable the checkout page and accept payments using Wix business solutions, yo
 ### Step 2: Change the checkout base URL (optional)
 
 To change the base URL for Wix-managed checkout pages, follow these steps in the :
-1. In the project [dashboard](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2F), click **More Actions**.
+1. In the project [dashboard](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Fhome), click **More Actions**.
 2. Click **Rename Project**.
 3. Change the editable part of the URL in **Site Address (URL)** and click **Save**.
 
