@@ -38,7 +38,6 @@ const CalendarSidebar = ({
         bookingsCheckout: {
           slotAvailability: selectedSlot!,
           timezone,
-          serviceId: service.id!,
         },
         callbacks: createRedirectCallbacks({ baseUrl: window.location.origin }),
       })

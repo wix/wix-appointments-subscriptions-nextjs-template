@@ -33,8 +33,9 @@ export default function RootLayout(layoutProps: any) {
         <body className="">
           <main className="max-w-full-content mx-auto bg-white pt-32">
             <h1>
-              Seems API key and site Id are not set, please define the
-              environment variables (refer to the Readme file for more details)
+              Page not available. Please add an environment variable called
+              NEXT_PUBLIC_WIX_CLIENT_ID, containing the client ID, to your
+              deployment provider.
             </h1>
           </main>
         </body>

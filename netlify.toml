@@ -6,4 +6,4 @@
   incoming-hooks = ["WixBookings"]
 
 [template.environment]
-  NEXT_PUBLIC_WIX_CLIENT_ID = "Wix headless client id"
+  NEXT_PUBLIC_WIX_CLIENT_ID = "Wix Headless Client ID"
