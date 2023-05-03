@@ -1,4 +1,4 @@
-import { OfferedAsType } from '@model/service/service-types.internal';
+import { OfferedAsType } from '@app/model/service/service-types.internal';
 import type { services } from '@wix/bookings';
 
 export function determinePaymentOptionsBy(service: services.Service) {

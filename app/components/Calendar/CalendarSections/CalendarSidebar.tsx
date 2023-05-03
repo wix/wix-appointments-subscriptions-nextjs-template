@@ -1,5 +1,5 @@
 'use client';
-import { ServiceInfoViewModel } from '@model/service/service.mapper';
+import { ServiceInfoViewModel } from '@app/model/service/service.mapper';
 import { useCallback, useEffect, useState } from 'react';
 import { format } from 'date-fns';
 
@@ -7,7 +7,7 @@ import { useServiceFormattedPrice } from '@app/hooks/useServiceFormattedPrice';
 import { SlotViewModel } from '@app/components/Calendar/CalendarSections/CalendarSlots';
 import type { availabilityCalendar } from '@wix/bookings';
 import { useClientAuthSession } from '@app/hooks/useClientAuthSession';
-import { createRedirectCallbacks } from '@model/redirects/redirect.utils';
+import { createRedirectCallbacks } from '@app/model/redirects/redirect.utils';
 
 const CalendarSidebar = ({
   service,

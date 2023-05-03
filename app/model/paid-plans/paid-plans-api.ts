@@ -1,6 +1,6 @@
 import { WixSession } from '../auth/auth';
 import type { plans } from '@wix/pricing-plans';
-import { safeCall } from '@model/utils';
+import { safeCall } from '@app/model/utils';
 
 export const safeGetPaidPlans = (
   wixSession: WixSession,

@@ -1,4 +1,4 @@
-import { ServicePaymentDto } from '@model/service/service-payment.mapper';
+import { ServicePaymentDto } from '@app/model/service/service-payment.mapper';
 
 export const formatServicePrice = ({
   servicePayment,

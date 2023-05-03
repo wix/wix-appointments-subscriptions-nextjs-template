@@ -1,4 +1,4 @@
-import { ServiceImage } from '@model/service/service.mapper';
+import { ServiceImage } from '@app/model/service/service.mapper';
 import ImageGalleryClient from '@app/components/Image/ImageGallery/ImageGallery.client';
 import { getImageUrlForMedia } from '@app/components/Image/WixMediaImage';
 

@@ -1,7 +1,7 @@
 import { useServerAuthSession } from '@app/hooks/useServerAuthSession';
-import { safeGetPaidPlans } from '@model/paid-plans/paid-plans-api';
+import { safeGetPaidPlans } from '@app/model/paid-plans/paid-plans-api';
 import { formatCurrencyToParts } from '@app/utils/price-formtter';
-import { getCheckoutUrl } from '@model/paid-plans/paid-plans-checkout';
+import { getCheckoutUrl } from '@app/model/paid-plans/paid-plans-checkout';
 import PlanSelect from '@app/components/Plan/PlanSelect';
 import { plans } from '@wix/pricing-plans';
 

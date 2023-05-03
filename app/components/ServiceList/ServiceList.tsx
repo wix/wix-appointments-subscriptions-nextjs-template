@@ -1,5 +1,5 @@
 import WixMediaImage from '@app/components/Image/WixMediaImage';
-import { ServiceInfoViewModel } from '@model/service/service.mapper';
+import { ServiceInfoViewModel } from '@app/model/service/service.mapper';
 import { useServiceFormattedPrice } from '@app/hooks/useServiceFormattedPrice';
 
 const ALL_SERVICES_CATEGORY_ID = 'ALL';

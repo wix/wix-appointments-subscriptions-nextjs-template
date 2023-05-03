@@ -1,5 +1,5 @@
 import ServiceList from '@app/components/ServiceList/ServiceList';
-import { safeGetServices } from '@model/service/service-api';
+import { safeGetServices } from '@app/model/service/service-api';
 import { useServerAuthSession } from '@app/hooks/useServerAuthSession';
 
 export default async function BookNowPage({ params }: any) {

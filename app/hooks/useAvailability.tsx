@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { getServiceAvailability } from '@model/availability/availability-api';
+import { getServiceAvailability } from '@app/model/availability/availability-api';
 import { useClientAuthSession } from '@app/hooks/useClientAuthSession';
 
 export const useAvailability = ({

@@ -37,7 +37,7 @@ export const getServiceAvailability = (
         },
         cursorPaging: { ...(limit ? { limit } : {}) },
       },
-    },
+    } as any,
     wixSession,
   });
 

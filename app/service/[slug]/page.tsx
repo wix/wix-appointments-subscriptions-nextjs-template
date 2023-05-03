@@ -1,9 +1,9 @@
-import { getServiceBySlug } from '@model/service/service-api';
+import { getServiceBySlug } from '@app/model/service/service-api';
 import ImageGallery from '@app/components/Image/ImageGallery/ImageGallery';
 import { useServerAuthSession } from '@app/hooks/useServerAuthSession';
 import { useServiceFormattedPrice } from '@app/hooks/useServiceFormattedPrice';
-import { OfferedAsType } from '@model/service/service-types.internal';
-import { ServiceInfoViewModel } from '@model/service/service.mapper';
+import { OfferedAsType } from '@app/model/service/service-types.internal';
+import { ServiceInfoViewModel } from '@app/model/service/service.mapper';
 
 const offeredAsToPaymentOptions = (offeredAs: string) =>
   offeredAs === OfferedAsType.OFFLINE

@@ -2,7 +2,7 @@ import './page.css';
 import ServiceListPreview from '@app/components/ServiceList/ServiceListPreview';
 import ScrollIntoView from '@app/components/ScrollIntoView/ScrollIntoView';
 import { useServerAuthSession } from '@app/hooks/useServerAuthSession';
-import { safeGetServices } from '@model/service/service-api';
+import { safeGetServices } from '@app/model/service/service-api';
 
 export default async function Home() {
   const wixSession = useServerAuthSession();

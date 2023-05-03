@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { useClientAuthSession } from '@app/hooks/useClientAuthSession';
-import { getServices } from '@model/service/service-api';
+import { getServices } from '@app/model/service/service-api';
 
 // example usage client components
 export const useServices = ({

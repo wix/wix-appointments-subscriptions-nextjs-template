@@ -1,7 +1,7 @@
 import { formatDuration, intervalToDuration } from 'date-fns';
 import { services } from '@wix/bookings';
-import { mapServiceOfferedAsDto } from '@model/service/service-offered-as.mapper';
-import { mapServicePaymentDto } from '@model/service/service-payment.mapper';
+import { mapServiceOfferedAsDto } from '@app/model/service/service-offered-as.mapper';
+import { mapServicePaymentDto } from '@app/model/service/service-payment.mapper';
 
 export type ServiceInfoViewModel = NonNullable<
   ReturnType<typeof mapServiceInfo>

@@ -1,5 +1,5 @@
 'use client';
-import { ServiceInfoViewModel } from '@model/service/service.mapper';
+import { ServiceInfoViewModel } from '@app/model/service/service.mapper';
 import { WixBookingsClientProvider } from '@app/components/Provider/WixBookingsClientProvider';
 import { useEffect, useMemo, useState } from 'react';
 import { useAvailability } from '@app/hooks/useAvailability';

@@ -1,4 +1,4 @@
-import type { ServicePaymentDto } from '@model/service/service-payment.mapper';
+import type { ServicePaymentDto } from '@app/model/service/service-payment.mapper';
 import { formatServicePrice } from '@app/utils/price-formtter';
 
 export const useServiceFormattedPrice = (
