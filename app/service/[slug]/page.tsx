@@ -20,6 +20,14 @@ export default async function ServicePage({ params }: any) {
     ? await getServiceBySlug(wixSession, params.slug)
     : { data: null };
 
+  return <ServicePageWithFallback service={service} />;
+}
+
+export function ServicePageWithFallback({
+  service,
+}: {
+  service?: ServiceInfoViewModel | null;
+}) {
   return (
     <div className="max-w-full-content mx-auto bg-white px-6 sm:px-28">
       {service ? (
