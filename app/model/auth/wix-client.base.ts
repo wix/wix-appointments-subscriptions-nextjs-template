@@ -5,6 +5,7 @@ import {
   extendedBookings,
   bookings,
 } from '@wix/bookings';
+import { members } from '@wix/members';
 import { plans, orders } from '@wix/pricing-plans';
 import { redirects } from '@wix/redirects';
 import { WIX_REFRESH_TOKEN } from '@app/model/auth/auth.const';
@@ -33,6 +34,7 @@ export const getWixClient = ({ cookieStore }: { cookieStore: CookieStore }) =>
           orders,
           bookings: extendedBookings,
           bookingsActions: bookings,
+          members,
         },
         auth: OAuthStrategy({
           clientId: process.env.NEXT_PUBLIC_WIX_CLIENT_ID!,
