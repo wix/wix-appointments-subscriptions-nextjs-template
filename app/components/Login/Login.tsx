@@ -8,8 +8,8 @@ import {
   AUTH_LOGIN_PATHNAME,
   WIX_REFRESH_TOKEN,
 } from '@app/model/auth/auth.const';
-import LoginAvatar from '@app/components/Layout/NavBar/LoginAvatar';
 import { WixBookingsClientProvider } from '@app/components/Provider/WixBookingsClientProvider';
+import MemberAvatar from '@app/components/Login/MemberAvatar';
 
 const URLS_WITH_NO_AVATAR = [AUTH_CALLBACK_PATHNAME, AUTH_LOGIN_PATHNAME];
 
@@ -42,8 +42,8 @@ const LoginComp = ({ onActionClick }: LoginProps) => {
       onClick={onLoginClick}
       className="flex flex-nowrap gap-2 justify-center items-center"
     >
-      <div>
-        <LoginAvatar width={22} height={22} className="fill-turquoise-200" />
+      <div className="w-[22px] h-[22px] fill-turquoise-200">
+        <MemberAvatar />
       </div>
       <div className="flex relative whitespace-nowrap">
         {isLoggedIn ? 'Log Out' : 'Log In'}

@@ -7,6 +7,7 @@ import {
 import { useFormattedTimezone } from '@app/hooks/useFormattedTimezone';
 import BookingActions from '@app/components/MyAccount/Bookings/BookingActions';
 import { format } from 'date-fns';
+import { getCurrentMember } from '@app/model/members/members-api';
 
 const DATE_TIME_FORMAT = 'MMM dd, yyyy, h:mm a';
 
@@ -25,22 +26,25 @@ export default async function MyBookingsPage({
 }) {
   const selectedTab = searchParams?.view || SelectedView.UPCOMING;
   const wixSession = useServerAuthSession();
-  const bookings =
+  const [bookings, { member }] = await Promise.all([
     selectedTab === SelectedView.UPCOMING
-      ? await getMyUpcomingBookings(wixSession)
-      : await getMyBookingHistory(wixSession);
+      ? getMyUpcomingBookings(wixSession)
+      : getMyBookingHistory(wixSession),
+    getCurrentMember(wixSession),
+  ]);
+
   const timezoneStr = useFormattedTimezone();
 
   return (
-    <MyAccountSection>
-      <h2 className="text-highlight text-4xl">Manage Your Bookings</h2>
+    <MyAccountSection member={member}>
+      <h2 className="text-turquoise-200 text-4xl">Manage Your Bookings</h2>
       <div className="text-sm py-2">
         <p className="pt-2">
           View, cancel your bookings and easily book again.
         </p>
         <p className="pt-2">Timezone: {timezoneStr}</p>
       </div>
-      <nav className="text-center sm:text-left text-highlight my-2 border-b border-white border-opacity-[0.04]">
+      <nav className="text-center sm:text-left text-turquoise-200 my-2 border-b border-black border-opacity-[0.04]">
         {[
           { name: 'Upcoming', value: SelectedView.UPCOMING },
           { name: 'History', value: SelectedView.HISTORY },
@@ -48,7 +52,9 @@ export default async function MyBookingsPage({
           <a
             key={value}
             className={`w-20 sm:w-28 inline-block text-center py-4 border-b-[3px] border-opacity-60 ${
-              value === selectedTab ? 'border-highlight' : 'border-transparent'
+              value === selectedTab
+                ? 'border-turquoise-200'
+                : 'border-transparent'
             }`}
             href={`?view=${value}`}
           >
@@ -60,7 +66,7 @@ export default async function MyBookingsPage({
         bookings.extendedBookings?.map(({ booking, allowedActions }, index) => (
           <div
             key={booking!._id}
-            className="flex flex-wrap gap-5 py-6 border-b border-white border-opacity-30 hover:border-opacity-80"
+            className="flex flex-wrap gap-5 py-6 border-b border-black border-opacity-30 hover:border-opacity-80 text-sm items-center"
           >
             <div>{formatDateAndTime(booking!.startDate!)}</div>
             <div>{booking?.bookedEntity?.title}</div>
@@ -82,12 +88,9 @@ export default async function MyBookingsPage({
       ) : (
         <div className="py-12 text-center">
           <div className="mb-3">
-            {"You've got nothing booked at the moment."}
+            {"You've got nothing booked for the selected view."}
           </div>
-          <a
-            href="/classes-schedule"
-            className="text-sm text-highlight underline"
-          >
+          <a href="/services" className="text-sm text-turquoise-200 underline">
             Check Out Our Services
           </a>
         </div>

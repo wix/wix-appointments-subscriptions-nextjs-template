@@ -1,7 +1,12 @@
+'use client';
 import { SVGProps } from 'react';
+import { useClientAuthSession } from '@app/hooks/useClientAuthSession';
+import { useCurrentMember } from '@app/hooks/useMember';
+import { WixBookingsClientProvider } from '@app/components/Provider/WixBookingsClientProvider';
+import dynamic from 'next/dynamic';
 
 // For future use
-const LoginAvatar = (props: SVGProps<any>) => (
+const EmptyMemberAvatar = (props: SVGProps<any>) => (
   <svg
     data-bbox="0 0 50 50"
     data-type="shape"
@@ -17,4 +22,50 @@ const LoginAvatar = (props: SVGProps<any>) => (
   </svg>
 );
 
-export default LoginAvatar;
+const StyledEmptyMemberAvatar = () => {
+  return (
+    <EmptyMemberAvatar width="100%" height="100%" className="fill-inherit" />
+  );
+};
+
+const LoggedInMemberAvatar = () => {
+  const { data: myMemberDetails, isFetching } = useCurrentMember();
+
+  return isFetching ? (
+    <div className="h-full w-full rounded-full" />
+  ) : myMemberDetails?.member?.profile?.photo?.url ? (
+    <div
+      className={`h-full w-full rounded-full bg-cover bg-center`}
+      style={{
+        backgroundImage: `url(${myMemberDetails?.member?.profile?.photo?.url})`,
+      }}
+    ></div>
+  ) : (
+    <StyledEmptyMemberAvatar />
+  );
+};
+
+const MemberAvatarNoSsr = dynamic(
+  () =>
+    Promise.resolve(() => {
+      const { wixClient } = useClientAuthSession();
+      const isLoggedIn = wixClient?.auth.loggedIn();
+
+      return isLoggedIn ? (
+        <LoggedInMemberAvatar />
+      ) : (
+        <StyledEmptyMemberAvatar />
+      );
+    }),
+  {
+    ssr: false,
+  }
+);
+
+export default function MemberAvatar() {
+  return (
+    <WixBookingsClientProvider>
+      <MemberAvatarNoSsr />
+    </WixBookingsClientProvider>
+  );
+}

@@ -2,7 +2,6 @@
 import { NavLink } from './NavLink';
 import { useCallback, useState } from 'react';
 import type { LinkProps } from 'next/link';
-import LoginAvatar from '@app/components/Layout/NavBar/LoginAvatar';
 import { usePathname } from 'next/navigation';
 import Login from '@app/components/Login/Login';
 
@@ -12,7 +11,7 @@ const navbarItems = [
   { ref: '/plans', label: 'Plans' },
   { ref: '/guides', label: 'Guides' },
   { ref: '/#contact', label: 'Contact' },
-  { ref: '/account/my-bookings', label: 'Account' },
+  { ref: '/account/my-account', label: 'Account' },
 ];
 
 export const StyledNavLink = ({

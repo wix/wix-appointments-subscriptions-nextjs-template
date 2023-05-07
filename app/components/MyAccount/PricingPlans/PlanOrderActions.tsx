@@ -24,7 +24,7 @@ function PlanOrderActionsView({ planOrder }: PlanOrderActionsProps) {
   return error ? (
     <span className="text-red-600">{error}</span>
   ) : (
-    <div className="text-highlight flex gap-2 underline text-sm">
+    <div className="text-turquoise-200 flex gap-2 underline text-sm">
       <button onClick={onCancel}>Cancel Plan Order</button>
     </div>
   );

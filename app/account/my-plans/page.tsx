@@ -3,6 +3,7 @@ import { useServerAuthSession } from '@app/hooks/useServerAuthSession';
 import { getMyPlanOrders } from '@app/model/paid-plans/paid-plans-api';
 import { format } from 'date-fns';
 import PlanOrderActions from '@app/components/MyAccount/PricingPlans/PlanOrderActions';
+import { getCurrentMember } from '@app/model/members/members-api';
 
 const DATE_FORMAT = 'MMM dd, yyyy';
 
@@ -10,21 +11,24 @@ const formatDate = (date: Date) => format(new Date(date), DATE_FORMAT);
 
 export default async function MyPlansPage() {
   const wixSession = useServerAuthSession();
-  const { data: planOrders } = await getMyPlanOrders(wixSession);
+  const [{ data: planOrders }, { member }] = await Promise.all([
+    getMyPlanOrders(wixSession),
+    getCurrentMember(wixSession),
+  ]);
   return (
-    <MyAccountSection>
-      <h2 className="text-highlight text-4xl">My Plans</h2>
+    <MyAccountSection member={member}>
+      <h2 className="text-turquoise-200 text-4xl">My Plans</h2>
       <div className="text-sm py-2">
         <p className="pt-2">
           View and manage the subscriptions you have purchased
         </p>
       </div>
-      <div className="border-t border-white border-opacity-[0.04] mt-14"></div>
+      <div className="border-t border-black border-opacity-[0.04] mt-14 text-sm"></div>
       {planOrders?.length ? (
         planOrders?.map((order, index) => (
           <div
             key={order._id}
-            className="flex flex-wrap gap-5 py-6 border-b border-white border-opacity-30 hover:border-opacity-80 text-sm"
+            className="flex flex-wrap items-center gap-5 py-6 border-b border-black border-opacity-30 hover:border-opacity-80 text-sm"
           >
             <div>{order.planName}</div>
             <div>
@@ -44,7 +48,7 @@ export default async function MyPlansPage() {
           <div className="mb-3">
             {"You haven't purchased any subscriptions yet."}
           </div>
-          <a href="/plans" className="text-sm text-highlight underline">
+          <a href="/plans" className="text-sm text-turquoise-200 underline">
             View Plans & Pricing
           </a>
         </div>
