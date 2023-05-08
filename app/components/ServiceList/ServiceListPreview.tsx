@@ -10,7 +10,7 @@ export default function ServiceListPreviewView({
   const smClassName = (services?.length ?? 0) > 1 ? 'sm:grid-cols-2' : '';
   const mdClassName = (services?.length ?? 0) > 2 ? 'md:grid-cols-3' : '';
 
-  return (
+  return services?.length ? (
     <>
       <div
         className={`mx-auto flex flex-wrap my-3 m-auto grid grid-cols-1 gap-4 ${smClassName} ${mdClassName}`}
@@ -20,7 +20,7 @@ export default function ServiceListPreviewView({
         ))}
       </div>
     </>
-  );
+  ) : null;
 }
 
 const ServiceCardPreview = ({ service }: { service: ServiceInfoViewModel }) => {

@@ -67,13 +67,27 @@ export default function ServiceList({
           </li>
         </ul>
       </div>
-      <div className="p-3 container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {servicesToDisplay?.length
-          ? servicesToDisplay.map((service, index) => (
-              <ServiceCard service={service} key={service.id} />
-            ))
-          : 'No Services found'}
-      </div>
+      {servicesToDisplay?.length ? (
+        <div className="p-3 container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {servicesToDisplay.map((service, index) => (
+            <ServiceCard service={service} key={service.id} />
+          ))}
+        </div>
+      ) : (
+        <>
+          No services found. Click{' '}
+          <a
+            href="https://manage.wix.com/account/site-selector?actionUrl=https%3A%2F%2Fmanage.wix.com%2Fdashboard%2F%7BmetaSiteId%7D%2Fbookings%2Fservices%2Ftemplates-catalog%3Forigin%3DHeadless"
+            target="_blank"
+            rel="noreferrer"
+            className="text-turquoise-200"
+          >
+            here
+          </a>{' '}
+          to go to the business dashboard to add services. Once added, they will
+          appear here.
+        </>
+      )}
     </>
   );
 }
