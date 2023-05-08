@@ -36,8 +36,9 @@ export const getServiceAvailability = (
           endDate: to,
         },
         cursorPaging: { ...(limit ? { limit } : {}) },
-      },
-    } as any,
+        // till the cursorPaging is exposed again in sdk
+      } as availabilityCalendar.QueryV2,
+    },
     wixSession,
   });
 
