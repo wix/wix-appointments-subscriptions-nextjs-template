@@ -19,7 +19,7 @@
     "cookie": "^0.5.0",
     "date-fns": "^2.29.3",
     "flowbite": "^1.6.3",
-    "flowbite-react": "^0.3.8",
+    "flowbite-react": "^0.4.4",
     "js-cookie": "^3.0.1",
     "jsurl": "^0.1.5",
     "next": "13.3.1",
