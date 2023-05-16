@@ -24,9 +24,13 @@ const setVisitorTokens = async ({
 
 export async function middleware(request: NextRequest) {
   const cookies = request.cookies;
-  request.headers.set('x-mid-request-url', request.url);
-  const res = NextResponse.next();
-  res.headers.set('x-mid-res-url', request.url);
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set('x-middleware-request-url', request.url);
+  const res = NextResponse.next({
+    request: {
+      headers: requestHeaders,
+    },
+  });
   const wixClient = getServerWixClient({
     cookieStore: request.cookies,
   });
