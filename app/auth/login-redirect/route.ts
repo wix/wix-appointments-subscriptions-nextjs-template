@@ -27,9 +27,7 @@ export async function GET(request: NextRequest) {
   response.headers.set(
     'x-test-redirect-login',
     JSON.stringify({
-      xProto: request.headers.get('X-Forwarded-Proto'),
-      nextUrl: request.nextUrl.toString(),
-      nextPath: request.nextUrl.basePath,
+      xPathNew: request.headers.get('x-mid-request-url'),
       legacyUrl: request.url,
     })
   );

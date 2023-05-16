@@ -24,6 +24,7 @@ const setVisitorTokens = async ({
 
 export async function middleware(request: NextRequest) {
   const cookies = request.cookies;
+  request.headers.set('x-mid-request-url', request.url);
   const res = NextResponse.next();
   const wixClient = getServerWixClient({
     cookieStore: request.cookies,
@@ -53,15 +54,6 @@ export async function middleware(request: NextRequest) {
     );
     return NextResponse.redirect(redirectUrl);
   }
-  res.headers.set(
-    'x-test-proto',
-    JSON.stringify({
-      xProto: request.headers.get('X-Forwarded-Proto'),
-      nextUrl: request.nextUrl.toString(),
-      nextPath: request.nextUrl.basePath,
-      legacyUrl: request.url,
-    })
-  );
   return res;
 }
 
