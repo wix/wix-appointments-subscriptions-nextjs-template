@@ -1,5 +1,3 @@
-import { NextRequest } from 'next/server';
-
 export const safeCall = async <T>(
   call: () => Promise<T>,
   defaultVal: T,
@@ -20,6 +18,3 @@ export const safeCall = async <T>(
     };
   }
 };
-
-export const getRequestUrl = (request: NextRequest) =>
-  request.headers.get('x-middleware-request-url') || request.url;

@@ -5,7 +5,7 @@ import {
   OAUTH_COOKIE_STATE,
 } from '@app/model/auth/auth.const';
 import { getServerWixClient } from '@app/model/auth/wix-client.server';
-import { getRequestUrl } from '@app/model/utils';
+import { getRequestUrl } from '@app/model/server-utils';
 
 export const fetchCache = 'force-no-store';
 export const revalidate = 0;
