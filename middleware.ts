@@ -24,7 +24,14 @@ const setVisitorTokens = async ({
 
 export async function middleware(request: NextRequest) {
   const cookies = request.cookies;
-  const res = NextResponse.next();
+  const requestHeaders = new Headers(request.headers);
+  const requestUrl = request.url;
+  requestHeaders.set('x-middleware-request-url', requestUrl);
+  const res = NextResponse.next({
+    request: {
+      headers: requestHeaders,
+    },
+  });
   const wixClient = getServerWixClient({
     cookieStore: request.cookies,
   });
@@ -43,8 +50,8 @@ export async function middleware(request: NextRequest) {
     wixMemberLoggedIn === 'true' ||
     (!isLoggedIn && request.nextUrl.pathname.startsWith('/account'))
   ) {
-    const redirectUrl = new URL(AUTH_LOGIN_PATHNAME, request.url);
-    const loginCallbackUrl = new URL(request.url);
+    const redirectUrl = new URL(AUTH_LOGIN_PATHNAME, requestUrl);
+    const loginCallbackUrl = new URL(requestUrl);
     redirectUrl.searchParams.delete(REDIRECT_FROM_WIX_LOGIN_STATUS);
     loginCallbackUrl.searchParams.delete(REDIRECT_FROM_WIX_LOGIN_STATUS);
     redirectUrl.searchParams.set(
