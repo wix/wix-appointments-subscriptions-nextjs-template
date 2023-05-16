@@ -53,6 +53,13 @@ export async function middleware(request: NextRequest) {
     );
     return NextResponse.redirect(redirectUrl);
   }
+  res.headers.set(
+    'x-test-proto',
+    JSON.stringify({
+      xProto: request.headers.get('x-forwarded-proto'),
+      nextUrl: request.nextUrl.protocol,
+    })
+  );
   return res;
 }
 
