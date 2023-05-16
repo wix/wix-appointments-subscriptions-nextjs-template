@@ -56,8 +56,10 @@ export async function middleware(request: NextRequest) {
   res.headers.set(
     'x-test-proto',
     JSON.stringify({
-      xProto: request.headers.get('x-forwarded-proto'),
-      nextUrl: request.nextUrl.protocol,
+      xProto: request.headers.get('X-Forwarded-Proto'),
+      nextUrl: request.nextUrl.toString(),
+      nextPath: request.nextUrl.basePath,
+      legacyUrl: request.url,
     })
   );
   return res;

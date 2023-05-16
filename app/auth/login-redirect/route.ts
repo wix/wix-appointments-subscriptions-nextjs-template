@@ -24,6 +24,15 @@ export async function GET(request: NextRequest) {
   const oauthData = wixClient!.auth.generateOAuthData(redirectUrl, originalUrl);
   const { authUrl } = await wixClient!.auth.getAuthUrl(oauthData);
   const response = NextResponse.redirect(authUrl);
+  response.headers.set(
+    'x-test-redirect-login',
+    JSON.stringify({
+      xProto: request.headers.get('X-Forwarded-Proto'),
+      nextUrl: request.nextUrl.toString(),
+      nextPath: request.nextUrl.basePath,
+      legacyUrl: request.url,
+    })
+  );
   response.cookies.set({
     name: OAUTH_COOKIE_STATE,
     value: JSON.stringify(oauthData),
