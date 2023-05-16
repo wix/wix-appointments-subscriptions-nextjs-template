@@ -525,19 +525,19 @@ __metadata:
   linkType: hard
 
 "@wix/api-client@npm:^1.1.65":
-  version: 1.1.71
-  resolution: "@wix/api-client@npm:1.1.71"
+  version: 1.1.72
+  resolution: "@wix/api-client@npm:1.1.72"
   dependencies:
     "@babel/runtime": ^7.21.5
     "@types/grecaptcha": ^3.0.4
     "@wix/identity": ^1.0.37
     "@wix/image-kit": ^1.31.0
-    "@wix/redirects": ^1.0.14
-    "@wix/sdk-types": 1.1.71
+    "@wix/redirects": ^1.0.15
+    "@wix/sdk-types": 1.1.72
     pkce-challenge: ^3.1.0
     querystring: ^0.2.1
     type-fest: ^2.19.0
-  checksum: 77eb69092536b4673a00259453e489bb3e93c117b02be0f73f30d510b6e67a674b50eca5ecf129465367f473ec2ab3d90d786c4af07c97c620e8e763296d727a
+  checksum: bfed480b122b9f81e05f979ee2ebc2bffa2fbe8c77621bea218e31e254ac25c98bf28bd5f26fd998e2723ad26d7ea35dbe6505b7d3e4608c18a0bc05e7f2631b
   languageName: node
   linkType: hard
 
@@ -708,7 +708,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/redirects@npm:^1.0.13, @wix/redirects@npm:^1.0.14":
+"@wix/redirects@npm:^1.0.13, @wix/redirects@npm:^1.0.15":
   version: 1.0.15
   resolution: "@wix/redirects@npm:1.0.15"
   dependencies:
@@ -719,7 +719,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/sdk-types@npm:1.1.71, @wix/sdk-types@npm:^1.0.0":
+"@wix/sdk-types@npm:1.1.72":
+  version: 1.1.72
+  resolution: "@wix/sdk-types@npm:1.1.72"
+  dependencies:
+    "@babel/runtime": ^7.21.5
+  checksum: d8fb1e202c4abff3d9e0255f66c554737b43df9bc09ed8c643e6f6bc6867cb26e021b7b3488786da186c82636c0463078e91ca86ebc69625c9f716f7f0a12e35
+  languageName: node
+  linkType: hard
+
+"@wix/sdk-types@npm:^1.0.0":
   version: 1.1.71
   resolution: "@wix/sdk-types@npm:1.1.71"
   dependencies:
