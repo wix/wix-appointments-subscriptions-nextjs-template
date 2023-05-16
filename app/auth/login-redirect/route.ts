@@ -28,6 +28,8 @@ export async function GET(request: NextRequest) {
     'x-test-redirect-login',
     JSON.stringify({
       xPathNew: request.headers.get('x-mid-request-url'),
+      xPathReqNew: request.headers.get('x-mid-res-url'),
+      xPathResNew: response.headers.get('x-mid-res-url'),
       legacyUrl: request.url,
     })
   );

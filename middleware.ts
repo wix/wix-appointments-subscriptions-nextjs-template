@@ -26,6 +26,7 @@ export async function middleware(request: NextRequest) {
   const cookies = request.cookies;
   request.headers.set('x-mid-request-url', request.url);
   const res = NextResponse.next();
+  res.headers.set('x-mid-res-url', request.url);
   const wixClient = getServerWixClient({
     cookieStore: request.cookies,
   });
