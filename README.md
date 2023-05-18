@@ -52,7 +52,7 @@ If you don't want to use quick-start deployment, begin by forking this repo to y
 
 Read [Set Up Authorization](https://dev.wix.com/api/sdk/sdk-setup:-wix-headless/authorization) in the Wix SDK documentation for instructions on how to manually create an OAuth app and generate a client ID in the [Headless Settings](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Foauth-apps-settings) menu of the project dashboard.
 
-> **Note:** The authorization redirect URI for this template is <YOUR-NEW-BASE-DOMAIN>/auth/callback.
+> **Note:** The authorization redirect URI for this template is `<YOUR-NEW-BASE-DOMAIN>/auth/callback`.
 
 After creating an OAuth app, store the Client ID securely.
 
