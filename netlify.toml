@@ -1,3 +1,5 @@
+environment = {__NEXT_PRIVATE_PREBUNDLED_REACT = "next"}
+
 [build]
   command = "npm run build"
   publish = ".next"
