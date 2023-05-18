@@ -7,6 +7,3 @@
 
 [template.environment]
   NEXT_PUBLIC_WIX_CLIENT_ID = "Wix Headless Client ID"
-
-[context.deploy-preview.environment]
-  __NEXT_PRIVATE_PREBUNDLED_REACT = "next"
