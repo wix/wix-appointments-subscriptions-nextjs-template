@@ -357,8 +357,8 @@ __metadata:
   linkType: hard
 
 "@tanstack/react-query@npm:^4.24.4":
-  version: 4.29.11
-  resolution: "@tanstack/react-query@npm:4.29.11"
+  version: 4.29.12
+  resolution: "@tanstack/react-query@npm:4.29.12"
   dependencies:
     "@tanstack/query-core": 4.29.11
     use-sync-external-store: ^1.2.0
@@ -371,7 +371,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 94730795d1dfb2a8f76a33de4b65200bd983aa1f5ab0b3e645b6316479c69a5650efb0b7142056f31d657bae12c01eb43c79fae807bf9be86a00d650f86f6d34
+  checksum: aea231af648688c5eafdbbda0667034221cca8b77e00690ab54950b7cc0296d14646931aee44fc5f18d5ce4d683b5d234b053eed5c0a5c340bbbacdab873a70b
   languageName: node
   linkType: hard
 
