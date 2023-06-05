@@ -21,6 +21,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.22.0":
+  version: 7.22.3
+  resolution: "@babel/runtime@npm:7.22.3"
+  dependencies:
+    regenerator-runtime: ^0.13.11
+  checksum: 8fc50785ca4cba749fed90bffca7e6fd52d4709755654e95b8d2a945fc034b56fb8c2e8a0183fea7c4abb86bf5fa77678c0ea35163b6920649833d180c34c234
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -525,19 +534,19 @@ __metadata:
   linkType: hard
 
 "@wix/api-client@npm:^1.1.65":
-  version: 1.1.73
-  resolution: "@wix/api-client@npm:1.1.73"
+  version: 1.1.75
+  resolution: "@wix/api-client@npm:1.1.75"
   dependencies:
-    "@babel/runtime": ^7.21.5
+    "@babel/runtime": ^7.22.0
     "@types/grecaptcha": ^3.0.4
     "@wix/identity": ^1.0.38
     "@wix/image-kit": ^1.31.0
-    "@wix/redirects": ^1.0.15
-    "@wix/sdk-types": 1.1.73
+    "@wix/redirects": ^1.0.16
+    "@wix/sdk-types": 1.1.75
     pkce-challenge: ^3.1.0
     querystring: ^0.2.1
     type-fest: ^2.19.0
-  checksum: 8dd5219f05f36805a56bae83044cd2903ca31ba62b64c6d0d687378c72bc3e7918a70279bbaffa5ddb0931421295651ec06bf1ad5955e7d16f1aae6a5a4aae6b
+  checksum: c4668177de2acb5a803bd0d692f00e0cdbfa3cfab12bbf486b8978389804f6995e9c3d0d3081891b0ec2f1c7113b4465595c56476c39d721622d979ca97e9ae7
   languageName: node
   linkType: hard
 
@@ -708,7 +717,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/redirects@npm:^1.0.13, @wix/redirects@npm:^1.0.15":
+"@wix/redirects@npm:^1.0.13, @wix/redirects@npm:^1.0.16":
   version: 1.0.16
   resolution: "@wix/redirects@npm:1.0.16"
   dependencies:
@@ -719,12 +728,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/sdk-types@npm:1.1.73":
-  version: 1.1.73
-  resolution: "@wix/sdk-types@npm:1.1.73"
+"@wix/sdk-types@npm:1.1.75":
+  version: 1.1.75
+  resolution: "@wix/sdk-types@npm:1.1.75"
   dependencies:
-    "@babel/runtime": ^7.21.5
-  checksum: 56dc1b326214e2c01a547e4b42ec6c2ebada8411bdd895cc7d93fca9a7b867601a8edea5173bb3cdbc74943047855702710e805f1f6c9350507653f55ae34f40
+    "@babel/runtime": ^7.22.0
+  checksum: b86e928cbdf49051ac3d4c20743bd38149c2472d52050bd6462198b1e4324420d3e46d122541952fcd16c1c0f25157d006aec531fd0aeff7bd08cf8629c22422
   languageName: node
   linkType: hard
 
