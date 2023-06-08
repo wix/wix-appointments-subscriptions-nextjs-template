@@ -21,7 +21,7 @@ jobs:
       uses: jakepartusch/wait-for-netlify-action@v1.2
       id: waitFor200
       with:
-        site_name: "wix-commerce-ticketing-nextjs-templat"
+        site_name: "wix-appointments-subscriptions-nextjs"
         max_timeout: 360 # 6 Minutes, depends on your build pipeline duration
     - name: Run E2E Tests on Netlify URL
       run: yarn e2e
