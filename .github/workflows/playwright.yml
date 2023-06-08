@@ -13,10 +13,10 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16
-    - name: Setup Playwright
-      run: npx playwright install-deps chromium
     - name: Install dependencies
       run: yarn
+    - name: Install Playwright Browsers
+      run: yarn playwright install --with-deps
     - name: Waiting for 200 from the Netlify Preview
       uses: jakepartusch/wait-for-netlify-action@v1.2
       id: waitFor200
