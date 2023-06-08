@@ -11,19 +11,21 @@ test.describe('Home Page', () => {
 
   test('look and feel - header', async ({ page }) => {
     await page.goto('/');
-    await page.waitForTimeout(1000);
 
     await expect(
       await page.getByTestId(testIds.HOME_PAGE.HEADER)
-    ).toHaveScreenshot('home-header.png');
+    ).toHaveScreenshot('home-header.png', {
+      mask: [page.getByTestId(testIds.PAGE.HEADER)],
+    });
   });
 
   test('look and feel - services section', async ({ page }) => {
     await page.goto('/');
-    await page.waitForTimeout(1000);
 
     await expect(
       await page.getByTestId(testIds.HOME_PAGE.SERVICES_SECTION)
-    ).toHaveScreenshot('home-services.png');
+    ).toHaveScreenshot('home-services.png', {
+      mask: [page.getByTestId(testIds.PAGE.HEADER)],
+    });
   });
 });
