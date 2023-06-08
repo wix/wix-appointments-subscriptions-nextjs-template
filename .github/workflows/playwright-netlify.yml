@@ -1,0 +1,41 @@
+name: Netlify E2E
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - name: Install dependencies
+      run: yarn
+    - name: Install Playwright Browsers
+      run: yarn playwright install --with-deps
+    - name: Waiting for 200 from the Netlify Preview
+      uses: jakepartusch/wait-for-netlify-action@v1.4
+      id: waitFor200
+      with:
+        site_name: "wix-appointments-subscriptions-nextjs"
+        max_timeout: 360 # 6 Minutes, depends on your build pipeline duration
+    - name: Run E2E Tests on Netlify URL
+      run: REMOTE_URL=true yarn e2e
+      env:
+        PLAYWRIGHT_TEST_BASE_URL: ${{ steps.waitFor200.outputs.url }}
+    - uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 10
+    - uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: screenshots
+        path: tests/e2e/__screenshots__
+        retention-days: 10
