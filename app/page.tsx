@@ -79,17 +79,17 @@ export default async function Home() {
       </div>
       <div className="parallax-background">
         {services?.length ? (
-          <div className="max-w-full-content mx-auto bg-transparent p-5">
+          <div
+            className="max-w-full-content mx-auto bg-transparent p-5"
+            data-testid={testIds.HOME_PAGE.SERVICES_SECTION}
+          >
             <div className="header-line my-8"></div>
             <h2 className="mb-7 mt-10 tracking-tighter title max-w-xs">
               How I Can Help You
             </h2>
 
             <>
-              <ServiceListPreview
-                services={services}
-                data-testid={testIds.HOME_PAGE.SERVICES_SECTION}
-              />
+              <ServiceListPreview services={services} />
               <div className="flex my-8 justify-center">
                 <a className="btn-main" href="/book-now">
                   More Services
