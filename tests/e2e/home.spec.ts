@@ -9,7 +9,7 @@ test.describe('Home Page', () => {
     await expect(servicesSection).toBeVisible();
   });
 
-  test.skip('look and feel - header', async ({ page }) => {
+  test('look and feel - header', async ({ page }) => {
     await page.goto('/');
 
     await expect(
