@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import * as process from 'process';
 
 /**
  * Read environment variables from file.
@@ -70,8 +71,9 @@ export default defineConfig({
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: 'yarn start',
+    command: process.env.REMOTE_URL
+      ? `echo using remote server: ${process.env.PLAYWRIGHT_TEST_BASE_URL}`
+      : 'yarn start',
     url: 'http://127.0.0.1:3000',
-    reuseExistingServer: !process.env.PLAYWRIGHT_TEST_BASE_URL,
   },
 });
