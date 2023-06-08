@@ -2,7 +2,7 @@ name: Vercel E2E
 on:
   deployment_status:
 jobs:
-  test:
+  vercel-e2e:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success'

@@ -73,7 +73,7 @@ const config = defineConfig({
   ],
 
   /* Run your local dev server before starting the tests */
-  webServer: process.env.REMOTE_URL
+  webServer: process.env.REMOTE_PROVIDER
     ? undefined
     : {
         command: 'yarn start',
