@@ -10,7 +10,7 @@ import * as process from 'process';
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
-export default defineConfig({
+const config = defineConfig({
   testDir: './tests/e2e',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -70,10 +70,12 @@ export default defineConfig({
   ],
 
   /* Run your local dev server before starting the tests */
-  webServer: {
-    command: process.env.REMOTE_URL
-      ? `echo using remote server: ${process.env.PLAYWRIGHT_TEST_BASE_URL}`
-      : 'yarn start',
-    url: 'http://127.0.0.1:3000',
-  },
+  webServer: process.env.REMOTE_URL
+    ? undefined
+    : {
+        command: 'yarn start',
+        url: 'http://127.0.0.1:3000',
+      },
 });
+
+export default config;
