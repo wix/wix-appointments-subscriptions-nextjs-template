@@ -72,6 +72,6 @@ export default defineConfig({
   webServer: {
     command: 'yarn start',
     url: 'http://127.0.0.1:3000',
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: !process.env.PLAYWRIGHT_TEST_BASE_URL,
   },
 });
