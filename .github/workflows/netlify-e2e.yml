@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 jobs:
   netlify-e2e:
-    uses: ./.github/actions/setup-e2e.yml
+    uses: ./.github/workflows/setup-e2e.yml
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
