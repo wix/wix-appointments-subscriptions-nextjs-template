@@ -7,6 +7,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Get yarn cache directory path
+      id: yarn-cache-dir-path
+      run: echo "dir=$(yarn cache dir)"
+    - name: Store Playwright's Version
+      id: store-playwright-version
+      run: |
+        PLAYWRIGHT_VERSION=$(npm ls @playwright/test | grep @playwright | sed 's/.*@//')
+        echo "Playwright's Version: $PLAYWRIGHT_VERSION"
+        echo "PLAYWRIGHT_VERSION=$PLAYWRIGHT_VERSION" >> $GITHUB_OUTPUT
+    - uses: ./.github/actions/setup-e2e
+      with:
+        runner-os: ${{runner.os}}
+        playwright-version: ${{ steps.store-playwright-version.outputs.PLAYWRIGHT_VERSION }}
+        yarn-cache-dir: ${{ steps.yarn-cache-dir-path.outputs.dir }}
     - uses: ./.github/actions/setup-e2e
     - name: Run E2E Tests on Vercel URL
       run: REMOTE_PROVIDER=vercel yarn e2e
