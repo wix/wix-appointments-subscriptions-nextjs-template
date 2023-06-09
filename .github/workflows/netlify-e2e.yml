@@ -9,6 +9,7 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - uses: ./.github/actions/setup-e2e
       - name: Waiting for 200 from the Netlify Preview
         uses: jakepartusch/wait-for-netlify-action@v1.4
