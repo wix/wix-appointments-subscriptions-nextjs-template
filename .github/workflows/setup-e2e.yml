@@ -11,12 +11,6 @@ jobs:
         with:
           node-version: 16
           cache: 'yarn'
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: |
-          DIR=$(yarn cache dir)
-          echo "Cache Dir: $DIR"
-          echo "DIR=$DIR" >> $GITHUB_OUTPUT
       - name: Install dependencies
         run: yarn
       - name: Store Playwright's Version
