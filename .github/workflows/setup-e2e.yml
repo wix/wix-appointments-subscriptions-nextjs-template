@@ -1,6 +1,6 @@
 name: Setup Playwright
 on:
-  workflow_dispatch:
+  workflow_call:
 jobs:
   install-playwright:
     runs-on: ubuntu-latest
