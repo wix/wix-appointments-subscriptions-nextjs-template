@@ -2,9 +2,11 @@ name: Vercel E2E
 on:
   deployment_status:
 jobs:
-  vercel-e2e:
-    if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success'
+  setup:
     uses: ./.github/workflows/setup-e2e.yml
+  vercel-e2e:
+    needs: setup
+    if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success'
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:

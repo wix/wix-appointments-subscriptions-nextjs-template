@@ -5,8 +5,10 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  netlify-e2e:
+  setup:
     uses: ./.github/workflows/setup-e2e.yml
+  netlify-e2e:
+    needs: setup
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
