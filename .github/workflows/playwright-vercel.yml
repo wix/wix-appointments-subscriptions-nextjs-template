@@ -5,7 +5,7 @@ jobs:
   vercel-e2e:
     timeout-minutes: 60
     runs-on: ubuntu-latest
-    if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success'
+    if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success' && github.event.deployment_status.target_url.contains('vercel-demo-wix-appointments')
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
