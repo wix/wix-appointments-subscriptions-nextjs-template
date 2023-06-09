@@ -1,9 +1,14 @@
-name: E2E
+name: Setup Playwright
 on:
   workflow_dispatch:
 jobs:
+  prepare-version:
+    runs-on: ubuntu-latest
+    outputs:
+      playwright-version: $(npm ls @playwright/test | grep @playwright | sed 's/.*@//')
   install-playwright:
     runs-on: ubuntu-latest
+    needs: prepare-version
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v3
@@ -16,7 +21,7 @@ jobs:
         run: yarn
       - name: Store Playwright's Version
         run: |
-          PLAYWRIGHT_VERSION=$(npm ls @playwright/test | grep @playwright | sed 's/.*@//')
+          PLAYWRIGHT_VERSION=${{ needs.prepare-version.outputs.playwright-version }}
           echo "Playwright's Version: $PLAYWRIGHT_VERSION"
           echo "PLAYWRIGHT_VERSION=$PLAYWRIGHT_VERSION" >> $GITHUB_ENV
       - name: Cache Playwright Browsers for Playwright's Version
@@ -24,7 +29,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.cache/ms-playwright
-          key: playwright-browsers-${{ env.PLAYWRIGHT_VERSION }}
+          key: playwright-browsers-${{ needs.prepare-version.outputs.playwright-version }}
       - name: Setup Playwright
         if: steps.cache-playwright-browsers.outputs.cache-hit != 'true'
         run: yarn playwright install --with-deps
