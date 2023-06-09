@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./.github/workflows/setup-playwright
+      - uses: wix/wix-appointments-subscriptions-nextjs-template/.github/workflows/setup-playwright
       - name: Waiting for 200 from the Netlify Preview
         uses: jakepartusch/wait-for-netlify-action@v1.4
         id: waitFor200
@@ -41,7 +41,7 @@ jobs:
     if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success' && contains(github.event.deployment_status.target_url, 'vercel-demo-wix-appointments')
     steps:
     - uses: actions/checkout@v3
-    - uses: ./.github/workflows/setup-playwright
+    - uses: wix/wix-appointments-subscriptions-nextjs-template/.github/workflows/setup-playwright
     - name: Run E2E Tests on Vercel URL
       run: REMOTE_PROVIDER=vercel yarn e2e
       env:
