@@ -1,7 +1,5 @@
 name: Netlify E2E
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
 jobs:
@@ -36,7 +34,7 @@ jobs:
         id: waitFor200
         with:
           site_name: "wix-appointments-subscriptions-nextjs" # TODO: change to your site name
-          max_timeout: 360 # 6 Minutes, depends on your build pipeline duration
+          max_timeout: 120 # 2 Minutes, depends on your build pipeline duration
       - name: Run E2E Tests on Netlify URL
         run: REMOTE_PROVIDER=netlify yarn e2e
         env:
