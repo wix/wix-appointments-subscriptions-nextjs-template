@@ -6,9 +6,9 @@ on:
   deployment_status:
 jobs:
   audit-trigger:
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-      name: Audit
+    - name: Audit
       run: |
         echo "Deployment State: ${{ github.event.deployment_status.state }}"
         echo "URL: ${{ github.event.deployment_status.target_url }}"
