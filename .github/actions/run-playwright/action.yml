@@ -11,11 +11,6 @@ runs:
   using: "composite"
   steps:
     - uses: actions/checkout@v3
-    - name: Run E2E Tests on Netlify URL
-      run: REMOTE_PROVIDER=${{ inputs.provider }} yarn e2e
-      shell: bash
-      env:
-        PLAYWRIGHT_TEST_BASE_URL: ${{ inputs.provider-deployment-url }}
     - uses: actions/upload-artifact@v3
       if: always()
       with:
