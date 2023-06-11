@@ -12,6 +12,8 @@ jobs:
         with:
           node-version: 16
           cache: 'yarn'
+      - name: Install dependencies
+        run: yarn
       - uses: ./.github/actions/setup-playwright
       - name: Waiting for 200 from the Netlify Preview
         uses: jakepartusch/wait-for-netlify-action@v1.4
@@ -19,11 +21,6 @@ jobs:
         with:
           site_name: "wix-appointments-subscriptions-nextjs" # TODO: change to your site name
           max_timeout: 120 # 2 Minutes, depends on your build pipeline duration
-      - name: Run E2E Tests on Netlify URL
-        run: REMOTE_PROVIDER=${{ inputs.provider }} yarn e2e
-        shell: bash
-        env:
-          PLAYWRIGHT_TEST_BASE_URL: ${{ steps.waitFor200.outputs.url }}
       - uses: ./.github/actions/run-playwright
         with:
           provider: 'netlify'

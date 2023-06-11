@@ -3,10 +3,6 @@ description: 'Setup Playwright With Cache'
 runs:
   using: "composite"
   steps:
-    - uses: actions/checkout@v3
-    - name: Install dependencies
-      run: yarn
-      shell: bash
     - name: Store Playwright's Version
       id: store-playwright-version
       run: |

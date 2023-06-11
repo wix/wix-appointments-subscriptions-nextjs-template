@@ -15,6 +15,8 @@ jobs:
       with:
         node-version: 16
         cache: 'yarn'
+    - name: Install dependencies
+      run: yarn
     - uses: ./.github/actions/setup-playwright
     - uses: ./.github/actions/run-playwright
       with:
