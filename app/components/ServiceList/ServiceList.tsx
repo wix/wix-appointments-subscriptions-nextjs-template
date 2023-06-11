@@ -71,7 +71,7 @@ export default function ServiceList({
       {servicesToDisplay?.length ? (
         <div
           className="p-3 container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
-          data-testid={testIds.SERVICE_LIST.SERVICES_CONTAINER}
+          data-testid={testIds.SERVICE_LIST.CONTAINER}
         >
           {servicesToDisplay.map((service, index) => (
             <ServiceCard service={service} key={service.id} />
@@ -102,7 +102,10 @@ const ServiceCard = ({ service }: { service: ServiceInfoViewModel }) => {
   );
 
   return (
-    <div className="w-full rounded-none bg-white overflow-hidden mx-auto border border-white relative h-full min-h-[500px]">
+    <div
+      className="w-full rounded-none bg-white overflow-hidden mx-auto border border-white relative h-full min-h-[500px]"
+      data-testid={testIds.SERVICE_ITEM.CONTAINER}
+    >
       <a href={`/service/${service.slug}`}>
         <WixMediaImage
           media={service.info.media.mainMedia}
@@ -124,7 +127,11 @@ const ServiceCard = ({ service }: { service: ServiceInfoViewModel }) => {
         </div>
       </div>
       <div className="w-full mx-auto pb-8 absolute bottom-0 text-center">
-        <a href={`/calendar/${service.slug}`} className="btn-main">
+        <a
+          href={`/calendar/${service.slug}`}
+          className="btn-main"
+          data-testid={testIds.SERVICE_ITEM.BOOK_NOW_CTA}
+        >
           Book Now
         </a>
       </div>
