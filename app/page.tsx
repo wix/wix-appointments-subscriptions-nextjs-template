@@ -3,6 +3,7 @@ import ServiceListPreview from '@app/components/ServiceList/ServiceListPreview';
 import ScrollIntoView from '@app/components/ScrollIntoView/ScrollIntoView';
 import { useServerAuthSession } from '@app/hooks/useServerAuthSession';
 import { safeGetServices } from '@app/model/service/service-api';
+import testIds from '@app/utils/test-ids';
 
 export default async function Home() {
   const wixSession = useServerAuthSession();
@@ -11,7 +12,10 @@ export default async function Home() {
   } = await safeGetServices(wixSession, { limit: 3 });
   return (
     <div>
-      <div className="text-center w-full min-h-screen relative">
+      <div
+        className="text-center w-full min-h-screen relative"
+        data-testid={testIds.HOME_PAGE.HEADER}
+      >
         <video autoPlay muted loop className="video-background">
           <source
             src="https://video.wixstatic.com/video/11062b_9de2dbff3dda403b944bb98c41cb5764/1080p/mp4/file.mp4"
@@ -75,7 +79,10 @@ export default async function Home() {
       </div>
       <div className="parallax-background">
         {services?.length ? (
-          <div className="max-w-full-content mx-auto bg-transparent p-5">
+          <div
+            className="max-w-full-content mx-auto bg-transparent p-5"
+            data-testid={testIds.HOME_PAGE.SERVICES_SECTION}
+          >
             <div className="header-line my-8"></div>
             <h2 className="mb-7 mt-10 tracking-tighter title max-w-xs">
               How I Can Help You

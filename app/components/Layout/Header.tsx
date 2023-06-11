@@ -1,8 +1,12 @@
 import { NavBar } from '@app/components/Layout/NavBar/NavBar';
+import testIds from '@app/utils/test-ids';
 
 const Header = () => (
   <>
-    <header className="absolute md:fixed h-header bg-white z-40 w-full">
+    <header
+      className="absolute md:fixed h-header bg-white z-40 w-full"
+      data-testid={testIds.PAGE.HEADER}
+    >
       <div className="relative flex justify-center max-w-full-content mx-auto gap-8 h-header items-center">
         <a
           href="/"

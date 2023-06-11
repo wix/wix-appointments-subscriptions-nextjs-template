@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "test": "",
+    "test": "yarn e2e",
+    "e2e": "yarn playwright test",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix"
@@ -28,6 +29,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.34.3",
     "@types/cookie": "^0.5.1",
     "@types/js-cookie": "^3.0.3",
     "@types/node": "18.13.0",
