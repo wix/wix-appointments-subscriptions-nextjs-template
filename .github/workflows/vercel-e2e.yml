@@ -5,13 +5,6 @@ name: Vercel E2E
 on:
   deployment_status:
 jobs:
-  audit-trigger:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Audit
-      run: |
-        echo "Deployment State: ${{ github.event.deployment_status.state }}"
-        echo "URL: ${{ github.event.deployment_status.target_url }}"
   vercel-e2e:
     if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success' && contains(github.event.deployment_status.target_url, 'vercel-demo-wix-appointments') # TODO: change to your site name
     timeout-minutes: 60
