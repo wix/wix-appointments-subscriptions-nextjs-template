@@ -4,6 +4,7 @@ import { formatCurrencyToParts } from '@app/utils/price-formtter';
 import { getCheckoutUrl } from '@app/model/paid-plans/paid-plans-checkout';
 import PlanSelect from '@app/components/Plan/PlanSelect';
 import { plans } from '@wix/pricing-plans';
+import testIds from '@app/utils/test-ids';
 
 const durationPeriodFormatter = (
   period: plans.PeriodUnit = plans.PeriodUnit.UNDEFINED
@@ -67,7 +68,7 @@ export default async function PlansPage({
   return (
     <div className="max-w-full-content mx-auto pb-8">
       <div className="px-5">
-        <div className="pt-5 pb-12">
+        <div className="pt-5 pb-12" data-testid={testIds.PLANS_PAGE.HEADER}>
           <div className="header-line my-8"></div>
           <h1 className="mb-2 mt-10 tracking-tighter">
             Choose the Plan for You
@@ -78,7 +79,10 @@ export default async function PlansPage({
           </p>
         </div>
         {plans?.length ? (
-          <div className="p-3 pt-8 container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div
+            className="p-3 pt-8 container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+            data-testid={testIds.PLAN_LIST.CONTAINER}
+          >
             {plans.map((plan) => {
               const priceParts = formatCurrencyToParts(
                 plan.pricing?.price?.value,
@@ -86,6 +90,7 @@ export default async function PlansPage({
               );
               return (
                 <li
+                  data-testid={testIds.PLAN_ITEM.CONTAINER}
                   key={plan._id}
                   className="w-full list-none rounded-none bg-white overflow-hidden mx-auto border-black border-2 m-0 p-0 bg-opacity-50 flex flex-col"
                 >

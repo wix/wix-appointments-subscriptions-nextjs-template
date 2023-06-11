@@ -8,6 +8,7 @@ import { SlotViewModel } from '@app/components/Calendar/CalendarSections/Calenda
 import type { availabilityCalendar } from '@wix/bookings';
 import { useClientAuthSession } from '@app/hooks/useClientAuthSession';
 import { createRedirectCallbacks } from '@app/model/redirects/redirect.utils';
+import testIds from '@app/utils/test-ids';
 
 const CalendarSidebar = ({
   service,
@@ -117,6 +118,7 @@ const CalendarSidebar = ({
         </section>
         <div className="mt-7">
           <button
+            data-testid={testIds.CALENDAR.CHECKOUT_CTA}
             disabled={!selectedSlot || redirecting}
             className="btn-main w-full"
             onClick={goToCheckout}

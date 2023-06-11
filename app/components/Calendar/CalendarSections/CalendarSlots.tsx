@@ -2,6 +2,7 @@
 import { PropsWithChildren } from 'react';
 import { Tooltip } from 'flowbite-react';
 import type { availabilityCalendar } from '@wix/bookings';
+import testIds from '@app/utils/test-ids';
 
 export type SlotViewModel = {
   formattedTime: string;
@@ -53,6 +54,7 @@ const CalendarSlots = ({
         index
       ) => (
         <button
+          data-testid={testIds.CALENDAR.SLOT_CTA}
           key={index}
           className={`px-3 py-1.5 w-full border-2 flex justify-center ${
             bookable

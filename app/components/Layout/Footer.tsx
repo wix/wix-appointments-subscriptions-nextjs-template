@@ -1,9 +1,10 @@
 import './footer.css';
 import Image from 'next/image';
 import ScrollIntoView from '@app/components/ScrollIntoView/ScrollIntoView';
+import testIds from '@app/utils/test-ids';
 
 const FooterNote = () => (
-  <div className="text-xs">
+  <div className="text-xs" data-testid={testIds.LAYOUT.FOOTER}>
     <p>© 2023 by Personal Life Coach.</p>
     <p>
       <span>Powered and secured by </span>

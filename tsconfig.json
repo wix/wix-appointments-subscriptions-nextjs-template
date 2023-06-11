@@ -4,6 +4,7 @@
     "paths": {
       "@statics/*": ["public/*"],
       "@app/*": ["app/*"],
+      "@tests/*": ["tests/*"],
       "@model/*": ["src/model/*"],
       "@api/*": ["src/pages/api/*"]
     },
