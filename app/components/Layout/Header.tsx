@@ -5,7 +5,7 @@ const Header = () => (
   <>
     <header
       className="absolute md:fixed h-header bg-white z-40 w-full"
-      data-testid={testIds.PAGE.HEADER}
+      data-testid={testIds.LAYOUT.HEADER}
     >
       <div className="relative flex justify-center max-w-full-content mx-auto gap-8 h-header items-center">
         <a

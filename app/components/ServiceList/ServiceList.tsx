@@ -1,6 +1,7 @@
 import WixMediaImage from '@app/components/Image/WixMediaImage';
 import { ServiceInfoViewModel } from '@app/model/service/service.mapper';
 import { useServiceFormattedPrice } from '@app/hooks/useServiceFormattedPrice';
+import testIds from '@app/utils/test-ids';
 
 const ALL_SERVICES_CATEGORY_ID = 'ALL';
 
@@ -68,7 +69,10 @@ export default function ServiceList({
         </ul>
       </div>
       {servicesToDisplay?.length ? (
-        <div className="p-3 container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div
+          className="p-3 container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+          data-testid={testIds.SERVICE_LIST.SERVICES_CONTAINER}
+        >
           {servicesToDisplay.map((service, index) => (
             <ServiceCard service={service} key={service.id} />
           ))}
