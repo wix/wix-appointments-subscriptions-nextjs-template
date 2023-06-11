@@ -6,7 +6,9 @@ test.describe('Home Page', () => {
   test('present services in the home screen', async ({ page }) => {
     await page.goto(PATH);
 
-    const servicesSection = await page.getByTestId(testIds.HOME_PAGE.HEADER);
+    const servicesSection = await page.getByTestId(
+      testIds.HOME_PAGE.SERVICES_SECTION
+    );
     await expect(servicesSection).toBeVisible();
   });
 
