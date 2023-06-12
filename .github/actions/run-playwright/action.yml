@@ -25,5 +25,5 @@ runs:
       if: always()
       with:
         name: screenshots-${{inputs.provider}}
-        path: tests/e2e/__screenshots__
+        path: tests/e2e/__screenshots__/${{inputs.provider}}
         retention-days: 10
