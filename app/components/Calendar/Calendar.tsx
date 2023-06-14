@@ -13,9 +13,7 @@ import {
   formatISO,
 } from 'date-fns';
 import { Suspense } from 'react';
-// react-day-picker/dist/index.js incorrectly uses "require"
-// @ts-ignore
-import { DayPicker } from 'react-day-picker/dist/index.esm';
+import { DayPicker } from 'react-day-picker';
 import {
   useFormattedTimezone,
   useUserTimezone,
@@ -26,6 +24,7 @@ import CalendarSlots, {
 } from '@app/components/Calendar/CalendarSections/CalendarSlots';
 import CalendarSidebar from '@app/components/Calendar/CalendarSections/CalendarSidebar';
 import { availabilityCalendar } from '@wix/bookings';
+import testIds from '@app/utils/test-ids';
 
 type CalendarDateRange = { from: string; to: string };
 
@@ -125,7 +124,8 @@ export function CalendarView({ service }: { service: ServiceInfoViewModel }) {
               modifiersClassNames={{
                 daysWithSlots:
                   'relative inline-block before:block before:absolute ' +
-                  'before:-skew-y-3 before:bg-gray-700 before:dot-md-center',
+                  'before:-skew-y-3 before:bg-gray-700 before:dot-md-center ' +
+                  testIds.CALENDAR.DAY_WITH_SLOT_CLASSNAME,
               }}
               mode="single"
               selected={selectedDate}
@@ -155,6 +155,7 @@ export function CalendarView({ service }: { service: ServiceInfoViewModel }) {
             ) : !!nextAvailableDate ? (
               <div className="pt-4">
                 <button
+                  data-testid={testIds.CALENDAR.NEXT_AVAILABLE_SLOT_CTA}
                   className="btn-main w-full"
                   onClick={() => setSelectedDate(nextAvailableDate)}
                 >

@@ -33,7 +33,11 @@ export default async function Home() {
             Now Available for Online Coaching
           </div>
           <div className="pt-7">
-            <a className="btn-main" href="/book-now">
+            <a
+              className="btn-main"
+              href="/book-now"
+              data-testid={testIds.HOME_PAGE.BOOK_NOW_CTA}
+            >
               Book Now
             </a>
           </div>
