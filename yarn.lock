@@ -1216,7 +1216,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:^2.2.6, classnames@npm:^2.3.2":
+"classnames@npm:^2.2.6":
   version: 2.3.2
   resolution: "classnames@npm:2.3.2"
   checksum: 2c62199789618d95545c872787137262e741f9db13328e216b093eea91c85ef2bfb152c1f9e63027204e2559a006a92eb74147d46c800a9f96297ae1d9f96f4e
@@ -2095,19 +2095,19 @@ __metadata:
   linkType: hard
 
 "flowbite-react@npm:^0.4.4":
-  version: 0.4.7
-  resolution: "flowbite-react@npm:0.4.7"
+  version: 0.4.8
+  resolution: "flowbite-react@npm:0.4.8"
   dependencies:
     "@floating-ui/react": ^0.24.1
-    classnames: ^2.3.2
     flowbite: ^1.6.5
     react-icons: ^4.8.0
     react-indiana-drag-scroll: ^2.2.0
+    tailwind-merge: ^1.13.1
   peerDependencies:
     react: ^18
     react-dom: ^18
     tailwindcss: ^3
-  checksum: 8c598b180043d5f7e74a719654a8c2c3448ee2358e852707d36d23c06846b83cc012e50ebda0cd358d5924a86c89d37806b5b82df8bebfc3158991e4735a7afd
+  checksum: 998a9a3fde1372c7d51daeee072f4e0f9d154360e7b52ef75346244bff9c2bd94fdb916cae994a26c81203eadd5decb853af51a9d20bcec10a4153bf3052b572
   languageName: node
   linkType: hard
 
@@ -4445,6 +4445,13 @@ __metadata:
   version: 6.1.2
   resolution: "tabbable@npm:6.1.2"
   checksum: 1e2d9af4f172a3793f491bab10263c26903c2be6a5c4ab723d69d1ba2054828d22a50add9ba7fc42735468871d40054d906fa4f0a9dc2fbd4feff875e84c1a89
+  languageName: node
+  linkType: hard
+
+"tailwind-merge@npm:^1.13.1":
+  version: 1.13.2
+  resolution: "tailwind-merge@npm:1.13.2"
+  checksum: 8f9de3bd1e6271f5980f863ab85e0103f062bf84d814d3188bf6870af7eb43725ea40493ef0693dedd652b668cbdfcd6544235b16b70d438ed20bca6118a9066
   languageName: node
   linkType: hard
 
