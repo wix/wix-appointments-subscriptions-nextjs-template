@@ -1,7 +1,7 @@
 name: Netlify E2E
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    branches: [ main ]
 jobs:
   netlify-e2e:
     timeout-minutes: 60
