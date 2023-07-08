@@ -581,13 +581,13 @@ __metadata:
   linkType: hard
 
 "@wix/bookings@npm:^1.0.122":
-  version: 1.0.192
-  resolution: "@wix/bookings@npm:1.0.192"
+  version: 1.0.195
+  resolution: "@wix/bookings@npm:1.0.195"
   dependencies:
     "@wix/metro-runtime": ^1.0.0
     "@wix/motion-edm-autogen-query-wrapper": ^1.0.0
     "@wix/sdk-types": ^1.0.0
-  checksum: 06c833801a6c7e0e99953d20fecb7c3046da7a8fe57198a5c38ce21a34a2e01f900fc470a157c029f0eb67547525ed8934be552652ea005ed7d893fc25514957
+  checksum: 1f856513f2006a4da5a5b570ae4ba80550dc4a4e967306c7dbd0bb652f8647fd2d948beec14b2cd4b12f9834269fab35452b63d4aba1b8c6e387fa26589b2b3e
   languageName: node
   linkType: hard
 
