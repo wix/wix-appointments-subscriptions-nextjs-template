@@ -23,7 +23,7 @@
     "flowbite-react": "^0.4.4",
     "js-cookie": "^3.0.1",
     "jsurl": "^0.1.5",
-    "next": "13.3.1",
+    "next": "^13.4.9",
     "react": "18.2.0",
     "react-day-picker": "^8.5.1",
     "react-dom": "18.2.0"
@@ -37,7 +37,7 @@
     "@types/react-dom": "18.0.10",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.33.0",
-    "eslint-config-next": "13.3.1",
+    "eslint-config-next": "^13.4.9",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "postcss": "^8.4.21",
