@@ -7,23 +7,107 @@ inputs:
   provider:
     description: 'Which next deployment provider is used'
     required: true
+  githubToken:
+    description: 'GitHub Token'
+    required: true
+  prNumber:
+    description: 'Pull request ID (optional)'
+    required: false
+outputs:
+  conclusion:
+    description: 'E2E result'
 runs:
   using: "composite"
   steps:
     - name: Run E2E Tests on Netlify URL
+      id: playwright-e2e
       run: REMOTE_PROVIDER=${{ inputs.provider }} yarn e2e
       shell: bash
       env:
         PLAYWRIGHT_TEST_BASE_URL: ${{ inputs.provider-deployment-url }}
     - uses: actions/upload-artifact@v3
+      id: playwright-report-artifact
       if: always()
       with:
         name: playwright-report-${{ inputs.provider }}
         path: playwright-report/
         retention-days: 10
     - uses: actions/upload-artifact@v3
+      id: playwright-screenshots-artifact
       if: always()
       with:
         name: screenshots-${{inputs.provider}}
         path: tests/e2e/__screenshots__/${{inputs.provider}}
         retention-days: 10
+    - uses: actions/github-script@v6
+      if: always()
+      with:
+        github-token: ${{ inputs.githubToken }}
+        script: |
+          const conclusion = '${{ steps.playwright-e2e.outcome }}';
+          const prNumber = '${{ inputs.prNumber }}';
+          const provider = '${{ inputs.provider }}';
+          const deploymentUrl = '${{ inputs.provider-deployment-url }}';
+          
+          if (prNumber && conclusion) {
+            core.setOutput('conclusion', conclusion);
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const jobName = context.job;
+            const runId = context.runId;
+
+            const pullRequest = await github.rest.pulls.get({
+              owner,
+              repo,
+              pull_number: prNumber,
+            });
+            const checksForPr = await github.rest.checks.listForRef({
+              owner: owner,
+              repo: repo,
+              ref: pullRequest.data.head.ref,
+            });
+          
+            let checkRunId = null;
+            for (const checkRun of checksForPr.data.check_runs) {
+              if (checkRun.name === jobName) {
+                checkRunId = checkRun.id;
+                console.log(`Found Check Run ID: ${checkRunId}`);
+                break;
+              }
+            }
+          
+            if (checkRunId) {
+              const checkInput = {
+                owner,
+                repo,
+                check_run_id: checkRunId,
+                pull_request: prNumber,
+                status: 'completed',
+                conclusion: conclusion,
+                output: {
+                  title: `e2e ${provider}`,
+                  summary: `e2e ${provider}: ${conclusion}`,
+                },
+              };
+              github.rest.checks.update(checkInput).catch((error) => {
+                console.warn('Error updating check:', error, ' flow continues');
+              });
+            }
+            // Create a comment with the artifact links on the pull request
+            const artifactLinks = [
+              `## ${conclusion === 'success' ? ':green_circle:' : ':red_circle:'} Playwright E2E for ${provider.toUpperCase()}`,
+              `| Name | Info    |`,
+              `|------|---------|`,
+              `| Summary | [Action Summary](https://github.com/${owner}/${repo}/actions/runs/${runId}/) |`,
+              `| Site URL | [${deploymentUrl}](${deploymentUrl}) |`,
+            ];
+            const comment = artifactLinks.join('\n');
+            github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: pullRequest.data.number,
+              body: comment
+            }).catch((error) => {
+              console.warn('Error creating comment:', error, ' flow continues');
+            });
+          }
