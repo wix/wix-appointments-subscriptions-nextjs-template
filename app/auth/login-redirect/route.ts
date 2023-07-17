@@ -3,6 +3,7 @@ import {
   AUTH_CALLBACK_PATHNAME,
   AUTH_LOGIN_CALLBACK_PARAM,
   OAUTH_COOKIE_STATE,
+  PROMPT_QUERY_PARAM,
 } from '@app/model/auth/auth.const';
 import { getServerWixClient } from '@app/model/auth/wix-client.server';
 import { getRequestUrl } from '@app/model/server-utils';
@@ -17,7 +18,8 @@ export async function GET(request: NextRequest) {
   const requestUrl = getRequestUrl(request);
   const { searchParams } = new URL(requestUrl);
   const originalUrl = searchParams.get(AUTH_LOGIN_CALLBACK_PARAM);
-  const prompt = (searchParams.get('prompt') as 'login' | 'none') ?? 'login';
+  const prompt =
+    (searchParams.get(PROMPT_QUERY_PARAM) as 'login' | 'none') ?? 'login';
   if (!originalUrl) {
     throw new Error(
       `${AUTH_LOGIN_CALLBACK_PARAM} is required for login redirect`

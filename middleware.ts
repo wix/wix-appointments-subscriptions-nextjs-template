@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import {
   AUTH_LOGIN_CALLBACK_PARAM,
   AUTH_LOGIN_PATHNAME,
+  PROMPT_QUERY_PARAM,
   REDIRECT_FROM_WIX_LOGIN_STATUS,
   WIX_REFRESH_TOKEN,
 } from '@app/model/auth/auth.const';
@@ -58,7 +59,7 @@ export async function middleware(request: NextRequest) {
       AUTH_LOGIN_CALLBACK_PARAM,
       loginCallbackUrl.toString()
     );
-    redirectUrl.searchParams.set('prompt', 'none');
+    redirectUrl.searchParams.set(PROMPT_QUERY_PARAM, 'none');
     return NextResponse.redirect(redirectUrl);
   }
   return res;
