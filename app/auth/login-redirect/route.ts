@@ -17,6 +17,7 @@ export async function GET(request: NextRequest) {
   const requestUrl = getRequestUrl(request);
   const { searchParams } = new URL(requestUrl);
   const originalUrl = searchParams.get(AUTH_LOGIN_CALLBACK_PARAM);
+  const prompt = (searchParams.get('prompt') as 'login' | 'none') ?? 'login';
   if (!originalUrl) {
     throw new Error(
       `${AUTH_LOGIN_CALLBACK_PARAM} is required for login redirect`
@@ -24,7 +25,9 @@ export async function GET(request: NextRequest) {
   }
   const redirectUrl = new URL(AUTH_CALLBACK_PATHNAME, requestUrl).toString();
   const oauthData = wixClient!.auth.generateOAuthData(redirectUrl, originalUrl);
-  const { authUrl } = await wixClient!.auth.getAuthUrl(oauthData);
+  const { authUrl } = await wixClient!.auth.getAuthUrl(oauthData, {
+    prompt,
+  });
   const response = NextResponse.redirect(authUrl);
   response.cookies.set({
     name: OAUTH_COOKIE_STATE,

@@ -58,6 +58,7 @@ export async function middleware(request: NextRequest) {
       AUTH_LOGIN_CALLBACK_PARAM,
       loginCallbackUrl.toString()
     );
+    redirectUrl.searchParams.set('prompt', 'none');
     return NextResponse.redirect(redirectUrl);
   }
   return res;
