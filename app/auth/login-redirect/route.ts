@@ -17,7 +17,7 @@ export async function GET(request: NextRequest) {
   const requestUrl = getRequestUrl(request);
   const { searchParams } = new URL(requestUrl);
   const originalUrl = searchParams.get(AUTH_LOGIN_CALLBACK_PARAM);
-  const prompt = searchParams.get('prompt') ?? 'login';
+  const prompt = (searchParams.get('prompt') as 'login' | 'none') ?? 'login';
   if (!originalUrl) {
     throw new Error(
       `${AUTH_LOGIN_CALLBACK_PARAM} is required for login redirect`
