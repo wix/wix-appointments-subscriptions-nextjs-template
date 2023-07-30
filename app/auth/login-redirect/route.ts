@@ -29,6 +29,7 @@ export async function GET(request: NextRequest) {
   const oauthData = wixClient!.auth.generateOAuthData(redirectUrl, originalUrl);
   const { authUrl } = await wixClient!.auth.getAuthUrl(oauthData, {
     prompt,
+    responseMode: 'query',
   });
   const response = NextResponse.redirect(authUrl);
   response.cookies.set({
