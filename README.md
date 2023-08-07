@@ -10,13 +10,13 @@ To integrate the Wix Bookings and Wix Pricing Plans business solutions with the 
 
 ### Step 1: Create a project on Wix
 
-Create a [new Wix Headless project](https://www.wix.com/intro/headless). For instructions on creating a Wix project, see [Create a Wix Headless Project](https://dev.wix.com/api/sdk/setup:-wix-headless/create-a-project).
+Create a [new Wix Headless project](https://www.wix.com/intro/headless?referral_info=netlify_github_coacher). For instructions on creating a Wix project, see [Create a Wix Headless Project](https://dev.wix.com/docs/go-headless/getting-started/setup/general-setup/create-a-project).
 
 When prompted to add functionalities to your new project, select Bookings and Pricing Plans:
 
 ![Apps Menu - select Bookings and Pricing Plans](docs/media/project-business-solutions.png)
 
-You can also add business solutions to your project later. See [Add Apps to a Project](https://dev.wix.com/api/sdk/setup:-wix-headless/add-apps-to-a-project).
+You can also add business solutions to your project later. See [Add Apps to a Project](https://dev.wix.com/docs/go-headless/getting-started/setup/general-setup/add-apps-to-a-project).
 
 ### Step 2: Set up the Wix business solutions you need
 
