@@ -209,12 +209,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:13.4.13":
-  version: 13.4.13
-  resolution: "@next/eslint-plugin-next@npm:13.4.13"
+"@next/eslint-plugin-next@npm:13.4.19":
+  version: 13.4.19
+  resolution: "@next/eslint-plugin-next@npm:13.4.19"
   dependencies:
     glob: 7.1.7
-  checksum: cd1e9c2a2bcda62ac28dc0bb5d19f8d74b31ac85adbd5e101c1c854480bcff3dfc7bc11be12d386898e61f0256e6d8c33022cfcf288a2bd5c4d061ab473c336f
+  checksum: d60c136e4a8d156b50d4b248eef9918bbf4bd7da293487cdf1f7bc172b07beeae4a2822798942d2f87999af86c53d871ebea592f3d6099ae23a0746d2abf7c73
   languageName: node
   linkType: hard
 
@@ -343,18 +343,18 @@ __metadata:
   linkType: hard
 
 "@playwright/test@npm:^1.34.3":
-  version: 1.37.0
-  resolution: "@playwright/test@npm:1.37.0"
+  version: 1.37.1
+  resolution: "@playwright/test@npm:1.37.1"
   dependencies:
     "@types/node": "*"
     fsevents: 2.3.2
-    playwright-core: 1.37.0
+    playwright-core: 1.37.1
   dependenciesMeta:
     fsevents:
       optional: true
   bin:
     playwright: cli.js
-  checksum: 59ccc519396c5cd66ba27bfc821b6a6483a9a426824eedb85cbd05b1cfb817f62bc1e1d893878582cf88af441a8a45aa83e678ab1d3145b54838c7c2e917b8a2
+  checksum: b7038f29000289103c08b215eff7aabdda70cdc1375fa7dad0e81651be71086a1e2fc0e0e29dc70348037c366cf0cc69f762373fda34ba1a74aa1658741d9195
   languageName: node
   linkType: hard
 
@@ -574,13 +574,13 @@ __metadata:
   linkType: hard
 
 "@wix/bookings@npm:^1.0.122":
-  version: 1.0.222
-  resolution: "@wix/bookings@npm:1.0.222"
+  version: 1.0.226
+  resolution: "@wix/bookings@npm:1.0.226"
   dependencies:
     "@wix/metro-runtime": ^1.0.0
     "@wix/motion-edm-autogen-query-wrapper": ^1.0.0
     "@wix/sdk-types": ^1.0.0
-  checksum: bb22d6b694fe87745578c4f6c70c1333babcfcc977b25580e8fd8edf8e76cf96d265f785bfa8b708db98e6ed02b09699de4c6db6a2582e7444815ebab4222dd6
+  checksum: cabffc92687de80028901df23ed7aaa866f2cb05599aa0ce9f52220fe3cf752b678d5b63bbbeb158d3c97b7dc862198b218538c28cc4f88e6313838cbba4463d
   languageName: node
   linkType: hard
 
@@ -993,11 +993,11 @@ __metadata:
   linkType: hard
 
 "autoprefixer@npm:^10.4.13":
-  version: 10.4.14
-  resolution: "autoprefixer@npm:10.4.14"
+  version: 10.4.15
+  resolution: "autoprefixer@npm:10.4.15"
   dependencies:
-    browserslist: ^4.21.5
-    caniuse-lite: ^1.0.30001464
+    browserslist: ^4.21.10
+    caniuse-lite: ^1.0.30001520
     fraction.js: ^4.2.0
     normalize-range: ^0.1.2
     picocolors: ^1.0.0
@@ -1006,7 +1006,7 @@ __metadata:
     postcss: ^8.1.0
   bin:
     autoprefixer: bin/autoprefixer
-  checksum: e9f18e664a4e4a54a8f4ec5f6b49ed228ec45afaa76efcae361c93721795dc5ab644f36d2fdfc0dea446b02a8067b9372f91542ea431994399e972781ed46d95
+  checksum: d490b14fb098c043e109fc13cd23628f146af99a493d35b9df3a26f8ec0b4dd8937c5601cdbaeb465b98ea31d3ea05aa7184711d4d93dfb52358d073dcb67032
   languageName: node
   linkType: hard
 
@@ -1091,17 +1091,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.21.5":
-  version: 4.21.5
-  resolution: "browserslist@npm:4.21.5"
+"browserslist@npm:^4.21.10":
+  version: 4.21.10
+  resolution: "browserslist@npm:4.21.10"
   dependencies:
-    caniuse-lite: ^1.0.30001449
-    electron-to-chromium: ^1.4.284
-    node-releases: ^2.0.8
-    update-browserslist-db: ^1.0.10
+    caniuse-lite: ^1.0.30001517
+    electron-to-chromium: ^1.4.477
+    node-releases: ^2.0.13
+    update-browserslist-db: ^1.0.11
   bin:
     browserslist: cli.js
-  checksum: 9755986b22e73a6a1497fd8797aedd88e04270be33ce66ed5d85a1c8a798292a65e222b0f251bafa1c2522261e237d73b08b58689d4920a607e5a53d56dc4706
+  checksum: 1e27c0f111a35d1dd0e8fc2c61781b0daefabc2c9471b0b10537ce54843014bceb2a1ce4571af1a82b2bf1e6e6e05d38865916689a158f03bc2c7a4ec2577db8
   languageName: node
   linkType: hard
 
@@ -1173,10 +1173,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001406, caniuse-lite@npm:^1.0.30001449, caniuse-lite@npm:^1.0.30001464":
+"caniuse-lite@npm:^1.0.30001406":
   version: 1.0.30001486
   resolution: "caniuse-lite@npm:1.0.30001486"
   checksum: 5e8c2ba2679e4ad17dea6d2761a6449b814441bfeac81af6cc9d58af187df6af4b79b27befcbfc4a557e720b21c0399a7d1911c8705922e38938dcc0f40b5d4b
+  languageName: node
+  linkType: hard
+
+"caniuse-lite@npm:^1.0.30001517, caniuse-lite@npm:^1.0.30001520":
+  version: 1.0.30001522
+  resolution: "caniuse-lite@npm:1.0.30001522"
+  checksum: 56e3551c02ae595085114073cf242f7d9d54d32255c80893ca9098a44f44fc6eef353936f234f31c7f4cb894dd2b6c9c4626e30649ee29e04d70aa127eeefeb0
   languageName: node
   linkType: hard
 
@@ -1522,10 +1529,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-to-chromium@npm:^1.4.284":
-  version: 1.4.387
-  resolution: "electron-to-chromium@npm:1.4.387"
-  checksum: 3c1ddddad5b9d86aa68cbe002e76b9ce1ed2b220b766f33249ea40cd3ae7be8af93f75a05f27a3e13e039801d936ce302b61f74cb054023180369541e4a31197
+"electron-to-chromium@npm:^1.4.477":
+  version: 1.4.496
+  resolution: "electron-to-chromium@npm:1.4.496"
+  checksum: b90cc4cc71691a9506bcce3b8b184d22794c58b4a2af5e95f7bc305b254e8c5af06b51e26f866d018aaf70b80e0fb498e3a196c5841765bcf05bac9f0f924624
   languageName: node
   linkType: hard
 
@@ -1681,10 +1688,10 @@ __metadata:
   linkType: hard
 
 "eslint-config-next@npm:^13.4.9":
-  version: 13.4.13
-  resolution: "eslint-config-next@npm:13.4.13"
+  version: 13.4.19
+  resolution: "eslint-config-next@npm:13.4.19"
   dependencies:
-    "@next/eslint-plugin-next": 13.4.13
+    "@next/eslint-plugin-next": 13.4.19
     "@rushstack/eslint-patch": ^1.1.3
     "@typescript-eslint/parser": ^5.4.2 || ^6.0.0
     eslint-import-resolver-node: ^0.3.6
@@ -1692,14 +1699,14 @@ __metadata:
     eslint-plugin-import: ^2.26.0
     eslint-plugin-jsx-a11y: ^6.5.1
     eslint-plugin-react: ^7.31.7
-    eslint-plugin-react-hooks: 5.0.0-canary-7118f5dd7-20230705
+    eslint-plugin-react-hooks: ^4.5.0 || 5.0.0-canary-7118f5dd7-20230705
   peerDependencies:
     eslint: ^7.23.0 || ^8.0.0
     typescript: ">=3.3.1"
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 992f98cef6b2c00220ee642df82333b03566042a6c9115a57041884fc22284c6f89f2fc2ea30a1355b73dc3e2124047de2cf64cf1bf5ed041d998f436e98a894
+  checksum: 2b2e527facf98326486b2ce806043f41d1f5a969405d2e546d4726462de3fdd05f720ec97d27952abacb09c34e31f3896da05c0c135e65f587376db9ddd71424
   languageName: node
   linkType: hard
 
@@ -1822,7 +1829,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:5.0.0-canary-7118f5dd7-20230705":
+"eslint-plugin-react-hooks@npm:^4.5.0 || 5.0.0-canary-7118f5dd7-20230705":
   version: 5.0.0-canary-7118f5dd7-20230705
   resolution: "eslint-plugin-react-hooks@npm:5.0.0-canary-7118f5dd7-20230705"
   peerDependencies:
@@ -3420,10 +3427,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-releases@npm:^2.0.8":
-  version: 2.0.10
-  resolution: "node-releases@npm:2.0.10"
-  checksum: d784ecde25696a15d449c4433077f5cce620ed30a1656c4abf31282bfc691a70d9618bae6868d247a67914d1be5cc4fde22f65a05f4398cdfb92e0fc83cadfbc
+"node-releases@npm:^2.0.13":
+  version: 2.0.13
+  resolution: "node-releases@npm:2.0.13"
+  checksum: 17ec8f315dba62710cae71a8dad3cd0288ba943d2ece43504b3b1aa8625bf138637798ab470b1d9035b0545996f63000a8a926e0f6d35d0996424f8b6d36dda3
   languageName: node
   linkType: hard
 
@@ -3743,12 +3750,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.37.0":
-  version: 1.37.0
-  resolution: "playwright-core@npm:1.37.0"
+"playwright-core@npm:1.37.1":
+  version: 1.37.1
+  resolution: "playwright-core@npm:1.37.1"
   bin:
     playwright-core: cli.js
-  checksum: be91857b1bb56890b3929ed8cd529f5f5abe4b748f709abc8dbe5b0ee4c0e158247c3958fbccec6a52394dafe4619bc0e69c93d1b129a71b31ab3697771e4c5a
+  checksum: 69f818da2230057584140d5b3af7778a4f4a822b5b18d133abfc5d259128becb943c343a2ddf6b0635277a69f28983e83e2bc3fce23595ececb1e410475b6368
   languageName: node
   linkType: hard
 
@@ -3834,13 +3841,13 @@ __metadata:
   linkType: hard
 
 "postcss@npm:^8.4.21, postcss@npm:^8.4.23":
-  version: 8.4.27
-  resolution: "postcss@npm:8.4.27"
+  version: 8.4.28
+  resolution: "postcss@npm:8.4.28"
   dependencies:
     nanoid: ^3.3.6
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
-  checksum: 1cdd0c298849df6cd65f7e646a3ba36870a37b65f55fd59d1a165539c263e9b4872a402bf4ed1ca1bc31f58b68b2835545e33ea1a23b161a1f8aa6d5ded81e78
+  checksum: f605c24a36f7e400bad379735fbfc893ccb8d293ad6d419bb824db77cdcb69f43d614ef35f9f7091f32ca588d130ec60dbcf53b366e6bf88a8a64bbeb3c05f6d
   languageName: node
   linkType: hard
 
@@ -3919,12 +3926,12 @@ __metadata:
   linkType: hard
 
 "react-day-picker@npm:^8.5.1":
-  version: 8.8.0
-  resolution: "react-day-picker@npm:8.8.0"
+  version: 8.8.1
+  resolution: "react-day-picker@npm:8.8.1"
   peerDependencies:
     date-fns: ^2.28.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: c104b4ae44bad44183f6a273327aa1d00d23afe6f3860f8335eea2d06c0f64ea015ea7438655c79a5024a8db259ba5fa9431dbf92f03889120d0c2c00a28117f
+  checksum: d11864808219d7ae1b526595884d28992c1f6479efc00497bb5bafc9c3a81c33ec060a735bc4789ed4c762a8297da5dff4d2826c62bef218370ba2003aa79c9f
   languageName: node
   linkType: hard
 
@@ -4709,7 +4716,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"update-browserslist-db@npm:^1.0.10":
+"update-browserslist-db@npm:^1.0.11":
   version: 1.0.11
   resolution: "update-browserslist-db@npm:1.0.11"
   dependencies:
