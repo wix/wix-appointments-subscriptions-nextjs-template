@@ -36,6 +36,6 @@ test.describe('Calendar Page', () => {
 
     await waitForWixSite(page);
 
-    await expect(await page.getByText('Service Details')).toBeVisible();
+    await expect(await page.getByText('Booking Details')).toBeVisible();
   });
 });
