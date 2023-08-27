@@ -72,10 +72,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:^8.47.0":
-  version: 8.47.0
-  resolution: "@eslint/js@npm:8.47.0"
-  checksum: 0ef57fe27b6d4c305b33f3b2d2fee1ab397a619006f1d6f4ce5ee4746b8f03d11a4e098805a7d78601ca534cf72917d37f0ac19896c992a32e26299ecb9f9de1
+"@eslint/js@npm:8.48.0":
+  version: 8.48.0
+  resolution: "@eslint/js@npm:8.48.0"
+  checksum: b2755f9c0ee810c886eba3c50dcacb184ba5a5cd1cbc01988ee506ad7340653cae0bd55f1d95c64b56dfc6d25c2caa7825335ffd2c50165bae9996fe0f396851
   languageName: node
   linkType: hard
 
@@ -381,18 +381,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-core@npm:4.32.6":
-  version: 4.32.6
-  resolution: "@tanstack/query-core@npm:4.32.6"
-  checksum: c06f4b8d7edfc237d34da14c4ff2c71f4e6de662f123914419e9c2fbb9dccb7c1d3f46afd66ca5fea40687c5a99e514750a32a05e809d0db76343a90a45c76a8
+"@tanstack/query-core@npm:4.33.0":
+  version: 4.33.0
+  resolution: "@tanstack/query-core@npm:4.33.0"
+  checksum: fae325f1d79b936435787797c32367331d5b8e9c5ced84852bf2085115e3aafef57a7ae530a6b0af46da4abafb4b0afaef885926b71715a0e6f166d74da61c7f
   languageName: node
   linkType: hard
 
 "@tanstack/react-query@npm:^4.24.4":
-  version: 4.32.6
-  resolution: "@tanstack/react-query@npm:4.32.6"
+  version: 4.33.0
+  resolution: "@tanstack/react-query@npm:4.33.0"
   dependencies:
-    "@tanstack/query-core": 4.32.6
+    "@tanstack/query-core": 4.33.0
     use-sync-external-store: ^1.2.0
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -403,7 +403,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 5ce7939515329d64aee35703de8f030bba383717e68eefb17a32492cca44d8421175b7045e0fd6314faff11cee8a570f42208685947a97bc50d0023d5ae1029e
+  checksum: b3cf4afa427435e464e077b3f23c891e38e5f78873518f15c1d061ad55f1464d6241ecd92d796a5dbc9412b4fd7eb30b01f2a9cfc285ee9f30dfdd2ca0ecaf4b
   languageName: node
   linkType: hard
 
@@ -574,13 +574,13 @@ __metadata:
   linkType: hard
 
 "@wix/bookings@npm:^1.0.122":
-  version: 1.0.227
-  resolution: "@wix/bookings@npm:1.0.227"
+  version: 1.0.232
+  resolution: "@wix/bookings@npm:1.0.232"
   dependencies:
     "@wix/metro-runtime": ^1.0.0
     "@wix/motion-edm-autogen-query-wrapper": ^1.0.0
     "@wix/sdk-types": ^1.0.0
-  checksum: ba6515714d473dc96f26d2323a74090e4a8d5dadfb5f6aac46e394868c3b6ea7e1105f1d05982f2a0168673a030c3f6bd8b9b1040b8eabcf4c2ee246bd13bdf2
+  checksum: 5b8a680426b523f853172591151044aef63bbef118da7d37737339eab3325b5af071a55a72a3386e83e09ad7a77ecb3aeb5d7116d6f4a1b28239db58b5e4646f
   languageName: node
   linkType: hard
 
@@ -730,13 +730,13 @@ __metadata:
   linkType: hard
 
 "@wix/pricing-plans@npm:^1.0.17":
-  version: 1.0.30
-  resolution: "@wix/pricing-plans@npm:1.0.30"
+  version: 1.0.31
+  resolution: "@wix/pricing-plans@npm:1.0.31"
   dependencies:
     "@wix/metro-runtime": ^1.0.0
     "@wix/motion-edm-autogen-query-wrapper": ^1.0.0
     "@wix/sdk-types": ^1.0.0
-  checksum: 8e527f3767a9acee9c9533e9b8f348f6c66ebee8d3188b78d3ed8b6d6992268b4627bab419f0b2add470439860884c9419ff35c7478ccef9a8b4ac221f537f33
+  checksum: 89d4c71900698668f2b375b7d0ee4dc397a7cb89ad1c79a281d05c841d227fb858f32b871f91b205900ded30f6057291fd1b53dfff766b2fc1bc069de8b7dde0
   languageName: node
   linkType: hard
 
@@ -1888,13 +1888,13 @@ __metadata:
   linkType: hard
 
 "eslint@npm:^8.33.0":
-  version: 8.47.0
-  resolution: "eslint@npm:8.47.0"
+  version: 8.48.0
+  resolution: "eslint@npm:8.48.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@eslint-community/regexpp": ^4.6.1
     "@eslint/eslintrc": ^2.1.2
-    "@eslint/js": ^8.47.0
+    "@eslint/js": 8.48.0
     "@humanwhocodes/config-array": ^0.11.10
     "@humanwhocodes/module-importer": ^1.0.1
     "@nodelib/fs.walk": ^1.2.8
@@ -1930,7 +1930,7 @@ __metadata:
     text-table: ^0.2.0
   bin:
     eslint: bin/eslint.js
-  checksum: 1988617f703eadc5c7540468d54dc8e5171cf2bb9483f6172799cd1ff54a9a5e4470f003784e8cef92687eaa14de37172732787040e67817581a20bcb9c15970
+  checksum: f20b359a4f8123fec5c033577368cc020d42978b1b45303974acd8da7a27063168ee3fe297ab5b35327162f6a93154063e3ce6577102f70f9809aff793db9bd0
   languageName: node
   linkType: hard
 
