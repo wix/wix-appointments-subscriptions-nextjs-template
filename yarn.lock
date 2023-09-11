@@ -72,10 +72,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:8.48.0":
-  version: 8.48.0
-  resolution: "@eslint/js@npm:8.48.0"
-  checksum: b2755f9c0ee810c886eba3c50dcacb184ba5a5cd1cbc01988ee506ad7340653cae0bd55f1d95c64b56dfc6d25c2caa7825335ffd2c50165bae9996fe0f396851
+"@eslint/js@npm:8.49.0":
+  version: 8.49.0
+  resolution: "@eslint/js@npm:8.49.0"
+  checksum: a6601807c8aeeefe866926ad92ed98007c034a735af20ff709009e39ad1337474243d47908500a3bde04e37bfba16bcf1d3452417f962e1345bc8756edd6b830
   languageName: node
   linkType: hard
 
@@ -128,14 +128,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@humanwhocodes/config-array@npm:^0.11.10":
-  version: 0.11.10
-  resolution: "@humanwhocodes/config-array@npm:0.11.10"
+"@humanwhocodes/config-array@npm:^0.11.11":
+  version: 0.11.11
+  resolution: "@humanwhocodes/config-array@npm:0.11.11"
   dependencies:
     "@humanwhocodes/object-schema": ^1.2.1
     debug: ^4.1.1
     minimatch: ^3.0.5
-  checksum: 1b1302e2403d0e35bc43e66d67a2b36b0ad1119efc704b5faff68c41f791a052355b010fb2d27ef022670f550de24cd6d08d5ecf0821c16326b7dcd0ee5d5d8a
+  checksum: db84507375ab77b8ffdd24f498a5b49ad6b64391d30dd2ac56885501d03964d29637e05b1ed5aefa09d57ac667e28028bc22d2da872bfcd619652fbdb5f4ca19
   languageName: node
   linkType: hard
 
@@ -381,18 +381,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-core@npm:4.33.0":
-  version: 4.33.0
-  resolution: "@tanstack/query-core@npm:4.33.0"
-  checksum: fae325f1d79b936435787797c32367331d5b8e9c5ced84852bf2085115e3aafef57a7ae530a6b0af46da4abafb4b0afaef885926b71715a0e6f166d74da61c7f
+"@tanstack/query-core@npm:4.35.0":
+  version: 4.35.0
+  resolution: "@tanstack/query-core@npm:4.35.0"
+  checksum: 7a6f24164bce5d7367e2bb58f94380d9608bf4df2726e4e8b0e4f42e84d40cc7883baab2127c0c7e8eaa5c4d444a80c1e5f6e7930d21768a863c82baf22a75d4
   languageName: node
   linkType: hard
 
 "@tanstack/react-query@npm:^4.24.4":
-  version: 4.33.0
-  resolution: "@tanstack/react-query@npm:4.33.0"
+  version: 4.35.0
+  resolution: "@tanstack/react-query@npm:4.35.0"
   dependencies:
-    "@tanstack/query-core": 4.33.0
+    "@tanstack/query-core": 4.35.0
     use-sync-external-store: ^1.2.0
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -403,7 +403,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: b3cf4afa427435e464e077b3f23c891e38e5f78873518f15c1d061ad55f1464d6241ecd92d796a5dbc9412b4fd7eb30b01f2a9cfc285ee9f30dfdd2ca0ecaf4b
+  checksum: d3a140a010f0266eca9dae83c4995f2b541ceb8cafafd7247c5c17ec4e09416d2f2a88450f23ebab45c132125e4e4222e77a69354c0dd5d459170c7a24f1b172
   languageName: node
   linkType: hard
 
@@ -415,9 +415,9 @@ __metadata:
   linkType: hard
 
 "@types/cookie@npm:^0.5.1":
-  version: 0.5.1
-  resolution: "@types/cookie@npm:0.5.1"
-  checksum: 9a8d60fc84797122bc399d6bd330fe5780dc7aab032321de705049ea925339f74658bfa418de483a625d51858770efef58df633ff2e20f1bdf7fbd74a52847e2
+  version: 0.5.2
+  resolution: "@types/cookie@npm:0.5.2"
+  checksum: 4a1e46379d877f5a3cc687a9799dd72e5f7e68c4764d45cb469789dec92b4b4a7a5bb8b10a08c90be15939fa7b9b402f87ed339dfac0cabf43699c5189880e88
   languageName: node
   linkType: hard
 
@@ -574,13 +574,13 @@ __metadata:
   linkType: hard
 
 "@wix/bookings@npm:^1.0.122":
-  version: 1.0.245
-  resolution: "@wix/bookings@npm:1.0.245"
+  version: 1.0.255
+  resolution: "@wix/bookings@npm:1.0.255"
   dependencies:
     "@wix/metro-runtime": ^1.0.0
     "@wix/motion-edm-autogen-query-wrapper": ^1.0.0
     "@wix/sdk-types": ^1.0.0
-  checksum: cb94c3a41c55a04f7ec4097780f50845bf3b1ece7e0e7c62019b5e181b97f0d8fbb4a3880602a7f95079c56a162a788e67437914b202a19c5c9bf7d359d6b432
+  checksum: 74f40faa986d661ea75d2fc928eb92124ebcae9141b63b49e5820369759ddce6989d3e519a296341ae1bc94024a2db1268582fc49c2f147ed0a32e02b7f097f2
   languageName: node
   linkType: hard
 
@@ -617,13 +617,13 @@ __metadata:
   linkType: hard
 
 "@wix/members@npm:^1.0.12":
-  version: 1.0.21
-  resolution: "@wix/members@npm:1.0.21"
+  version: 1.0.23
+  resolution: "@wix/members@npm:1.0.23"
   dependencies:
     "@wix/metro-runtime": ^1.0.0
     "@wix/motion-edm-autogen-query-wrapper": ^1.0.0
     "@wix/sdk-types": ^1.0.0
-  checksum: f362ecfb9da59cd0140e2a892a439c9a1f34c0bfb6641f653fec6ef636a64275a2b32322a641deddc28cb3f198fb89182bb07055571abfaadc43e07e91be3877
+  checksum: 10603acfe743c22d1bac606be298f843e70740eba86b9d8c7ca1bcda6782874e251f63e28f3d6f845622708b1544241c1a16d0b65d6224df4e440bc6fc979bad
   languageName: node
   linkType: hard
 
@@ -1886,14 +1886,14 @@ __metadata:
   linkType: hard
 
 "eslint@npm:^8.33.0":
-  version: 8.48.0
-  resolution: "eslint@npm:8.48.0"
+  version: 8.49.0
+  resolution: "eslint@npm:8.49.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@eslint-community/regexpp": ^4.6.1
     "@eslint/eslintrc": ^2.1.2
-    "@eslint/js": 8.48.0
-    "@humanwhocodes/config-array": ^0.11.10
+    "@eslint/js": 8.49.0
+    "@humanwhocodes/config-array": ^0.11.11
     "@humanwhocodes/module-importer": ^1.0.1
     "@nodelib/fs.walk": ^1.2.8
     ajv: ^6.12.4
@@ -1928,7 +1928,7 @@ __metadata:
     text-table: ^0.2.0
   bin:
     eslint: bin/eslint.js
-  checksum: f20b359a4f8123fec5c033577368cc020d42978b1b45303974acd8da7a27063168ee3fe297ab5b35327162f6a93154063e3ce6577102f70f9809aff793db9bd0
+  checksum: 4dfe257e1e42da2f9da872b05aaaf99b0f5aa022c1a91eee8f2af1ab72651b596366320c575ccd4e0469f7b4c97aff5bb85ae3323ebd6a293c3faef4028b0d81
   languageName: node
   linkType: hard
 
