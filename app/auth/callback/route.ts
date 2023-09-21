@@ -5,7 +5,7 @@ import {
 } from '@app/model/auth/auth.const';
 import { getServerWixClient } from '@app/model/auth/wix-client.server';
 import { getRequestUrl } from '@app/model/server-utils';
-import { OauthData } from '@wix/api-client';
+import { OauthData } from '@wix/sdk';
 import { cookies } from 'next/headers';
 import { NextRequest, NextResponse } from 'next/server';
 

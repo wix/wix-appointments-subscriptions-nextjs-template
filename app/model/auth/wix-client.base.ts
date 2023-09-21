@@ -1,4 +1,4 @@
-import { createClient, OAuthStrategy } from '@wix/api-client';
+import { createClient, OAuthStrategy } from '@wix/sdk';
 import {
   availabilityCalendar,
   services,
