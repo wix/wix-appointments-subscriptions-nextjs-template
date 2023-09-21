@@ -545,23 +545,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/api-client@npm:^1.2.7":
-  version: 1.5.0
-  resolution: "@wix/api-client@npm:1.5.0"
-  dependencies:
-    "@babel/runtime": ^7.22.15
-    "@wix/identity": ^1.0.57
-    "@wix/image-kit": ^1.37.0
-    "@wix/metro-runtime": ^1.1529.0
-    "@wix/redirects": ^1.0.24
-    "@wix/sdk-types": 1.5.0
-    pkce-challenge: ^3.1.0
-    querystring: ^0.2.1
-    type-fest: ^3.13.1
-  checksum: 64b64114dcc55a14c2a2e48bfdbc4d61c83638326f6f5b8f9585a96b0c67a72df91da91746a3f96d60531e5229dfe845b2553d838b8ffad232e4c735af1a3494
-  languageName: node
-  linkType: hard
-
 "@wix/bookings@npm:^1.0.122":
   version: 1.0.256
   resolution: "@wix/bookings@npm:1.0.256"
@@ -841,6 +824,27 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.21.5
   checksum: e1a53c7bb922a9c7ff21d8e1f6b7c80ea91d59a823db353b66bce9d9fb78b8e2cf303ee4da07a2a0570e54d81d5ad96227f5c3faeb261c2b15994369fd71a5bd
+  languageName: node
+  linkType: hard
+
+"@wix/sdk@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@wix/sdk@npm:1.5.0"
+  dependencies:
+    "@babel/runtime": ^7.22.15
+    "@wix/identity": ^1.0.57
+    "@wix/image-kit": ^1.37.0
+    "@wix/metro-runtime": ^1.1529.0
+    "@wix/redirects": ^1.0.24
+    "@wix/sdk-types": 1.5.0
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+    pkce-challenge: ^3.1.0
+    querystring: ^0.2.1
+    type-fest: ^3.13.1
+  dependenciesMeta:
+    graphql:
+      optional: true
+  checksum: ecd32f9c5b2a79b4697281b7bda89ef6bff1b5476437107d994c0782257628cced433b74379f515f26e68cc872e099d0b6292bae0d1028b6cfdbd4f140b142a1
   languageName: node
   linkType: hard
 
@@ -2492,6 +2496,13 @@ __metadata:
   version: 1.4.0
   resolution: "graphemer@npm:1.4.0"
   checksum: bab8f0be9b568857c7bec9fda95a89f87b783546d02951c40c33f84d05bb7da3fd10f863a9beb901463669b6583173a8c8cc6d6b306ea2b9b9d5d3d943c3a673
+  languageName: node
+  linkType: hard
+
+"graphql@npm:^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0":
+  version: 16.8.1
+  resolution: "graphql@npm:16.8.1"
+  checksum: 8d304b7b6f708c8c5cc164b06e92467dfe36aff6d4f2cf31dd19c4c2905a0e7b89edac4b7e225871131fd24e21460836b369de0c06532644d15b461d55b1ccc0
   languageName: node
   linkType: hard
 
@@ -4948,11 +4959,11 @@ __metadata:
     "@types/node": 18.13.0
     "@types/react": 18.0.27
     "@types/react-dom": 18.0.10
-    "@wix/api-client": ^1.2.7
     "@wix/bookings": ^1.0.122
     "@wix/members": ^1.0.12
     "@wix/pricing-plans": ^1.0.17
     "@wix/redirects": ^1.0.13
+    "@wix/sdk": ^1.5.0
     autoprefixer: ^10.4.13
     cookie: ^0.5.0
     date-fns: ^2.29.3

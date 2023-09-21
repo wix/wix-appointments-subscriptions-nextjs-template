@@ -1,5 +1,5 @@
 import { ServiceImage } from '@app/model/service/service.mapper';
-import { media as wixMedia } from '@wix/api-client';
+import { media as wixMedia } from '@wix/sdk';
 
 export const getImageUrlForMedia = (
   media?: ServiceImage,
