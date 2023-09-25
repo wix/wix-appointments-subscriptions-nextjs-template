@@ -42,7 +42,7 @@ Run the development server:
 Edit the template:
 
 - Start editing the homepage by modifying **app/page.tsx**. The page auto-updates as you edit the file.
-- Edit any other page using the pattern **app/<route>/page.tsx**. For more information, see [Defining Routes](https://beta.nextjs.org/docs/routing/defining-routes) in the Next.js documentation.
+- Edit any other page using the pattern **app/page.tsx**. For more information, see [Defining Routes](https://beta.nextjs.org/docs/routing/defining-routes) in the Next.js documentation.
 
 # Deployment
 
@@ -60,7 +60,6 @@ To learn more about Next.js, see:
 
 - [Next.js documentation](https://nextjs.org/docs): Learn about Next.js features and APIs.
 - [Learn Next.js](https://nextjs.org/learn): An interactive Next.js tutorial.
-- [Next.js app directory](https://beta.nextjs.org/docs/app-directory-roadmap): Information on the Next.js App Router Roadmap.
 
 Additionally, this template uses the following libraries and features:
 
