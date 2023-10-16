@@ -13,7 +13,7 @@
   "dependencies": {
     "@tanstack/react-query": "^4.24.4",
     "@wix/bookings": "^1.0.122",
-    "@wix/members": "^1.0.12",
+    "@wix/members": "^1.0.38",
     "@wix/pricing-plans": "^1.0.17",
     "@wix/redirects": "^1.0.13",
     "@wix/sdk": "^1.5.0",
