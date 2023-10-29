@@ -581,24 +581,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/identity@npm:^1.0.59":
-  version: 1.0.59
-  resolution: "@wix/identity@npm:1.0.59"
+"@wix/identity@npm:^1.0.60":
+  version: 1.0.60
+  resolution: "@wix/identity@npm:1.0.60"
   dependencies:
     "@wix/metro-runtime": ^1.0.0
     "@wix/motion-edm-autogen-query-wrapper": ^1.0.0
     "@wix/sdk-types": ^1.0.0
-  checksum: ec203082e7bff3e588cdef4f06650e7bc0942217aeaae101951be2ddc8e169ca185c65a675133f2e53608c38ad331450fe62f49b455ecc54f337fe753482c097
+  checksum: e52b05918213f71e07130a192ebdced42148d49c05fec573611ac37c11069484fcaa79bde11ebb8c730076fc3addd7f3ba3bb44ed165e30c1b30d7373d2f3ea6
   languageName: node
   linkType: hard
 
-"@wix/image-kit@npm:^1.37.0":
-  version: 1.37.0
-  resolution: "@wix/image-kit@npm:1.37.0"
+"@wix/image-kit@npm:^1.38.0":
+  version: 1.38.0
+  resolution: "@wix/image-kit@npm:1.38.0"
   dependencies:
     "@babel/runtime": ^7.0.0
     tslib: ^2.0.0
-  checksum: 6eac4482a930feefb30d22d05ed5746238cd7bdf0a193a1f4631ad783cb9d12a72dc11e9c358c6eef1a0efc72c885663e9ab140d2920abfe6a3e84cb73c86d90
+  checksum: 126b7315d3b1b9f37198186eb3630d7983cbc902bf6df4166c61077b4a1873b7116c3859fefaba1b4f6982437dfdcf9b44cd8dbc22f4bad804ea39cdf556c8e4
   languageName: node
   linkType: hard
 
@@ -726,7 +726,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/redirects@npm:^1.0.13, @wix/redirects@npm:^1.0.25":
+"@wix/redirects@npm:^1.0.13, @wix/redirects@npm:^1.0.26":
   version: 1.0.26
   resolution: "@wix/redirects@npm:1.0.26"
   dependencies:
@@ -754,13 +754,13 @@ __metadata:
   linkType: hard
 
 "@wix/sdk@npm:^1.5.0":
-  version: 1.5.4
-  resolution: "@wix/sdk@npm:1.5.4"
+  version: 1.5.6
+  resolution: "@wix/sdk@npm:1.5.6"
   dependencies:
     "@babel/runtime": ^7.23.2
-    "@wix/identity": ^1.0.59
-    "@wix/image-kit": ^1.37.0
-    "@wix/redirects": ^1.0.25
+    "@wix/identity": ^1.0.60
+    "@wix/image-kit": ^1.38.0
+    "@wix/redirects": ^1.0.26
     "@wix/sdk-types": 1.5.1
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     pkce-challenge: ^3.1.0
@@ -769,7 +769,7 @@ __metadata:
   dependenciesMeta:
     graphql:
       optional: true
-  checksum: 576c8d36f841c218b50e04e6b2c2e461e266b19961d7fac678f6c8daab66d9691343cdf83146963cebd4b8d7230e9fabc3b548356a9b40004bc65bb80947a94c
+  checksum: 0e84267d447835ea5cf77b5b7db85f063177e3c8718bd14a59908fd1e30e734640d360b54e9ab4ede4e5a24aae95b82fffb0b9bd6c6f2d6466cd4070e64f8bdb
   languageName: node
   linkType: hard
 
@@ -2192,6 +2192,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-glob@npm:^3.3.0":
+  version: 3.3.1
+  resolution: "fast-glob@npm:3.3.1"
+  dependencies:
+    "@nodelib/fs.stat": ^2.0.2
+    "@nodelib/fs.walk": ^1.2.3
+    glob-parent: ^5.1.2
+    merge2: ^1.3.0
+    micromatch: ^4.0.4
+  checksum: b6f3add6403e02cf3a798bfbb1183d0f6da2afd368f27456010c0bc1f9640aea308243d4cb2c0ab142f618276e65ecb8be1661d7c62a7b4e5ba774b9ce5432e5
+  languageName: node
+  linkType: hard
+
 "fast-json-stable-stringify@npm:^2.0.0":
   version: 2.1.0
   resolution: "fast-json-stable-stringify@npm:2.1.0"
@@ -3137,12 +3150,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jiti@npm:^1.18.2":
-  version: 1.18.2
-  resolution: "jiti@npm:1.18.2"
+"jiti@npm:^1.19.1":
+  version: 1.20.0
+  resolution: "jiti@npm:1.20.0"
   bin:
     jiti: bin/jiti.js
-  checksum: 46c41cd82d01c6efdee3fc0ae9b3e86ed37457192d6366f19157d863d64961b07982ab04e9d5879576a1af99cc4d132b0b73b336094f86a5ce9fb1029ec2d29f
+  checksum: 7924062b5675142e3e272a27735be84b7bfc0a0eb73217fc2dcafa034f37c4f7b4b9ffc07dd98bcff0f739a8811ce1544db205ae7e97b1c86f0df92c65ce3c72
   languageName: node
   linkType: hard
 
@@ -4852,18 +4865,18 @@ __metadata:
   linkType: hard
 
 "tailwindcss@npm:^3.2.6":
-  version: 3.3.3
-  resolution: "tailwindcss@npm:3.3.3"
+  version: 3.3.5
+  resolution: "tailwindcss@npm:3.3.5"
   dependencies:
     "@alloc/quick-lru": ^5.2.0
     arg: ^5.0.2
     chokidar: ^3.5.3
     didyoumean: ^1.2.2
     dlv: ^1.1.3
-    fast-glob: ^3.2.12
+    fast-glob: ^3.3.0
     glob-parent: ^6.0.2
     is-glob: ^4.0.3
-    jiti: ^1.18.2
+    jiti: ^1.19.1
     lilconfig: ^2.1.0
     micromatch: ^4.0.5
     normalize-path: ^3.0.0
@@ -4880,7 +4893,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: 0195c7a3ebb0de5e391d2a883d777c78a4749f0c532d204ee8aea9129f2ed8e701d8c0c276aa5f7338d07176a3c2a7682c1d0ab9c8a6c2abe6d9325c2954eb50
+  checksum: e04bb3bb7f9f17e9b6db0c7ace755ef0d6d05bff36ebeb9e5006e13c018ed5566f09db30a1a34380e38fa93ebbb4ae0e28fe726879d5e9ddd8c5b52bffd26f14
   languageName: node
   linkType: hard
 
