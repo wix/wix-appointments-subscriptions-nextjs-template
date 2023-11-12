@@ -417,16 +417,16 @@ __metadata:
   linkType: hard
 
 "@types/cookie@npm:^0.5.1":
-  version: 0.5.3
-  resolution: "@types/cookie@npm:0.5.3"
-  checksum: b785618f6b2fdceb6a20a17e1dfe99651b1e5c2c079f486de76dfb21b508f09d91913755e4a6dbdfe628882ea32466bb2e9318b114ce34efa5e624356494fcab
+  version: 0.5.4
+  resolution: "@types/cookie@npm:0.5.4"
+  checksum: bd9603ce5e9bcbe1c2c9fabe3d1b1da131f1db10a7fa0077b17eb06d59bf4a6192fbb890597e8e2295067a078aaf8299bc662bfe993e8c2d1ecd62f859317ece
   languageName: node
   linkType: hard
 
 "@types/js-cookie@npm:^3.0.3":
-  version: 3.0.5
-  resolution: "@types/js-cookie@npm:3.0.5"
-  checksum: 4d91ae26445499fdde283928aac9ad149be3561ef9b4d959f77e44694608accd5939c8c68ba42c50c2cfc007ccd442cc566a41077d7f2766390088fa91b612ce
+  version: 3.0.6
+  resolution: "@types/js-cookie@npm:3.0.6"
+  checksum: 272d551687547445cb210213c73e72e0e5d58ad73e2e444a65d688b8ff9425529779ee0cd6492aaa1f070161916d4254ef2b1a76d64179100437f60749d094ef
   languageName: node
   linkType: hard
 
@@ -560,13 +560,13 @@ __metadata:
   linkType: hard
 
 "@wix/bookings@npm:^1.0.122":
-  version: 1.0.273
-  resolution: "@wix/bookings@npm:1.0.273"
+  version: 1.0.276
+  resolution: "@wix/bookings@npm:1.0.276"
   dependencies:
     "@wix/metro-runtime": ^1.0.0
     "@wix/motion-edm-autogen-query-wrapper": ^1.0.0
     "@wix/sdk-types": ^1.0.0
-  checksum: e07158409049aa27f3a5e5a06adc551b48ceeab1904d7143e1da77d26003cb4b5b38e92f64719a578a4a8bdfbb99af7748205348a6ecd9629655674161cd7e6f
+  checksum: 860a4bf968a56d222db34858a7663637d2fe94284e6132afa051e2c9e56c92e40128d27034bd4d77568511bb0405d7ef3ff37c2d4bce009572f695718fcb0ffd
   languageName: node
   linkType: hard
 
