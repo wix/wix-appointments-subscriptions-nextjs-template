@@ -87,7 +87,7 @@ const Footer = () => (
                   <Image
                     width={25}
                     height={25}
-                    src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c7d035ba85f6486680c2facedecdcf4d.png"
+                    src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png"
                     alt="Twitter"
                   />
                 </a>
