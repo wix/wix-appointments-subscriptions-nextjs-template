@@ -4207,12 +4207,12 @@ __metadata:
   linkType: hard
 
 "react-day-picker@npm:^8.5.1":
-  version: 8.9.1
-  resolution: "react-day-picker@npm:8.9.1"
+  version: 8.10.0
+  resolution: "react-day-picker@npm:8.10.0"
   peerDependencies:
-    date-fns: ^2.28.0
+    date-fns: ^2.28.0 || ^3.0.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 1a609bd3621f66fd93c58635990246c6129e57ea33d05345256bdd561f56035a04b201213a279aa37129dbbe149ae5f0f15259a9d06309910d1c9a6bb6c0eccc
+  checksum: a265e8c2f3f0e92e5a23e2edeca40fe67c67c00bae64aa9e1a99c6fe7f58b2f697b538937822b8f68d4b890d7903a06f074f1365deb465a0aeef1a14c701cc65
   languageName: node
   linkType: hard
 
