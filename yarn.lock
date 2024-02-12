@@ -560,14 +560,14 @@ __metadata:
   linkType: hard
 
 "@wix/bookings@npm:^1.0.122":
-  version: 1.0.314
-  resolution: "@wix/bookings@npm:1.0.314"
+  version: 1.0.315
+  resolution: "@wix/bookings@npm:1.0.315"
   dependencies:
     "@wix/metro-runtime": ^1.1528.0
     "@wix/motion-edm-autogen-query-wrapper": ^1.0.37
     "@wix/sdk-runtime": ^0.2.7
     "@wix/sdk-types": ^1.5.3
-  checksum: 69d4aea0fcea2d8b2dd6d81dc2705876076600c4fb55dad4df0055264f711dfcbe098abc7656d6a3bca6f5207628c5ec0f2429f360509311164258b1678a558c
+  checksum: 4f32496b95e1e235dab1f16431163c15f3c313b90ef1df2901aac2af2ce4e9f816aa0e91e85a51eba78095674e3cf06034132771176eabd239b351e30c135e52
   languageName: node
   linkType: hard
 
@@ -891,7 +891,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/sdk-types@npm:^1.5.3":
+"@wix/sdk-types@npm:^1.5.3, @wix/sdk-types@npm:^1.5.6":
   version: 1.5.6
   resolution: "@wix/sdk-types@npm:1.5.6"
   checksum: 83131e53c6d071a87a5c2d924258a7b1b8c37b6ab82cb0eaeb2674378ebf92d6941ff97764f65b60b1f085092e164b11533e532ee3086a7bbbcd7c0eb1b1a218
@@ -906,14 +906,14 @@ __metadata:
   linkType: hard
 
 "@wix/sdk@npm:^1.5.0":
-  version: 1.7.2
-  resolution: "@wix/sdk@npm:1.7.2"
+  version: 1.7.4
+  resolution: "@wix/sdk@npm:1.7.4"
   dependencies:
     "@babel/runtime": ^7.23.2
     "@wix/identity": ^1.0.72
     "@wix/image-kit": ^1.50.0
     "@wix/redirects": ^1.0.32
-    "@wix/sdk-types": ^1.5.5
+    "@wix/sdk-types": ^1.5.6
     crypto-js: ^4.2.0
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     jsonwebtoken: ^9.0.2
@@ -923,7 +923,7 @@ __metadata:
   dependenciesMeta:
     graphql:
       optional: true
-  checksum: 6c10e658a52231ff488e22086527b1d46c10e71d18a0834ad4c0dfe34e419b455a860660d745830b39b1fd0d9f307a1ebf14d4e9cffb31f92052736513983e19
+  checksum: 15df537f8775228567975c7779c2b6b44ff891512be1244872390769170cc50cdda229eb1cf62ee62eab7e4f30965029eed70e739c20405b3291d8ba90924a18
   languageName: node
   linkType: hard
 
