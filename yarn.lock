@@ -843,14 +843,14 @@ __metadata:
   linkType: hard
 
 "@wix/pricing-plans@npm:^1.0.17":
-  version: 1.0.48
-  resolution: "@wix/pricing-plans@npm:1.0.48"
+  version: 1.0.52
+  resolution: "@wix/pricing-plans@npm:1.0.52"
   dependencies:
     "@wix/metro-runtime": ^1.1528.0
     "@wix/motion-edm-autogen-query-wrapper": ^1.0.37
     "@wix/sdk-runtime": ^0.2.7
     "@wix/sdk-types": ^1.5.3
-  checksum: b8ca8cfb4da42404092f03900bd8208e2e4abd74538ccc34bc3911b09e9403274d19e645861af415f317e235cae09d1e51e986e6e1212fcd93bd4305d8a7b9e4
+  checksum: f9040768177af8f80bfc41d99ee50300579d0123346d71de64457b33a0a499e4f12766248f4caee865706f356f1d32ac4c79748a98270d82d8b9362eb1c5dbdc
   languageName: node
   linkType: hard
 
