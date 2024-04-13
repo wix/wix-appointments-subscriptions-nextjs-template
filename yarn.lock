@@ -730,14 +730,36 @@ __metadata:
   linkType: hard
 
 "@wix/pricing-plans@npm:^1.0.17":
-  version: 1.0.54
-  resolution: "@wix/pricing-plans@npm:1.0.54"
+  version: 1.0.56
+  resolution: "@wix/pricing-plans@npm:1.0.56"
+  dependencies:
+    "@wix/pricing-plans_orders": 1.0.12
+    "@wix/pricing-plans_plans": 1.0.12
+  checksum: cf12e616d33fd10a463b3fa41cbbb49bc896d91c5544bc5bb0e9149149939be070471678e0ff8cedf666b019938ab230497ce25724c87a44ab0541ede8d52cdd
+  languageName: node
+  linkType: hard
+
+"@wix/pricing-plans_orders@npm:1.0.12":
+  version: 1.0.12
+  resolution: "@wix/pricing-plans_orders@npm:1.0.12"
   dependencies:
     "@wix/metro-runtime": ^1.1528.0
     "@wix/motion-edm-autogen-query-wrapper": ^1.0.37
-    "@wix/sdk-runtime": ^0.2.7
-    "@wix/sdk-types": ^1.5.9
-  checksum: 67f97078e7a26b5d86cd8e8c71fb2f43ef190f1bf8096ca6308dc7d4089ea4cc0be165813c344f210cfa696881db42ae21d61fef77df357751c16817232f3c25
+    "@wix/sdk-runtime": ^0.2.10
+    "@wix/sdk-types": ^1.5.11
+  checksum: fceb71d58daf695c4cd67af098cacd14b1e63627b92f69df42b6775d46b02f7a38cc7619bbab6da8bc8b0549a74bc24e139f91a75157eae2069a891d5ca94b83
+  languageName: node
+  linkType: hard
+
+"@wix/pricing-plans_plans@npm:1.0.12":
+  version: 1.0.12
+  resolution: "@wix/pricing-plans_plans@npm:1.0.12"
+  dependencies:
+    "@wix/metro-runtime": ^1.1528.0
+    "@wix/motion-edm-autogen-query-wrapper": ^1.0.37
+    "@wix/sdk-runtime": ^0.2.10
+    "@wix/sdk-types": ^1.5.11
+  checksum: 656898f5acd4434e6ba5c13189e29851f24e88ff64df738e9cb017581365611fdbee4bf709be2f14af9a41fb5c8a21c4fd5fefe272e80872a0de156a99f880ab
   languageName: node
   linkType: hard
 
@@ -750,6 +772,15 @@ __metadata:
     "@wix/sdk-runtime": ^0.2.7
     "@wix/sdk-types": ^1.5.9
   checksum: bbe155600578241ffd7ebbc7c95ebcb36b11ac32b99f64b0cc8af3fffd5dd55adc82f8fbe856652462fc1a2efe07aae5a923fc4fc42a26a44fb1afc14b3c2706
+  languageName: node
+  linkType: hard
+
+"@wix/sdk-runtime@npm:^0.2.10":
+  version: 0.2.11
+  resolution: "@wix/sdk-runtime@npm:0.2.11"
+  dependencies:
+    "@wix/sdk-types": ^1.5.11
+  checksum: b5ca9cab11986f40e1f5dcc4d7e897ef27923398f0b266aae995bf86b9520c328298e144846cf53bac5bd09de26ac06145927501c4f85ea2fc84d4311226264f
   languageName: node
   linkType: hard
 
