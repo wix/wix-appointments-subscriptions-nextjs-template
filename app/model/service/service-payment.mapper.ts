@@ -1,5 +1,4 @@
 import { services } from '@wix/bookings';
-import { RateType } from '@wix/bookings/build/cjs/src/bookings-services-v2-service.universal';
 
 export type ServicePaymentDto = ReturnType<typeof mapServicePaymentDto>;
 
@@ -20,19 +19,19 @@ export function mapServicePaymentDto(service: services.Service): {
   let priceText = undefined;
   let priceType: PriceTypeDto = 'text';
   switch (service.payment?.rateType) {
-    case RateType.FIXED:
+    case services.RateType.FIXED:
       defaultPrice = mapServiceMoneyDto(service?.payment?.fixed?.price);
       depositPrice = mapServiceMoneyDto(service?.payment?.fixed?.price);
       priceType = 'static';
       break;
-    case RateType.VARIED:
+    case services.RateType.VARIED:
       defaultPrice = mapServiceMoneyDto(service?.payment?.varied?.defaultPrice);
       depositPrice = mapServiceMoneyDto(service?.payment?.varied?.deposit);
       minPrice = mapServiceMoneyDto(service?.payment?.varied?.minPrice);
       maxPrice = mapServiceMoneyDto(service?.payment?.varied?.minPrice);
       priceType = 'dynamic';
       break;
-    case RateType.NO_FEE:
+    case services.RateType.NO_FEE:
       priceText = service?.payment?.custom?.description ?? undefined;
       break;
     default:
