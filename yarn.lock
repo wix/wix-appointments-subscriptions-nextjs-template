@@ -1163,8 +1163,8 @@ __metadata:
   linkType: hard
 
 "@wix/sdk@npm:^1.5.0":
-  version: 1.10.0
-  resolution: "@wix/sdk@npm:1.10.0"
+  version: 1.10.2
+  resolution: "@wix/sdk@npm:1.10.2"
   dependencies:
     "@babel/runtime": ^7.23.2
     "@wix/identity": ^1.0.78
@@ -1180,7 +1180,7 @@ __metadata:
   dependenciesMeta:
     graphql:
       optional: true
-  checksum: 1e41a9ea2216c65ed46b139cb5fc6b327e6f2354100cf4b23b958b3c0c3c0a190fa84774e47314e217dcca41bff4280cdde857b93dbdbc6f29f0917143a59942
+  checksum: 9f1d91ec9b7bd11944fc6d44cf6203089ea00f148605619ec9cacba92e9509e1d359d6c162d831c1c282e4f5a43c779b7ba2e0d313d4859d7ee447d2b11ccb57
   languageName: node
   linkType: hard
 
