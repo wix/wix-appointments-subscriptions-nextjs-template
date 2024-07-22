@@ -789,13 +789,13 @@ __metadata:
   linkType: hard
 
 "@wix/members@npm:^1.0.38":
-  version: 1.0.89
-  resolution: "@wix/members@npm:1.0.89"
+  version: 1.0.90
+  resolution: "@wix/members@npm:1.0.90"
   dependencies:
     "@wix/members_authentication": 1.0.18
     "@wix/members_badges": 1.0.26
     "@wix/members_members": 1.0.32
-  checksum: ff75ad53f5612a2040e9d2c6e0a992a21ce7acad85f9228d643389a39d6c46873caf9422462bac1b668c16be18204c47eea5223c233a35a7ba13f0ff32461f0f
+  checksum: 57fe9ed54f96bf26bf36800c26076bfd88ba6a3cbec2b171ae425e95c9f6dd8c7ee7d00a5e87548a4f7a4e12fc17f85a35e43bc78b2db790a1319c05f1466d5e
   languageName: node
   linkType: hard
 
