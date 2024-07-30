@@ -63,7 +63,7 @@ const Footer = () => (
             </p>
           </div>
           <div className="mb-16">
-            <ul aria-label="Social Bar" className="flex gap-4">
+            <ul aria-label="Social Bar" className="flex gap-4 items-center">
               <li>
                 <a
                   href="http://www.facebook.com/wix"
@@ -79,16 +79,12 @@ const Footer = () => (
                 </a>
               </li>
               <li>
-                <a
-                  href="http://www.twitter.com/wix"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="https://x.com/wix" target="_blank" rel="noreferrer">
                   <Image
-                    width={25}
-                    height={25}
-                    src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c7d035ba85f6486680c2facedecdcf4d.png"
-                    alt="Twitter"
+                    width={17}
+                    height={17}
+                    src="https://static.wixstatic.com/media/2be684_ea277e5149dc4b86ab826475d4d64c41~mv2.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2be684_ea277e5149dc4b86ab826475d4d64c41~mv2.png"
+                    alt="X"
                   />
                 </a>
               </li>
