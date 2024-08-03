@@ -787,13 +787,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/image-kit@npm:^1.74.0":
-  version: 1.77.0
-  resolution: "@wix/image-kit@npm:1.77.0"
+"@wix/image-kit@npm:^1.77.0":
+  version: 1.78.0
+  resolution: "@wix/image-kit@npm:1.78.0"
   dependencies:
     "@babel/runtime": ^7.25.0
     tslib: ^2.6.3
-  checksum: 3dad13c3e37ff63b3bfb40c45d708e33c73e0d7c24a0529ce0de43a323eaaca85604b43e23f7f01b12f882f9135f72ad301c3e651e3559dbbee9a44ed5cc5875
+  checksum: b9f2ccca1d111ce08dc616f7618c57ca58a97af01f66f3bb5c6c48960246d77ae516137cfe34316b6c881ce1c1f6ba6f93e94ea48646a0a3028045332b6c106d
   languageName: node
   linkType: hard
 
@@ -1046,13 +1046,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/sdk-runtime@npm:0.3.12":
-  version: 0.3.12
-  resolution: "@wix/sdk-runtime@npm:0.3.12"
+"@wix/sdk-runtime@npm:0.3.14":
+  version: 0.3.14
+  resolution: "@wix/sdk-runtime@npm:0.3.14"
   dependencies:
     "@wix/sdk-context": ^0.0.1
     "@wix/sdk-types": ^1.9.2
-  checksum: 7c2f3818a3a8578975d063f53474dbbcb614b40c6373b9591f82bde0d80138622e28776d65c13a57163b0acb3b22d6c94f3ca8074597b02cd69ea5bbcf60a8f2
+  checksum: 05e2087b0168bbf7c9ab6429b3d1430a6be14026b784257ce5eb07e0557b88aea0c67997df446bfc3629a59349a209a906751652dd1ef3af1600c4feebc017d6
   languageName: node
   linkType: hard
 
@@ -1090,26 +1090,27 @@ __metadata:
   linkType: hard
 
 "@wix/sdk@npm:^1.5.0":
-  version: 1.12.8
-  resolution: "@wix/sdk@npm:1.12.8"
+  version: 1.12.9
+  resolution: "@wix/sdk@npm:1.12.9"
   dependencies:
     "@babel/runtime": ^7.23.2
     "@wix/identity": ^1.0.78
-    "@wix/image-kit": ^1.74.0
+    "@wix/image-kit": ^1.77.0
     "@wix/redirects": ^1.0.41
     "@wix/sdk-context": ^0.0.1
-    "@wix/sdk-runtime": 0.3.12
+    "@wix/sdk-runtime": 0.3.14
     "@wix/sdk-types": ^1.9.2
     crypto-js: ^4.2.0
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     jose: ^5.2.1
+    nanoevents: ^9.0.0
     pkce-challenge: ^3.1.0
     querystring: ^0.2.1
     type-fest: ^4.9.0
   dependenciesMeta:
     graphql:
       optional: true
-  checksum: 365108b1795cce19d4f4f17381165f626f1974acd3c06841e379dd1ebe3728280f2f6289001c07deed59fd791c89a6e293ce61ea5ee9178dae23a147191f8031
+  checksum: 490dbd4661c04fe705a675b3403d208b51b96f6437ed4909f4e11bb748bfa084dc7e2d7d0e2a80eececb9502e684d47397b5842bfef6791544a2fb8cd730fa8c
   languageName: node
   linkType: hard
 
@@ -3776,6 +3777,13 @@ __metadata:
     object-assign: ^4.0.1
     thenify-all: ^1.0.0
   checksum: 8427de0ece99a07e9faed3c0c6778820d7543e3776f9a84d22cf0ec0a8eb65f6e9aee9c9d353ff9a105ff62d33a9463c6ca638974cc652ee8140cd1e35951c87
+  languageName: node
+  linkType: hard
+
+"nanoevents@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "nanoevents@npm:9.0.0"
+  checksum: d5e062bc67eac903991973ca923a0c9c6a3aa224583647540a0fdbe99d569f3c51f8fc6f281851e1721b24b3d0b8ea47c12215a50a0e1a3d0df1e64a41406974
   languageName: node
   linkType: hard
 
