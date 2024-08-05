@@ -787,7 +787,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/image-kit@npm:^1.77.0":
+"@wix/image-kit@npm:^1.78.0":
   version: 1.78.0
   resolution: "@wix/image-kit@npm:1.78.0"
   dependencies:
@@ -1090,12 +1090,12 @@ __metadata:
   linkType: hard
 
 "@wix/sdk@npm:^1.5.0":
-  version: 1.12.9
-  resolution: "@wix/sdk@npm:1.12.9"
+  version: 1.12.10
+  resolution: "@wix/sdk@npm:1.12.10"
   dependencies:
     "@babel/runtime": ^7.23.2
     "@wix/identity": ^1.0.78
-    "@wix/image-kit": ^1.77.0
+    "@wix/image-kit": ^1.78.0
     "@wix/redirects": ^1.0.41
     "@wix/sdk-context": ^0.0.1
     "@wix/sdk-runtime": 0.3.14
@@ -1103,14 +1103,13 @@ __metadata:
     crypto-js: ^4.2.0
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     jose: ^5.2.1
-    nanoevents: ^9.0.0
     pkce-challenge: ^3.1.0
     querystring: ^0.2.1
     type-fest: ^4.9.0
   dependenciesMeta:
     graphql:
       optional: true
-  checksum: 490dbd4661c04fe705a675b3403d208b51b96f6437ed4909f4e11bb748bfa084dc7e2d7d0e2a80eececb9502e684d47397b5842bfef6791544a2fb8cd730fa8c
+  checksum: 6d8e137f651cfc6e068f1f8c173f791d853fdeb4e8c00715bc93f91356e6c6285a54c9ce71ce51c97dc3a30d8cc2028d137c185d2552d9e1f98b820ad3fa64b6
   languageName: node
   linkType: hard
 
@@ -3784,13 +3783,6 @@ __metadata:
     object-assign: ^4.0.1
     thenify-all: ^1.0.0
   checksum: 8427de0ece99a07e9faed3c0c6778820d7543e3776f9a84d22cf0ec0a8eb65f6e9aee9c9d353ff9a105ff62d33a9463c6ca638974cc652ee8140cd1e35951c87
-  languageName: node
-  linkType: hard
-
-"nanoevents@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "nanoevents@npm:9.0.0"
-  checksum: d5e062bc67eac903991973ca923a0c9c6a3aa224583647540a0fdbe99d569f3c51f8fc6f281851e1721b24b3d0b8ea47c12215a50a0e1a3d0df1e64a41406974
   languageName: node
   linkType: hard
 
