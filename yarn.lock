@@ -1102,24 +1102,24 @@ __metadata:
   linkType: hard
 
 "@wix/pricing-plans@npm:^1.0.17":
-  version: 1.0.86
-  resolution: "@wix/pricing-plans@npm:1.0.86"
+  version: 1.0.87
+  resolution: "@wix/pricing-plans@npm:1.0.87"
   dependencies:
-    "@wix/pricing-plans_orders": 1.0.35
+    "@wix/pricing-plans_orders": 1.0.36
     "@wix/pricing-plans_plans": 1.0.38
-  checksum: f650a964b83806f20fbc8fb8de481d6ac69c4fed71a1b4f233f2ff6b5570aa1d8796b4836d7a0cd0dfbe823833c8584288950015ba61c929b3302c8083edc40e
+  checksum: bf4bbbebdf2b96642182bb028dae7486e27d7c2cbf65cda1a65285fdad68300c1310a51d447f1e91234dabb478e28beb66196836406d87b6bd7132e72ff87bdf
   languageName: node
   linkType: hard
 
-"@wix/pricing-plans_orders@npm:1.0.35":
-  version: 1.0.35
-  resolution: "@wix/pricing-plans_orders@npm:1.0.35"
+"@wix/pricing-plans_orders@npm:1.0.36":
+  version: 1.0.36
+  resolution: "@wix/pricing-plans_orders@npm:1.0.36"
   dependencies:
     "@wix/metro-runtime": ^1.1792.0
     "@wix/motion-edm-autogen-query-wrapper": ^1.0.37
     "@wix/sdk-runtime": ^0.3.14
     "@wix/sdk-types": ^1.9.2
-  checksum: 27a404fefad9b543143935c761687c5573e9af034ac09eab9ff9d681c03df321a333c4812bdc8070a903382593b022dac3efce8abfb4b12c7031ea6b11330e8e
+  checksum: c99219d7eff4b59a2834a51cefc8a2875ec68b8def0f517a9ff52376a79b4ee121f468d7f6d9b034859950fe3e01fe0b2d6b7fd8381ac3952486a9d866734ddf
   languageName: node
   linkType: hard
 
