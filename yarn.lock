@@ -1119,12 +1119,12 @@ __metadata:
   linkType: hard
 
 "@wix/pricing-plans@npm:^1.0.17":
-  version: 1.0.96
-  resolution: "@wix/pricing-plans@npm:1.0.96"
+  version: 1.0.97
+  resolution: "@wix/pricing-plans@npm:1.0.97"
   dependencies:
     "@wix/pricing-plans_orders": 1.0.41
     "@wix/pricing-plans_plans": 1.0.45
-  checksum: 0d80765deedb32c1d644ba0912f3ddffd4b29a970f30a0b3ccb156e8e08ae840ff9560e89bf1133a8abf4e937c781d254444b1b514ab2bfaa761ab030f510bfc
+  checksum: 1c48f0d12513e6a4460964bb7830eaef9bba056315be41ced5668c09b557d0d570319e640fd1edf4762a4960e19c098c97c35ad7e5dc80317079a39a8dd4f127
   languageName: node
   linkType: hard
 
