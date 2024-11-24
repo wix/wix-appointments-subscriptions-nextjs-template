@@ -971,22 +971,22 @@ __metadata:
   linkType: hard
 
 "@wix/pricing-plans@npm:^1.0.17":
-  version: 1.0.100
-  resolution: "@wix/pricing-plans@npm:1.0.100"
+  version: 1.0.101
+  resolution: "@wix/pricing-plans@npm:1.0.101"
   dependencies:
-    "@wix/pricing-plans_orders": 1.0.43
+    "@wix/pricing-plans_orders": 1.0.44
     "@wix/pricing-plans_plans": 1.0.47
-  checksum: c4e90085a7582f50f513f26401738f5be542c47b1825b68437a96f9a9823d5d1fe124173b312f253e32ec130b2a814d1118aec195d3a686d6a9ff3811f03d811
+  checksum: f8b7f08155d18ec80dcdb9997b43698d466bd389d6e2cf3a9dbd05f635395c76845b9e5efbd623718c3aee2f7a9c253f7394ce253150a4b7e5a9908f4d95d94d
   languageName: node
   linkType: hard
 
-"@wix/pricing-plans_orders@npm:1.0.43":
-  version: 1.0.43
-  resolution: "@wix/pricing-plans_orders@npm:1.0.43"
+"@wix/pricing-plans_orders@npm:1.0.44":
+  version: 1.0.44
+  resolution: "@wix/pricing-plans_orders@npm:1.0.44"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: 53ba5ebcb15acaa7af5c283258a8cbf6b848e18e151aac4bd59e9e939fbd7c55d4eb1331aaa4dedf965d530db8ee68dc97455c0d66c3ebfb81af39495b5ea0e4
+  checksum: 159c2413e1eb665cac4b986a134386c3f76a2fbfe5d011f9a37359f27c1f5e69e3dbfadba17e95ea31ad24600ceca1ac30b386a509fe870c7a01f8d1b5fa02cd
   languageName: node
   linkType: hard
 
