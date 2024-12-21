@@ -853,8 +853,8 @@ __metadata:
   linkType: hard
 
 "@wix/members@npm:^1.0.38":
-  version: 1.0.137
-  resolution: "@wix/members@npm:1.0.137"
+  version: 1.0.140
+  resolution: "@wix/members@npm:1.0.140"
   dependencies:
     "@wix/members_authentication": 1.0.38
     "@wix/members_authorization": 1.0.13
@@ -865,9 +865,9 @@ __metadata:
     "@wix/members_member-report": 1.0.7
     "@wix/members_member-role-definition": 1.0.16
     "@wix/members_member-to-member-block": 1.0.13
-    "@wix/members_members": 1.0.51
-    "@wix/members_user-member": 1.0.16
-  checksum: 73b42bbbefce920a3ccccf90ce85f7333fa0695dc7477d39bf82e2bb54dd796667d8afdaecaaaf308c62165ae796abe3d56a57e2b323f4165db0508432cf3961
+    "@wix/members_members": 1.0.53
+    "@wix/members_user-member": 1.0.19
+  checksum: f24dc2a834bbf76dea981b5d058cd380ef474d7317015958dbce36e6cf7cc016b29690fc68201e99c35e07eef86cf5d0bb8d30c34aa136bc05815e840e0fcfca
   languageName: node
   linkType: hard
 
@@ -961,23 +961,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/members_members@npm:1.0.51":
-  version: 1.0.51
-  resolution: "@wix/members_members@npm:1.0.51"
+"@wix/members_members@npm:1.0.53":
+  version: 1.0.53
+  resolution: "@wix/members_members@npm:1.0.53"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: ffc444f53b011e2a412aa252715af66fbac0b12f37805cadb8b0b69042b529eabf1d547a7c63ca886b1ba1dbea9c6ddb62fe595f0c18772244ca172624cbde42
+  checksum: 98c659c5c520f92d1f6de9ff9d6104f8a7f154ef1bf360356f315fe703579a36cb6882418e82a56c2f8f427df00be028ec93ea990ca6fe1c926e46068be48af5
   languageName: node
   linkType: hard
 
-"@wix/members_user-member@npm:1.0.16":
-  version: 1.0.16
-  resolution: "@wix/members_user-member@npm:1.0.16"
+"@wix/members_user-member@npm:1.0.19":
+  version: 1.0.19
+  resolution: "@wix/members_user-member@npm:1.0.19"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: 2b8b95e3eade306b7d3640b2215618ddbfd16ca57d5ce0adc5a015972e3505aa05fe3b3e7784c3bc58d0ddc0d78c7258e1eac878d4805eba4f4b48843e72fce4
+  checksum: 9b904c04023c30557ad0573d2b6912c8dc7b6547f2277ce4e168a3019d71b82e87bc630c92d2c9afbd359fd9503d01f0ac1c27b946f0d29f85fc57df1045ed57
   languageName: node
   linkType: hard
 
