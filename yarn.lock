@@ -216,81 +216,81 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:13.5.7":
-  version: 13.5.7
-  resolution: "@next/env@npm:13.5.7"
-  checksum: 7703ba37a5ad9c280fb8a04af43231b41bec2ed0bcf182a7e9e147b12e9d710ef96bbdc8e67aa27d2cf1abd4b57951d1c12018ba6ff03fbd87f31876362f5f58
+"@next/env@npm:13.5.8":
+  version: 13.5.8
+  resolution: "@next/env@npm:13.5.8"
+  checksum: 233983c0b6be309b199ba918dec05eca3fb1aff91dd06e076088553f07af9a8bca6336a801302e50a737c8a19ce33e9e5f386f382d5af549b43a6c5f5e2a305e
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:13.5.7":
-  version: 13.5.7
-  resolution: "@next/eslint-plugin-next@npm:13.5.7"
+"@next/eslint-plugin-next@npm:13.5.8":
+  version: 13.5.8
+  resolution: "@next/eslint-plugin-next@npm:13.5.8"
   dependencies:
     glob: 7.1.7
-  checksum: 6573569ac6aec8e5c53d74c0d2602265cd8e6a1981b48fb9a5de245c3b996ba3c92833edb35b23fa2683e2e12f65ae2b8ec6246cd2cc03866a54a49dfb44290f
+  checksum: 0a5432d5cf729fab0b576db1b400bdf407fb673bcaa410dc43550145772106a8f31d1a84bfb2dd3621a3ea1d593b08a09962edc924289cedf5791806e24b4825
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-arm64@npm:13.5.7":
-  version: 13.5.7
-  resolution: "@next/swc-darwin-arm64@npm:13.5.7"
+"@next/swc-darwin-arm64@npm:13.5.8":
+  version: 13.5.8
+  resolution: "@next/swc-darwin-arm64@npm:13.5.8"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-x64@npm:13.5.7":
-  version: 13.5.7
-  resolution: "@next/swc-darwin-x64@npm:13.5.7"
+"@next/swc-darwin-x64@npm:13.5.8":
+  version: 13.5.8
+  resolution: "@next/swc-darwin-x64@npm:13.5.8"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-gnu@npm:13.5.7":
-  version: 13.5.7
-  resolution: "@next/swc-linux-arm64-gnu@npm:13.5.7"
+"@next/swc-linux-arm64-gnu@npm:13.5.8":
+  version: 13.5.8
+  resolution: "@next/swc-linux-arm64-gnu@npm:13.5.8"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-musl@npm:13.5.7":
-  version: 13.5.7
-  resolution: "@next/swc-linux-arm64-musl@npm:13.5.7"
+"@next/swc-linux-arm64-musl@npm:13.5.8":
+  version: 13.5.8
+  resolution: "@next/swc-linux-arm64-musl@npm:13.5.8"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-gnu@npm:13.5.7":
-  version: 13.5.7
-  resolution: "@next/swc-linux-x64-gnu@npm:13.5.7"
+"@next/swc-linux-x64-gnu@npm:13.5.8":
+  version: 13.5.8
+  resolution: "@next/swc-linux-x64-gnu@npm:13.5.8"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-musl@npm:13.5.7":
-  version: 13.5.7
-  resolution: "@next/swc-linux-x64-musl@npm:13.5.7"
+"@next/swc-linux-x64-musl@npm:13.5.8":
+  version: 13.5.8
+  resolution: "@next/swc-linux-x64-musl@npm:13.5.8"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-win32-arm64-msvc@npm:13.5.7":
-  version: 13.5.7
-  resolution: "@next/swc-win32-arm64-msvc@npm:13.5.7"
+"@next/swc-win32-arm64-msvc@npm:13.5.8":
+  version: 13.5.8
+  resolution: "@next/swc-win32-arm64-msvc@npm:13.5.8"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-win32-ia32-msvc@npm:13.5.7":
-  version: 13.5.7
-  resolution: "@next/swc-win32-ia32-msvc@npm:13.5.7"
+"@next/swc-win32-ia32-msvc@npm:13.5.8":
+  version: 13.5.8
+  resolution: "@next/swc-win32-ia32-msvc@npm:13.5.8"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@next/swc-win32-x64-msvc@npm:13.5.7":
-  version: 13.5.7
-  resolution: "@next/swc-win32-x64-msvc@npm:13.5.7"
+"@next/swc-win32-x64-msvc@npm:13.5.8":
+  version: 13.5.8
+  resolution: "@next/swc-win32-x64-msvc@npm:13.5.8"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -574,8 +574,8 @@ __metadata:
   linkType: hard
 
 "@wix/bookings@npm:^1.0.122":
-  version: 1.0.525
-  resolution: "@wix/bookings@npm:1.0.525"
+  version: 1.0.528
+  resolution: "@wix/bookings@npm:1.0.528"
   dependencies:
     "@wix/bookings_attendance": 1.0.58
     "@wix/bookings_availability-calendar": 1.0.52
@@ -583,19 +583,19 @@ __metadata:
     "@wix/bookings_booking-fees": 1.0.11
     "@wix/bookings_booking-policies": 1.0.13
     "@wix/bookings_booking-policy-snapshots": 1.0.7
-    "@wix/bookings_bookings": 1.0.81
+    "@wix/bookings_bookings": 1.0.82
     "@wix/bookings_categories": 1.0.44
     "@wix/bookings_extended-bookings": 1.0.63
     "@wix/bookings_external-calendars": 1.0.41
     "@wix/bookings_multi-service-availability-time-slots": 1.0.42
     "@wix/bookings_pricing": 1.0.48
-    "@wix/bookings_resource-types": 1.0.20
-    "@wix/bookings_resources": 1.0.59
+    "@wix/bookings_resource-types": 1.0.22
+    "@wix/bookings_resources": 1.0.61
     "@wix/bookings_service-categories": 1.0.3
     "@wix/bookings_service-options-and-variants": 1.0.61
-    "@wix/bookings_services": 1.0.85
-    "@wix/bookings_staff-members": 1.0.20
-  checksum: 14ab2fbf11f2841efffb166424d91f0cbffcd07457ee4d00061aef4e3cf7fa439c65d731a88e466b294d17437c407a72ddce34c1ad501654e96592e8791dfd20
+    "@wix/bookings_services": 1.0.88
+    "@wix/bookings_staff-members": 1.0.22
+  checksum: b6472485875f5c482af2847ed36c0edb5ef73c995f26de3243008663031719bf8db37a7460eba38fed8f61a9825f6b2a12d001dd28c20700c763f19244c928e2
   languageName: node
   linkType: hard
 
@@ -659,13 +659,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/bookings_bookings@npm:1.0.81":
-  version: 1.0.81
-  resolution: "@wix/bookings_bookings@npm:1.0.81"
+"@wix/bookings_bookings@npm:1.0.82":
+  version: 1.0.82
+  resolution: "@wix/bookings_bookings@npm:1.0.82"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: 117cb8890d45e0a7f45bd1184f104348923e70dc23efacb67d5e4c15dfa12b626d9d99aab62c44bab5d8829f411fc0ddbe19709f47db143c4828f7c5956c2891
+  checksum: 0da2578989812b3a62ee4d8bad9fde14f8152473d70c1902f657d99bfbbbc9242a1b072614b923557a915e31ab9e01aef80d367c65b3b89b72331cb34e9fab58
   languageName: node
   linkType: hard
 
@@ -719,23 +719,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/bookings_resource-types@npm:1.0.20":
-  version: 1.0.20
-  resolution: "@wix/bookings_resource-types@npm:1.0.20"
+"@wix/bookings_resource-types@npm:1.0.22":
+  version: 1.0.22
+  resolution: "@wix/bookings_resource-types@npm:1.0.22"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: 8632ff0f4f0baeaaa5fb1df9d31b78848523a939a9d625c4d3106de2552818abb3ac684f91ba2b38784ce675d7c9a2b7b1750ddd95dc5dff038479a072c38274
+  checksum: f302ceeac4b33f30956e2d1645892643bdab42b1a3a935afee12c49bdce1b5ecd1038f965abc6f774de61b2510976d543d418dd165bba92a7c520da4e15ec2da
   languageName: node
   linkType: hard
 
-"@wix/bookings_resources@npm:1.0.59":
-  version: 1.0.59
-  resolution: "@wix/bookings_resources@npm:1.0.59"
+"@wix/bookings_resources@npm:1.0.61":
+  version: 1.0.61
+  resolution: "@wix/bookings_resources@npm:1.0.61"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: 641c2aaa58c74ba41a025f4f6b9d413a6d4201a0980e7a0889a7fe3e404dec9e46479f7b812e0da9f0cca1af90e6ea07e6a8d45267de5ccce312390a3e2c1689
+  checksum: 766af1b16a9171ccfdac5c020b07a3da50a6c45db4138d036e4fe6d709761e6c65bb0b093ad058ee45d6909452f19383f5d931af636cfb5cbfcdd903bc8ec5a3
   languageName: node
   linkType: hard
 
@@ -759,23 +759,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/bookings_services@npm:1.0.85":
-  version: 1.0.85
-  resolution: "@wix/bookings_services@npm:1.0.85"
+"@wix/bookings_services@npm:1.0.88":
+  version: 1.0.88
+  resolution: "@wix/bookings_services@npm:1.0.88"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: 25fa74c409936aa4e3269c038a9869b437e7e1b88756626dceef1366dd16d82a21d8ca604267203d9eb0d7bf3250d490b7ab6efafcc2adb80ac81b124ed2b648
+  checksum: bbeb509a4dddab026c528e120a1712dc13a10a0547baa8be6de279c51a25a71826c8f5ea3b6e9fac15ad8650283944a5df55bd55af6d96d59f5636140afd714c
   languageName: node
   linkType: hard
 
-"@wix/bookings_staff-members@npm:1.0.20":
-  version: 1.0.20
-  resolution: "@wix/bookings_staff-members@npm:1.0.20"
+"@wix/bookings_staff-members@npm:1.0.22":
+  version: 1.0.22
+  resolution: "@wix/bookings_staff-members@npm:1.0.22"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: ea7e4279af813dfc189ecf006ca38cb259e036deedaf401bf9b70e2bbabe12d3693f9069a952d76cb2387ce4e270265365fc2bf55381abf0ad4433361dac6253
+  checksum: d777856d61ace753fdcdbc71ece7b0e7119f5e93a709d50971f08dbdfd83e885caface61c415b5827c6bd7afb9c638225173da98d2f12de58372908a838dd058
   languageName: node
   linkType: hard
 
@@ -853,8 +853,8 @@ __metadata:
   linkType: hard
 
 "@wix/members@npm:^1.0.38":
-  version: 1.0.137
-  resolution: "@wix/members@npm:1.0.137"
+  version: 1.0.140
+  resolution: "@wix/members@npm:1.0.140"
   dependencies:
     "@wix/members_authentication": 1.0.38
     "@wix/members_authorization": 1.0.13
@@ -865,9 +865,9 @@ __metadata:
     "@wix/members_member-report": 1.0.7
     "@wix/members_member-role-definition": 1.0.16
     "@wix/members_member-to-member-block": 1.0.13
-    "@wix/members_members": 1.0.51
-    "@wix/members_user-member": 1.0.16
-  checksum: 73b42bbbefce920a3ccccf90ce85f7333fa0695dc7477d39bf82e2bb54dd796667d8afdaecaaaf308c62165ae796abe3d56a57e2b323f4165db0508432cf3961
+    "@wix/members_members": 1.0.53
+    "@wix/members_user-member": 1.0.19
+  checksum: f24dc2a834bbf76dea981b5d058cd380ef474d7317015958dbce36e6cf7cc016b29690fc68201e99c35e07eef86cf5d0bb8d30c34aa136bc05815e840e0fcfca
   languageName: node
   linkType: hard
 
@@ -961,72 +961,72 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/members_members@npm:1.0.51":
-  version: 1.0.51
-  resolution: "@wix/members_members@npm:1.0.51"
+"@wix/members_members@npm:1.0.53":
+  version: 1.0.53
+  resolution: "@wix/members_members@npm:1.0.53"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: ffc444f53b011e2a412aa252715af66fbac0b12f37805cadb8b0b69042b529eabf1d547a7c63ca886b1ba1dbea9c6ddb62fe595f0c18772244ca172624cbde42
+  checksum: 98c659c5c520f92d1f6de9ff9d6104f8a7f154ef1bf360356f315fe703579a36cb6882418e82a56c2f8f427df00be028ec93ea990ca6fe1c926e46068be48af5
   languageName: node
   linkType: hard
 
-"@wix/members_user-member@npm:1.0.16":
-  version: 1.0.16
-  resolution: "@wix/members_user-member@npm:1.0.16"
+"@wix/members_user-member@npm:1.0.19":
+  version: 1.0.19
+  resolution: "@wix/members_user-member@npm:1.0.19"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: 2b8b95e3eade306b7d3640b2215618ddbfd16ca57d5ce0adc5a015972e3505aa05fe3b3e7784c3bc58d0ddc0d78c7258e1eac878d4805eba4f4b48843e72fce4
+  checksum: 9b904c04023c30557ad0573d2b6912c8dc7b6547f2277ce4e168a3019d71b82e87bc630c92d2c9afbd359fd9503d01f0ac1c27b946f0d29f85fc57df1045ed57
   languageName: node
   linkType: hard
 
 "@wix/pricing-plans@npm:^1.0.17":
-  version: 1.0.106
-  resolution: "@wix/pricing-plans@npm:1.0.106"
+  version: 1.0.110
+  resolution: "@wix/pricing-plans@npm:1.0.110"
   dependencies:
-    "@wix/pricing-plans_orders": 1.0.49
-    "@wix/pricing-plans_plans": 1.0.48
-  checksum: c9b0495f79702e91ccd5dfafea80c16cfd7a7d35becb9c9af3ac77fc2b996b227befdaac1701bea7885e6ceb2b3c5f1a119f93ebabf22b1784b0a13f8459eb0c
+    "@wix/pricing-plans_orders": 1.0.52
+    "@wix/pricing-plans_plans": 1.0.51
+  checksum: 173a2188ff541837d214bd642d3dcf8ab72cc9c5b59d9cc8e4fef428563a40beed6faba8fccc8231ce7d810c737cb53fa316324d984f212de95c90d47c7666a8
   languageName: node
   linkType: hard
 
-"@wix/pricing-plans_orders@npm:1.0.49":
-  version: 1.0.49
-  resolution: "@wix/pricing-plans_orders@npm:1.0.49"
+"@wix/pricing-plans_orders@npm:1.0.52":
+  version: 1.0.52
+  resolution: "@wix/pricing-plans_orders@npm:1.0.52"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: 6eab32a785f900e3cef9a792391766465ee20d7a6870e3a25f707a225224fa96f6b3819bbffa3f86e95016ec16074d8e4674195fa23f96e1b4ce08e9bbe03c26
+  checksum: 627d626adf1d111069bad730c200c198e07db088ba7d7f7baae1afbf09ab2e01ff37ce498b8ea3b9b844df79cbab93a1dc07c2d744aba034d00921ed7c85fc38
   languageName: node
   linkType: hard
 
-"@wix/pricing-plans_plans@npm:1.0.48":
-  version: 1.0.48
-  resolution: "@wix/pricing-plans_plans@npm:1.0.48"
+"@wix/pricing-plans_plans@npm:1.0.51":
+  version: 1.0.51
+  resolution: "@wix/pricing-plans_plans@npm:1.0.51"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: 008b644ecd5d658cbb6a890f6afe023c35a6bb85dc362c703f36b3fec5b45fd14d2b85d214d87f88841d51db89c60cd69e407fb2d8455e4ac31125718a77ed34
+  checksum: 4a496bac4d205413a87b82d2e9f4d022048219df823f534aeeff15b707ff23a7fd301fd5fa781ced357e7f8aada776152e41845dee637cc08cf4c7cb66649af7
   languageName: node
   linkType: hard
 
 "@wix/redirects@npm:^1.0.13, @wix/redirects@npm:^1.0.64":
-  version: 1.0.64
-  resolution: "@wix/redirects@npm:1.0.64"
+  version: 1.0.67
+  resolution: "@wix/redirects@npm:1.0.67"
   dependencies:
-    "@wix/redirects_redirects": 1.0.33
-  checksum: 100e054fd1244dcc23a7e0a5aae087b20e36b2ed5ae40c3ff8c00c625bcdfa585e7945acc9979577303388377170e49a23111ee8048cb7cfbe2965b4524f13a6
+    "@wix/redirects_redirects": 1.0.36
+  checksum: ad59070b0e8c8cc56233d53ad09097b53db718b86ce77b03a9849325c18bfada0a0b007f3b6bfe2a3ce0e24478aae16937a9d0a90ff6bc081b404a7f9026bd48
   languageName: node
   linkType: hard
 
-"@wix/redirects_redirects@npm:1.0.33":
-  version: 1.0.33
-  resolution: "@wix/redirects_redirects@npm:1.0.33"
+"@wix/redirects_redirects@npm:1.0.36":
+  version: 1.0.36
+  resolution: "@wix/redirects_redirects@npm:1.0.36"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: f9c5c5300b46ba2eb472aa8db1f1c4c0cc874506717fc30161467376f0092b362ae4f9e49a0ab629f1586811dba37072e079eef48926177e1a80b1e4fcd3cb56
+  checksum: 56622f4785fda66e9c961c7521f2f6a424b2d673925abaad1cb7d6f6be2fee3cc447ee53597cd644a3c81667a13d853e835311f33d95d0a918e3d8e986b95cd6
   languageName: node
   linkType: hard
 
@@ -2094,10 +2094,10 @@ __metadata:
   linkType: hard
 
 "eslint-config-next@npm:^13.4.9":
-  version: 13.5.7
-  resolution: "eslint-config-next@npm:13.5.7"
+  version: 13.5.8
+  resolution: "eslint-config-next@npm:13.5.8"
   dependencies:
-    "@next/eslint-plugin-next": 13.5.7
+    "@next/eslint-plugin-next": 13.5.8
     "@rushstack/eslint-patch": ^1.3.3
     "@typescript-eslint/parser": ^5.4.2 || ^6.0.0
     eslint-import-resolver-node: ^0.3.6
@@ -2112,7 +2112,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 23e095968d2744d4ea4010f6d2049b0a2dd426f78562226008826471500c674476722584be14531853b524e404931217290be958db887844f79a51cb21167546
+  checksum: 1185ca81291c47cbb6add5d21f54097a89e74d36b2589d2103b2a10b280987e57cd21b72d5dcd369f26a264d36b4e7fcc3ef1bee37fd9641fbd8038018dec761
   languageName: node
   linkType: hard
 
@@ -3825,19 +3825,19 @@ __metadata:
   linkType: hard
 
 "next@npm:^13.4.9":
-  version: 13.5.7
-  resolution: "next@npm:13.5.7"
+  version: 13.5.8
+  resolution: "next@npm:13.5.8"
   dependencies:
-    "@next/env": 13.5.7
-    "@next/swc-darwin-arm64": 13.5.7
-    "@next/swc-darwin-x64": 13.5.7
-    "@next/swc-linux-arm64-gnu": 13.5.7
-    "@next/swc-linux-arm64-musl": 13.5.7
-    "@next/swc-linux-x64-gnu": 13.5.7
-    "@next/swc-linux-x64-musl": 13.5.7
-    "@next/swc-win32-arm64-msvc": 13.5.7
-    "@next/swc-win32-ia32-msvc": 13.5.7
-    "@next/swc-win32-x64-msvc": 13.5.7
+    "@next/env": 13.5.8
+    "@next/swc-darwin-arm64": 13.5.8
+    "@next/swc-darwin-x64": 13.5.8
+    "@next/swc-linux-arm64-gnu": 13.5.8
+    "@next/swc-linux-arm64-musl": 13.5.8
+    "@next/swc-linux-x64-gnu": 13.5.8
+    "@next/swc-linux-x64-musl": 13.5.8
+    "@next/swc-win32-arm64-msvc": 13.5.8
+    "@next/swc-win32-ia32-msvc": 13.5.8
+    "@next/swc-win32-x64-msvc": 13.5.8
     "@swc/helpers": 0.5.2
     busboy: 1.6.0
     caniuse-lite: ^1.0.30001406
@@ -3875,7 +3875,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: 056a0126fbb2197ee3c397c5599e5dafe57cb23d8420ab4ebd8c62a9a73f06305b8d323315097fa772408f11791106896e714fdccc8dae7f02064531ecc52a20
+  checksum: caf82f428b519139e39d9379da3f8cf2396bc5c5b0b329398f77c071b27bbca46e8638374fa8a3942173954ad55a586cfece4a3f9592ff743e06906304196019
   languageName: node
   linkType: hard
 
@@ -5091,8 +5091,8 @@ __metadata:
   linkType: hard
 
 "tailwindcss@npm:^3.2.6":
-  version: 3.4.16
-  resolution: "tailwindcss@npm:3.4.16"
+  version: 3.4.17
+  resolution: "tailwindcss@npm:3.4.17"
   dependencies:
     "@alloc/quick-lru": ^5.2.0
     arg: ^5.0.2
@@ -5119,7 +5119,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: a6ec1ce07da6ea4d40a62d9b3babfc5e56da75c5efb3c6fe48317dbda6877949f011c67b4fd03cb9a680d3bd734f45dbc977ee9138f8ce59619c7c712fb1350f
+  checksum: bda962f30e9a2f0567e2ee936ec863d5178958078e577ced13da60b3af779062a53a7e95f2f32b5c558f12a7477dea3ce071441a7362c6d7bf50bc9e166728a4
   languageName: node
   linkType: hard
 
