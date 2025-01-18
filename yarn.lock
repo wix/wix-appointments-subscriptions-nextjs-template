@@ -574,14 +574,14 @@ __metadata:
   linkType: hard
 
 "@wix/bookings@npm:^1.0.122":
-  version: 1.0.543
-  resolution: "@wix/bookings@npm:1.0.543"
+  version: 1.0.548
+  resolution: "@wix/bookings@npm:1.0.548"
   dependencies:
     "@wix/bookings_attendance": 1.0.63
     "@wix/bookings_availability-calendar": 1.0.58
     "@wix/bookings_availability-time-slots": 1.0.49
     "@wix/bookings_booking-fees": 1.0.17
-    "@wix/bookings_booking-policies": 1.0.19
+    "@wix/bookings_booking-policies": 1.0.20
     "@wix/bookings_booking-policy-snapshots": 1.0.12
     "@wix/bookings_bookings": 1.0.87
     "@wix/bookings_categories": 1.0.49
@@ -590,12 +590,12 @@ __metadata:
     "@wix/bookings_multi-service-availability-time-slots": 1.0.48
     "@wix/bookings_pricing": 1.0.53
     "@wix/bookings_resource-types": 1.0.28
-    "@wix/bookings_resources": 1.0.69
+    "@wix/bookings_resources": 1.0.70
     "@wix/bookings_service-categories": 1.0.9
     "@wix/bookings_service-options-and-variants": 1.0.67
-    "@wix/bookings_services": 1.0.97
-    "@wix/bookings_staff-members": 1.0.29
-  checksum: a42361b2ae9a5f5f9bd094e0aaa57134e81f7e6f773bb3e7f95440ce2f64cad7652cbba0c7d7127e2a892c85504485a37e4690f07607f3fcdeeb022c1ef57e2f
+    "@wix/bookings_services": 1.0.100
+    "@wix/bookings_staff-members": 1.0.30
+  checksum: b0ff24e8c67b381376984b35fb492aba32de179dd7056462613a4d9efc67d28f372281d6b151b29dba896c0eee3fc372276c3d68a430ee5efe0c977d16f5dd54
   languageName: node
   linkType: hard
 
@@ -639,13 +639,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/bookings_booking-policies@npm:1.0.19":
-  version: 1.0.19
-  resolution: "@wix/bookings_booking-policies@npm:1.0.19"
+"@wix/bookings_booking-policies@npm:1.0.20":
+  version: 1.0.20
+  resolution: "@wix/bookings_booking-policies@npm:1.0.20"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: 37897126ae15f77c52c6b874d5be50c9100f300a6b68eaa73e690e94a986dd9fdde7f973c36ee4f0350c07341ab56f013f63daf9ccfd6dea420e52744e91482d
+  checksum: 36c3e519923af7f88917a1d6b6cb5b0fcc85e0df44e91b95b54470834265f1bfaa1c351907d2870848a1ede4b9aa32cefd59621992ea0cee74761ec61e80c097
   languageName: node
   linkType: hard
 
@@ -729,13 +729,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/bookings_resources@npm:1.0.69":
-  version: 1.0.69
-  resolution: "@wix/bookings_resources@npm:1.0.69"
+"@wix/bookings_resources@npm:1.0.70":
+  version: 1.0.70
+  resolution: "@wix/bookings_resources@npm:1.0.70"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: fc9af877b3b1f2c540ca56cb1c3b854c2c4afb1f5af107291af7beb1d32d557639df35fddc2d9da2f1c8fc2d67eb7de39457f269d4e6130d146c5bc4cf51ee3f
+  checksum: db22065ed8165f10c24ec4db183c958dda0a058b0e8567aff09b32dbe4bfa52bde6f6d8816296b889f9a99afc50261534048b1767db63e19ebd542c4fd929991
   languageName: node
   linkType: hard
 
@@ -759,23 +759,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/bookings_services@npm:1.0.97":
-  version: 1.0.97
-  resolution: "@wix/bookings_services@npm:1.0.97"
+"@wix/bookings_services@npm:1.0.100":
+  version: 1.0.100
+  resolution: "@wix/bookings_services@npm:1.0.100"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: 91185048cc3f3312682e5ee8250236dcecf853b185bf6d3cdc8a8c0dfc233827efd28ab10225599318a84b8ee998107c75020f2001bc993d8b69598997a4835a
+  checksum: d6e298afb5b676cca42177f74f01e0e79412fd287fd2fc2ee4bd80e2d48cb87f82bf563a0747de37fc60f1250f8a3b2c149b3002a99a3d9a38f05424d38dab6e
   languageName: node
   linkType: hard
 
-"@wix/bookings_staff-members@npm:1.0.29":
-  version: 1.0.29
-  resolution: "@wix/bookings_staff-members@npm:1.0.29"
+"@wix/bookings_staff-members@npm:1.0.30":
+  version: 1.0.30
+  resolution: "@wix/bookings_staff-members@npm:1.0.30"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: f4947544922b499e71402a2f74efd11541bc883f02ac3d550d67145898f79df103bba929e1184c59338d68323863ca3e8ca8be709cee6f116c8ccd6cde58aa75
+  checksum: 49ca0b4bb21b8f090188090bc33b65e7082b047fecfac936481cf67dcbbce1672dd34e7a75a7af49ce33212d9b1dde1fd8f51c6c6600aec0d745381ac58c4c17
   languageName: node
   linkType: hard
 
