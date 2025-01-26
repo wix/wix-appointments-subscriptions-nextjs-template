@@ -842,12 +842,12 @@ __metadata:
   linkType: hard
 
 "@wix/members@npm:^1.0.38":
-  version: 1.0.178
-  resolution: "@wix/members@npm:1.0.178"
+  version: 1.0.179
+  resolution: "@wix/members@npm:1.0.179"
   dependencies:
     "@wix/members_authentication": 1.0.53
     "@wix/members_authorization": 1.0.26
-    "@wix/members_badges": 1.0.73
+    "@wix/members_badges": 1.0.74
     "@wix/members_custom-field": 1.0.28
     "@wix/members_custom-field-suggestion": 1.0.22
     "@wix/members_default-privacy": 1.0.16
@@ -856,7 +856,7 @@ __metadata:
     "@wix/members_member-to-member-block": 1.0.26
     "@wix/members_members": 1.0.67
     "@wix/members_user-member": 1.0.33
-  checksum: f068a6b0c1a569a8a995dd885e92159d400f52bb894474230050cd9ffe5facc6904cfc0e7f6a0bf7b44bfdb5b4dd8f193f18d5a2ce23dd75d7dcede06cd37b8e
+  checksum: c01591f19ba62f05d6e650341e41893148ea49cc3198a50060b9c1eda532aa19e64257dc7925a1f006368f40ebdaadbd2e5fac5ff9f25685566dc40464aabe02
   languageName: node
   linkType: hard
 
@@ -880,13 +880,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/members_badges@npm:1.0.73":
-  version: 1.0.73
-  resolution: "@wix/members_badges@npm:1.0.73"
+"@wix/members_badges@npm:1.0.74":
+  version: 1.0.74
+  resolution: "@wix/members_badges@npm:1.0.74"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: 4886bbe1cf29b107e9c03850bf05e8a10fffc6c63013d1847e17af9759593008a054c254ea03656923e5438ee5814e789f63cd7c9baf7c9beb5cae33e48f91f0
+  checksum: 42141d8738737de92ae549c885e3d7fc6d38c1a87ebb9e9ed463b1e481620814b7761ce11cfb2a6ce4d001190d1fc2f600483747d2637bf816bf396d3dcb8f5b
   languageName: node
   linkType: hard
 
