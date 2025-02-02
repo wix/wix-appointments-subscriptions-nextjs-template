@@ -25,14 +25,14 @@ runs:
       shell: bash
       env:
         PLAYWRIGHT_TEST_BASE_URL: ${{ inputs.provider-deployment-url }}
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       id: playwright-report-artifact
       if: always()
       with:
         name: playwright-report-${{ inputs.provider }}
         path: playwright-report/
         retention-days: 10
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       id: playwright-screenshots-artifact
       if: always()
       with:
