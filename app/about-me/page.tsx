@@ -34,19 +34,15 @@ export default function AboutMePage() {
           </div>
           <section className="min-h-max mx-5">
             <p className="text-sm flex-1 leading-7 sm:w-[calc(100%-319px)] sm:pt-24 pt-48">
-              My name is Allan Johnson and I am a personal coach. My goal is to
-              assist people identify and overcome obstacles in their lives and
-              to maximize their potential. Through my coaching, I help people
-              set goals, build the confidence and skills they need to achieve
-              success and develop a positive mindset and a sense of self-worth.
+              I'm Hailey Williams, the owner of Halos Haus of Brows, and I'm dedicated 
+              to providing a relaxing and personalized experience for each client. 
+              I'm passionate about creating beautiful brows that boost your confidence 
+              and enhance your natural beauty. My clients rave about my attention to detail, 
+              personalized service, and the transformative power of my brow services. 
+              Let's work together to create brows that make you feel amazing!
             </p>
             <p>&nbsp;</p>
             <p className="text-sm flex-1 leading-7">
-              As the famous American author, salesman and motivational speaker
-              Zig Ziglar once said: “Success is the doing, not the getting; in
-              the trying, not the triumph. Success is a personal standard,
-              reaching for the highest that is in us, becoming all that we can
-              be. If we do our best, we are a success.
             </p>
             <div className="sm:flex pb-6">
               <section className="flex-1 pt-6">
