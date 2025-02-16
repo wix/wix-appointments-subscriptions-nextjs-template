@@ -842,10 +842,10 @@ __metadata:
   linkType: hard
 
 "@wix/members@npm:^1.0.38":
-  version: 1.0.184
-  resolution: "@wix/members@npm:1.0.184"
+  version: 1.0.187
+  resolution: "@wix/members@npm:1.0.187"
   dependencies:
-    "@wix/members_authentication": 1.0.55
+    "@wix/members_authentication": 1.0.56
     "@wix/members_authorization": 1.0.27
     "@wix/members_badges": 1.0.75
     "@wix/members_custom-field": 1.0.29
@@ -857,18 +857,18 @@ __metadata:
     "@wix/members_member-to-member-block": 1.0.27
     "@wix/members_members": 1.0.69
     "@wix/members_members-about": 1.0.2
-    "@wix/members_user-member": 1.0.34
-  checksum: b40141d1f5ea0303711ec5cbfe0949ba347e881b94a8b2af1c61cf87cf0fabed7f1634e0b36706963679d5ae9d83b319f57337133964a0cd02c46368a668b686
+    "@wix/members_user-member": 1.0.37
+  checksum: 7e7db27d4f6694bab9ee2f68d7c4260c3d0eda3673377ba2045ddffbd8b5ab5fb578dc2f54c67317c5d68b219796d896ffe8d5b41577a874dbdca9b7ee316d3d
   languageName: node
   linkType: hard
 
-"@wix/members_authentication@npm:1.0.55":
-  version: 1.0.55
-  resolution: "@wix/members_authentication@npm:1.0.55"
+"@wix/members_authentication@npm:1.0.56":
+  version: 1.0.56
+  resolution: "@wix/members_authentication@npm:1.0.56"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: 2fc9005952783b8418ce6fbd246d5931472b9fb7da9c38464c8b31728bc7bde4025875f96173167b04cfd313d1dd006dc530610a079581ade92345658be8c9a5
+  checksum: d8cc9e6292e39628557ce47f3d16bdcb812fd13995f67129ce21118e49325813e14077787a74d1661ce6a45c600d990123cb0a7fa8293eddc44500bfd9cc8fba
   languageName: node
   linkType: hard
 
@@ -982,13 +982,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/members_user-member@npm:1.0.34":
-  version: 1.0.34
-  resolution: "@wix/members_user-member@npm:1.0.34"
+"@wix/members_user-member@npm:1.0.37":
+  version: 1.0.37
+  resolution: "@wix/members_user-member@npm:1.0.37"
   dependencies:
     "@wix/sdk-runtime": ^0.3.22
     "@wix/sdk-types": ^1.12.4
-  checksum: 09123c9f15eed57d21b74b648ca7546a1190300aba0c553cf4a6f5b28884b7574929af029c58dd754fd746c7dff8b797678599047171f65de78003f031ce8a57
+  checksum: 688eb4da619c9faa13da961fae6a5dab203a69031d0bea9978fd5a7cf840d8d6cbdbad3f233ac7206b7d4d9d499333b45d2e7dec7201ca0463bd65186fb7071b
   languageName: node
   linkType: hard
 
