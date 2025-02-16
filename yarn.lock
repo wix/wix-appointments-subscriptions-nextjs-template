@@ -574,9 +574,10 @@ __metadata:
   linkType: hard
 
 "@wix/bookings@npm:^1.0.122":
-  version: 1.0.566
-  resolution: "@wix/bookings@npm:1.0.566"
+  version: 1.0.567
+  resolution: "@wix/bookings@npm:1.0.567"
   dependencies:
+    "@wix/bookings_app-extensions": 1.0.1
     "@wix/bookings_attendance": 1.0.65
     "@wix/bookings_availability-calendar": 1.0.61
     "@wix/bookings_availability-time-slots": 1.0.52
@@ -595,7 +596,17 @@ __metadata:
     "@wix/bookings_service-options-and-variants": 1.0.70
     "@wix/bookings_services": 1.0.109
     "@wix/bookings_staff-members": 1.0.33
-  checksum: 4e98e18c56e1d720e2cb8c8a94e80704f4227fa19d65fcd27012ebb40fefa2c4ae914610a6bcc6e5a2f5f4c5d7b983e6796cad2b183ae102cd3921749e1e6868
+  checksum: 168638685f0ade93a4bf10c383d5f6086efe8d616fd787a264d63ccad56616cdf6ef76484f18fe2f7f08729d15c169f70b35f5d5956faa73ece44db2062e052a
+  languageName: node
+  linkType: hard
+
+"@wix/bookings_app-extensions@npm:1.0.1":
+  version: 1.0.1
+  resolution: "@wix/bookings_app-extensions@npm:1.0.1"
+  dependencies:
+    "@wix/sdk-runtime": ^0.3.22
+    "@wix/sdk-types": ^1.12.4
+  checksum: 1f5f3bc5edee709927a8cbe055c8d9408d301758ea8dbb7f8da08b02875674a4aab0747c35632cd970f6fb50c4d57b8b1b97553d343bef32da6dfad4b24aba32
   languageName: node
   linkType: hard
 
