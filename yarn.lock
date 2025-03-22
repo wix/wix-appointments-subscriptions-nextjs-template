@@ -573,6 +573,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@wix/auto_sdk_pricing-plans_orders@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@wix/auto_sdk_pricing-plans_orders@npm:1.0.2"
+  dependencies:
+    "@wix/sdk-runtime": ^0.3.35
+    "@wix/sdk-types": ^1.12.4
+  checksum: 3b2e8e4062ae9603e95b32248809bc16b9d7946e37e72465390e344c4cc520510635331f434a8cea7105fce047ae67116b5eb54e191ef7c2feca86e6ccf074a2
+  languageName: node
+  linkType: hard
+
+"@wix/auto_sdk_pricing-plans_plans@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@wix/auto_sdk_pricing-plans_plans@npm:1.0.2"
+  dependencies:
+    "@wix/sdk-runtime": ^0.3.35
+    "@wix/sdk-types": ^1.12.4
+  checksum: 1dab59135c7b3f6aabda4aefcb73bacfc261a3b843357ba3d4042b5557611b3d2159aeccc83834958818d68f15f495f15f12a1f7dec7845c4f82cc5437c4c309
+  languageName: node
+  linkType: hard
+
 "@wix/bookings@npm:^1.0.122":
   version: 1.0.567
   resolution: "@wix/bookings@npm:1.0.567"
@@ -1010,33 +1030,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@wix/monitoring-types@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "@wix/monitoring-types@npm:0.9.0"
+  checksum: 28f70f03f291d7434053553a0ab4dda9a73b4f9ea7dd31ddd6c82fc589390dbe2edc618c9e4404921a2d8d79e213c94eb093bea7d819e5f0d84ebdcac57ed325
+  languageName: node
+  linkType: hard
+
 "@wix/pricing-plans@npm:^1.0.17":
-  version: 1.0.122
-  resolution: "@wix/pricing-plans@npm:1.0.122"
+  version: 1.0.128
+  resolution: "@wix/pricing-plans@npm:1.0.128"
   dependencies:
-    "@wix/pricing-plans_orders": 1.0.63
-    "@wix/pricing-plans_plans": 1.0.55
-  checksum: 93311a18373618fde7083921592730e49e200b0e20ec0c5e9aee21b41d71f915374955fb780e4b31f05292b3af54c8047ff7d0d2fe8e430f7c053c88e5075f73
-  languageName: node
-  linkType: hard
-
-"@wix/pricing-plans_orders@npm:1.0.63":
-  version: 1.0.63
-  resolution: "@wix/pricing-plans_orders@npm:1.0.63"
-  dependencies:
-    "@wix/sdk-runtime": ^0.3.22
-    "@wix/sdk-types": ^1.12.4
-  checksum: 27a8ce4f11765794726e92d511d781917a8c5b40cab852c6d5dc0645397cf7660a52946d95b89fcfe18e5f494edc4f3bbc6a3b32b8e63282a0afdf90a9c11f5d
-  languageName: node
-  linkType: hard
-
-"@wix/pricing-plans_plans@npm:1.0.55":
-  version: 1.0.55
-  resolution: "@wix/pricing-plans_plans@npm:1.0.55"
-  dependencies:
-    "@wix/sdk-runtime": ^0.3.22
-    "@wix/sdk-types": ^1.12.4
-  checksum: cff06e0bcca68274025ee819c2a05802d97719803bca0aa99e967ad8e07b882887d1a59dfc14cb19513dd34ae9e7e9812fa4aa4294712e02d52a8eb10a7ec852
+    "@wix/auto_sdk_pricing-plans_orders": 1.0.2
+    "@wix/auto_sdk_pricing-plans_plans": 1.0.2
+  checksum: 7841891d38453b34ee192af9b43b2861faeafeaf7fe5f7eb4e84f3ac18054edb00ff41bbe419f85799424e91320ce908110661600bf390c4b4558ff728666cb3
   languageName: node
   linkType: hard
 
@@ -1059,7 +1066,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/sdk-context@npm:^0.0.1":
+"@wix/sdk-context@npm:0.0.1, @wix/sdk-context@npm:^0.0.1":
   version: 0.0.1
   resolution: "@wix/sdk-context@npm:0.0.1"
   checksum: 62b65cdeb372d5f409328df365a860338d224d6aa9b6203cd7eef693df2a6aa7ba6edb990469022a00d0acb3509fd72efa78441550afe06e6651973401bbb3e4
@@ -1086,6 +1093,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@wix/sdk-runtime@npm:^0.3.35":
+  version: 0.3.38
+  resolution: "@wix/sdk-runtime@npm:0.3.38"
+  dependencies:
+    "@wix/sdk-context": 0.0.1
+    "@wix/sdk-types": ^1.13.6
+  checksum: ef9f51b426b5839e7f1cb42ac1d7f3332bf57534d3f60f8797e2f39eaaa58238f27202347566c5c703a82335248419ea21ee6ccede4e96cb3728a2eb23c300e7
+  languageName: node
+  linkType: hard
+
 "@wix/sdk-types@npm:^1.12.4":
   version: 1.12.4
   resolution: "@wix/sdk-types@npm:1.12.4"
@@ -1099,6 +1116,15 @@ __metadata:
   dependencies:
     "@wix/monitoring-types": ^0.5.0
   checksum: 958fa6322800f650954dc153d573af2d6b75e5e1774d9d4203b08de540747ecb333f9ccaf49c6da4fa95c1d467b39b29293f34870e08b806b490940cd9f1a7f8
+  languageName: node
+  linkType: hard
+
+"@wix/sdk-types@npm:^1.13.6":
+  version: 1.13.6
+  resolution: "@wix/sdk-types@npm:1.13.6"
+  dependencies:
+    "@wix/monitoring-types": ^0.9.0
+  checksum: 03378d1d61859b029f283eb495b1b64ab98189d9a92d5910d0820382815dcaab4d4954934f8c0e8cf8c2a4257cb760697c25dd0a56923fea685dc71d3dbaaa8d
   languageName: node
   linkType: hard
 
